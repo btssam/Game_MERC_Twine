@@ -24,7 +24,9 @@
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
 
 
 
@@ -73,7 +75,7 @@ You glance upon your headquarters as you enter. Above the entrance is a wooden s
 	The individual on the right is a slender young woman with short black hair, spinning and tossing a long dagger in her hands. She is in a relaxed position, with one arm over her chair. You notice she also has been reading a book that she left open on the desk, with a pencil nearby. On a brief glance, it seems to contain sketches and descriptions of monsters. You see a quiver strapped to her back. She notices your quiet entrance and her brow raises slightly, though she continues spinning her dagger and reading her book.
 
 
-[[Greet them]]</tw-passagedata><tw-passagedata pid="9" name="Greet them" tags="" position="412,920" size="100,100">(if: $displayGreetingText is 0)[&quot;Greetings, mercenaries.&quot;
+[[Greet them]]</tw-passagedata><tw-passagedata pid="9" name="Greet them" tags="" position="412,919" size="100,100">(if: $displayGreetingText is 0)[&quot;Greetings, mercenaries.&quot;
 	
 	They both stop what they’re doing and look at you.
 	
@@ -143,7 +145,8 @@ You wake up in the middle of the night, realizing you should arrive by the morni
 
 (link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Set off to Ashenbark Forest&quot;)(goto:&quot;Check Status&quot;)]
 (if: $compan is 1) [[[Wake up Gorex]]] (else-if: $compan is 2) [[[Wake up Lily]]]
-[[Go back to sleep]]</tw-passagedata><tw-passagedata pid="20" name="Wake up Gorex" tags="" position="170,1704" size="100,100">(set: $compApproval to $compApproval+1)
+[[Go back to sleep]]</tw-passagedata><tw-passagedata pid="20" name="Wake up Gorex" tags="" position="171,1704" size="100,100">(set: $compApproval to $compApproval+1)&lt;i&gt;(Your companion approval increases.)&lt;/i&gt;
+
 Gorex lets out a long yawn. &quot;Hmm? Need something?&quot;
 
 &quot;I just woke up suddenly and can&#39;t fall back asleep&quot;, you say.
@@ -155,7 +158,8 @@ He sits up, still looking half asleep.
 [[Your past]]
 [[Their past]]
 [[Our mission]]
-[[Life]]</tw-passagedata><tw-passagedata pid="21" name="Wake up Lily" tags="" position="384,1703" size="100,100">(set: $compApproval to $compApproval+1)
+[[Life]]</tw-passagedata><tw-passagedata pid="21" name="Wake up Lily" tags="" position="384,1703" size="100,100">(set: $compApproval to $compApproval+1)&lt;i&gt;(Your companion approval increases.)&lt;/i&gt;
+
 Lily lets out a long yawn. &quot;Hmm?&quot;
 
 &quot;I woke up suddenly and can&#39;t fall back asleep&quot;, you say.
@@ -219,6 +223,7 @@ Lily cocks her head to the side, &quot;Hmm? How so?&quot;
 &quot;Ha. Yes, it sure does.&quot;
 
 You feel a sense of relaxation and sleepiness as your conversation comes to a close. Your eyelids grow heavy.]
+(else:)[Error, no companion set.]
 
 [[Wake up in Ashenbark Forest]]</tw-passagedata><tw-passagedata pid="24" name="Their past" tags="" position="234,1900" size="100,100">(if: $compan is 1)[You ask Gorex to speak of himself.
 
@@ -240,7 +245,7 @@ You see a crack in Lily&#39;s almost eternal smile.
 
 You feel a sense of relaxation and sleepiness as your conversation comes to a close. Your eyelids grow heavy.
 ]
-
+(else:)[Error, no companion set.]
 [[Wake up in Ashenbark Forest]]</tw-passagedata><tw-passagedata pid="25" name="Our mission" tags="" position="358,1900" size="100,100">(if: $compan is 1)[You speak of your mission with Gorex.
 
 &quot;What excites you about this mission?&quot;, you ask.
@@ -271,8 +276,8 @@ You scratch your chin and say, &quot;Well, that certainly makes sense.&quot;
 
 You feel a sense of relaxation and sleepiness as your conversation comes to a close. Your eyelids grow heavy.
 ]
-
-[[Wake up in Ashenbark Forest]]</tw-passagedata><tw-passagedata pid="26" name="Life" tags="" position="468,1896" size="100,100">(if: $compan is 1)[You speak of life with Gorex.
+(else:)[Error, no companion set.]
+[[Wake up in Ashenbark Forest]]</tw-passagedata><tw-passagedata pid="26" name="Life" tags="" position="477,1899" size="100,100">(if: $compan is 1)[You speak of life with Gorex.
 
 You begin by saying, &quot;Life&#39;s a fickle thing, eh?&quot;
 
@@ -298,7 +303,7 @@ She looks back up at you with a forced smile. &quot;Thank you, though.&quot;
 
 You feel a sense of relaxation and sleepiness as your conversation comes to a close. Your eyelids grow heavy.
 ]
-
+(else:)[Error, no companion set.]
 [[Wake up in Ashenbark Forest]]</tw-passagedata><tw-passagedata pid="27" name="Wake up in Ashenbark Forest" tags="" position="501,2108" size="100,100">You and your companion wake up with the morning sun spilling through the slits of the caravan&#39;s roof.
 
 Before the two of you lies the entrance to Ashenbark woods denoted by two curved trees that nearly form an archway.
@@ -345,7 +350,7 @@ You think on your actions thusfar, reflecting on your morality:(if: $karma &lt; 
 (else-if: $karma &gt; 0)[You feel as if you&#39;ve done your best to make the right, just choice.]
 (else:)[You feel neutral. You&#39;ve made logical and necessary choices.]
 
-(link: &quot;Back&quot;)[(goto:$previousPassage)]</tw-passagedata><tw-passagedata pid="30" name="Choose Right Path" tags="" position="930,2266" size="100,100">(set: $hasAsh to 0)You and your companion venture off in the direction of the rustling. It gets louder and louder until you come across some commotion in the distance.
+(link: &quot;Back&quot;)[(goto:$previousPassage)]</tw-passagedata><tw-passagedata pid="30" name="Choose Right Path" tags="" position="922,2246" size="100,100">(set: $hasAsh to 0)You and your companion venture off in the direction of the rustling. It gets louder and louder until you come across some commotion in the distance.
 
 You see an ogre fighting a wolf with a longspear. They are circling each other. They seem to have been fighting for sometime, both looking weary. You must be near the ogre encampment.
 
@@ -415,8 +420,7 @@ The first depicts two crossed lines, possibly representing spears.The second fur
 
 You determine you are heading in the right direction.
 
-[[Back|Choose Left Path]]</tw-passagedata><tw-passagedata pid="36" name="Test Mushroom on Companion" tags="" position="406,2723" size="100,100">(set: $compApproval to $compApproval-1)
-(set: $karma to $karma-1)
+[[Back|Choose Left Path]]</tw-passagedata><tw-passagedata pid="36" name="Test Mushroom on Companion" tags="" position="406,2723" size="100,100">(set: $compApproval to $compApproval-1)(set: $karma to $karma-1)&lt;i&gt;(Your karma decreases. Your companion approval decreases.)&lt;/i&gt;
 
 (if: $compan is 1)[You hand the mushroom to Gorex.
 
@@ -457,7 +461,7 @@ A half hour passes until Lily finally comes to, looking quite groggy.
 You give her a light shove. &quot;Wake up, Lily. Can you move? We&#39;re losing time.&quot;
 
 &quot;I. . .&quot;, she looks around a bit. She slowly stands up, takes a drink from the river, and stretches. &quot;I guess I&#39;m ready. Let&#39;s go then.&quot;]
-
+(else:)[Error, no companion set.]
 [[Continue Along The River]]</tw-passagedata><tw-passagedata pid="37" name="Continue Along The River" tags="" position="224,3255" size="100,100">After about twenty minutes of walking along the windy river, you come across what looks to be an open side entrance to the ogre encampment.
 
 Wodden walls and spikes surround the encampment. There is a larger entrance on the opposite side of the camp, with two ogres standing around a fire. Closer to you, you see a small hut and hear a muffled voice from within.
@@ -502,7 +506,9 @@ Once the smoke quells some, one ogre slumpts back, its eyes to the sky and the c
 It is not terribly long until the sat ogre begins sifting through the chest again.
 
 [[Back|Continue Along The River]] </tw-passagedata><tw-passagedata pid="40" name="Instruct Companion To Sneak By Guard Ogre And Free Bishop" tags="" position="0,3801" size="100,100">(set: $hasBishop to 1)
-(if: $compan is 1)[(set: $compApproval to $compApproval-1)&quot;Go sneak by the ogre and free the Bishop.&quot;
+(if: $compan is 1)[(set: $compApproval to $compApproval-1)&lt;i&gt;(Your companion approval decreases.)&lt;/i&gt;
+
+&quot;Go sneak by the ogre and free the Bishop.&quot;
 
 &quot;I&#39;m not really a very subtle individual, but I will try&quot;, Gorex says reluctantly.
 
@@ -535,9 +541,11 @@ Gorex looks to you, then back at the Bishop, &quot;I am sorry.&quot;
 [[Backtrack To Forest Entrance]]
 ]
 
-(if: $compan is 2)[(set: $compApproval to $compApproval+1)&quot;Go sneak by the ogre and free the Bishop.&quot;
+(if: $compan is 2)[(set: $compApproval to $compApproval+1)&lt;i&gt;(Your companion approval increases.)&lt;/i&gt;
 
-&quot;Now you&#39;re talking my language&quot;, Lily says with a smile.
+&quot;Go sneak by the ogre and free the Bishop.&quot;
+
+&quot;Now you&#39;re talking my language&quot;, Lily says with a smrik.
 
 She slowly takes out her dagger and lockpick. Then, Lily begins to make her way to the Bishop. She moves as slow as possible. The ogre seems totally unaware.
 
@@ -552,24 +560,31 @@ Lily looks uncomfortable. &quot;Lilian Feth, your bishophood.&quot; She curtseys
 &quot;Maybe we can spend some time together when we get back to Coreston, eh? For now, let&#39;s get out of these hellish woods.&quot;
 
 [[Backtrack To Forest Entrance]]
-]</tw-passagedata><tw-passagedata pid="41" name="Instruct Companion To Fight Guard Ogre" tags="" position="265,3781" size="100,100">(if: $compan is 1)[(set: $compApproval to $compApproval+1)&quot;We must dispatch with him. Do not waste time and do not alert the other guards.&quot;
+]
+(else:)[Error, no companion set.]</tw-passagedata><tw-passagedata pid="41" name="Instruct Companion To Fight Guard Ogre" tags="" position="265,3781" size="100,100">(if: $compan is 1)[(set: $compApproval to $compApproval+1)&lt;i&gt;(Your companion approval increases.)&lt;/i&gt;
 
-&quot;Really?&quot; Gorex smiles the widest you&#39;ve seen.
+&quot;We must dispatch with him. Do not waste time and do not alert the other guards.&quot;
+
+&quot;Really?&quot; Gorex smiles the widest you&#39;ve seen. Then, his grin quickly straigthens.
 
 Gorex smoothly takes out his long spear. He turns to you as you take out your sword and shield. He puts out his hand, indicating he wants you to wait as he fights.
 
-Gorex approaches and thrusts his long spear into the back of the ogre&#39;s shoulder. He looks to be strained as he pulls it back out. The ogre turns back around and points his spear at Gorex, though quickly falls to his knees due to his wounds. Gorex stabs him again, this time in the chest. With that thrust, the ogre opens its mouth wide to let loose a scream.
+Gorex approaches and thrusts his long spear into the back of the ogre&#39;s shoulder. He looks to be strained as he pulls it back out. The ogre turns back around and points his spear at Gorex, though quickly falls to his knees due to his wounds. Gorex stabs him again, this time in the chest. With that thrust, the ogre opens its mouth wide, ready to let loose a final scream.
 
 Both you and your companion tense up and exchange a look, knowing that he may alert his allies.
 
-Instead, only blood comes out of the ogre&#39;s mouth. He drops dead.
+Instead, no sound comes out. Only a dribble of blood. He drops dead.
+
+You and your companion detense a moment. Gorex has a determined, focused look on his face that doesn&#39;t fade.
 
 Your party looks to the struggling Bishop.
 
 [[Tell Gorex To Break The Chains]]
 ]
 
-(if: $compan is 2)[(set: $compApproval to $compApproval-1)&quot;We must dispatch with him. Do not waste time and do not alert the other guards.&quot;
+(if: $compan is 2)[(set: $compApproval to $compApproval-1)&lt;i&gt;(Your companion approval dedcreases.)&lt;/i&gt;
+
+&quot;We must dispatch with him. Do not waste time and do not alert the other guards.&quot;
 
 Lily looks shocked. &quot;This is our course of action? I don&#39;t really compare to an ogre. . .&quot;
 
@@ -577,11 +592,14 @@ You take out your shield and sword and point to the guard with your blade. &quot
 
 Lily pulls out her knife and approaches the guard slowly. She gets as close as possible, to the point that you think the ogre must surely have detected her, but she remains unseen. She readies herself, then in one swift motion, jumps high enough to reach the ogres neck and slices its throat from behind.
 
-The ogre clutches its throat and grabs at Lily&#39;s arm. She tries to dodge out of the way, but fails. You quickly jump into action slicing the ogre&#39;s arm. The ogre focuses on you and Lily jumps on its back and stabs it once more in the head, dropping to the floor.
+The ogre clutches its throat, eyes wide, and grabs at Lily&#39;s arm. She tries to dodge out of the way, but fails. Lily tries to stab at the ogre&#39;s arm while trying to wriggle out of it, but the ogre&#39;s hold remains tight. You quickly jump into action slicing the ogre&#39;s arm deep with your blade, releasing its grip in the process. The ogre turns it attention toward you. Lily jumps on its back and stabs it once more in the head, dropping to the floor, dead.
+
+You and your companion detense a moment. Lilian rubs her arm. You turn to her with a look of concern, but she smiles assuringly.
 
 Your party looks to the struggling Bishop.
 [[Tell Lily To Use Her Lockpick]]
-]</tw-passagedata><tw-passagedata pid="42" name="Tell Gorex To Break The Chains" tags="" position="12,3995" size="100,100">(set: $hasBishop to 1)
+]
+(else:)[Error, no companion set.]</tw-passagedata><tw-passagedata pid="42" name="Tell Gorex To Break The Chains" tags="" position="12,3995" size="100,100">(set: $hasBishop to 1)
 &quot;I will try&quot;, Gorex says.
 
 He grabs at the chains around the Bishop&#39;s hands and pulls them apart with relative ease. He then uses his dual axes to swing at the much tougher chain attaching him to the wall. After a minute or so of swinging, the chains break.
@@ -596,7 +614,7 @@ Gorex looks to you, then back at the Bishop, &quot;I am sorry.&quot;
 
 &quot;You should be. Now, can we get moving? I&#39;ve been stuck here for days?&quot;
 
-[[Backtrack To Forest Entrance]]</tw-passagedata><tw-passagedata pid="43" name="Tell Lily To Use Her Lockpick" tags="" position="189,3995" size="100,100">(set: $hasBishop to 1)
+[[Backtrack To Forest Entrance]]</tw-passagedata><tw-passagedata pid="43" name="Tell Lily To Use Her Lockpick" tags="" position="192,3993" size="100,100">(set: $hasBishop to 1)
 &quot;Of course, dear.&quot;
 
 Lily takes out a lockpick. After a few moments of moving the pick around, she releases the Bishop from his chains.
@@ -613,7 +631,8 @@ Lily looks uncomfortable. &quot;Lilian Feth, your bishophood.&quot; She curtseys
 
 [[Backtrack To Forest Entrance]] </tw-passagedata><tw-passagedata pid="44" name="Backtrack To Forest Entrance" tags="" position="124,4143" size="100,100">Your party follows the river back to the entrance of Ashenbark Woods, escorting the Bishop.
 
-(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Backtrack To Forest Entrance&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="45" name="Instruct Companion To Use Mushroom On Guard Ogre" tags="" position="121,3789" size="100,100">(set: $compApproval to $compApproval+1)
+(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Backtrack To Forest Entrance&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="45" name="Instruct Companion To Use Mushroom On Guard Ogre" tags="" position="121,3790" size="100,100">(set: $compApproval to $compApproval+1)(set: $hasMush to 0)&lt;i&gt;(Your companion approval increases. The mushroom is removed from your inventory.)&lt;/i&gt;
+
 (if: $compan is 1)[&quot;Rub the mushroom upon your blade and prick the ogre.&quot;
 
 &quot;As you wish&quot;, Gorex says.
@@ -641,13 +660,18 @@ The ogre&#39;s grip loosens as he lets go of Lily. The ogre falls foward and lan
 Lily rubs her neck smiles at you, eyes wide. &quot;You certainly keep things interesting, captain.&quot;
 
 [[Tell Lily To Use Her Lockpick]]
-]</tw-passagedata><tw-passagedata pid="46" name="Let The Fight Play Out" tags="" position="677,2383" size="100,100">You and your companion watch the fight play out from a safe distance.
+]
+(else:)[Error, no companion set.]</tw-passagedata><tw-passagedata pid="46" name="Let The Fight Play Out" tags="" position="677,2383" size="100,100">(set: $karma to $karma+1)&lt;i&gt;(Your karma increases.)&lt;/i&gt;
+
+You and your companion watch the fight play out from a safe distance.
 
 After a few minutes of back and forth fighting, the wolf suddenly lunges straight for the ogre. The ogre seems to have no strength left as the wolf tears at him.
 
 After the wolf has had its fair share of ogre flesh, it moves on.
 
-[[Investigate Scene]]</tw-passagedata><tw-passagedata pid="47" name="Attack The Ogre" tags="" position="798,2389" size="100,100">(if: $compan is 1)[(set: $compApproval to $compApproval+1)&quot;Attack the ogre!&quot;
+[[Investigate Scene]]</tw-passagedata><tw-passagedata pid="47" name="Attack The Ogre" tags="" position="798,2391" size="100,100">(if: $compan is 1)[(set: $compApproval to $compApproval+1)&lt;i&gt;(Your companion approval increases.)&lt;/i&gt;
+
+&quot;Attack the ogre!&quot;
 
 &quot;Really? I&#39;ve been waiting to fight one of these for some time.&quot;
 
@@ -664,7 +688,9 @@ The wolf scampers off.
 He looks back to you, then raises his weapon victoriously and lets out a belting warcry.
 ]
 
-(if: $compan is 2)[(set: $compApproval to $compApproval-1)&quot;Attack the ogre!&quot;
+(if: $compan is 2)[(set: $compApproval to $compApproval-1)&lt;i&gt;(Your companion approval decreases.)&lt;/i&gt;
+
+&quot;Attack the ogre!&quot;
 
 &quot;Are you sure? That&#39;s an &lt;i&gt;ogre&lt;/i&gt;. . .You are serious, huh?&quot; She unsheathes her bow and knocks an arrow. &quot;You first, then.&quot;
 
@@ -682,7 +708,7 @@ You detense and relax your body some. &quot;Well done&quot;, you say over your s
 
 She nods as she resheathes her bow, her gaze still on the ogre. She looks somewhat shaken from the encounter.
 ]
-
+(else:)[Error, no companion set.]
 [[Investigate Scene]]</tw-passagedata><tw-passagedata pid="48" name="Attack The Wolf" tags="" position="910,2392" size="100,100">You and your companion enter the fight, focusing on attacking the wolf. As you approach, you realize the ogre is much smaller than you would have expected, standing not much taller than you.
 
 You take out your sword and shield. You dispatch with the wolf with two quick bites of your blade, your companion following close behind.
@@ -691,18 +717,20 @@ The ogre looks back and forth at the two of you, bleeding from wounds on his for
 
 He slumps to his knees and lowers his head.
 
-[[Interrogate Ogre]]</tw-passagedata><tw-passagedata pid="49" name="Sneak By" tags="" position="1073,2413" size="100,100">(if: $compan is 1)[(set: $compApproval to $compApproval-1)
+[[Interrogate Ogre]]</tw-passagedata><tw-passagedata pid="49" name="Sneak By" tags="" position="1073,2413" size="100,100">(if: $compan is 1)[(set: $compApproval to $compApproval-1)&lt;i&gt;(Your companion approval decreases.)&lt;/i&gt;
+
 &quot;Let&#39;s not bother with this&quot;, you propose.
 
 Gorex frowns at you. &quot;You know how much I live to fight . . . So be it, we&#39;ll go around&quot;
-
 ]
-(if: $compan is 2)[(set: $compApproval to $compApproval+1)
+(if: $compan is 2)[(set: $compApproval to $compApproval+1)&lt;i&gt;(Your companion approval increases.)&lt;/i&gt;
+
 &quot;Let&#39;s not bother with this&quot;, you propose.
 
 Lily says, &quot;Good plan, boss. Follow my lead.&quot; Lily crouches low to the ground and sticks close to the trees. You follow.
-
 ]
+(else:)[Error, no companion set.]
+
 You and your companion take a wide route around the fight, going deeper into the forest.
 
 [[Sneak Deeper into woods]]</tw-passagedata><tw-passagedata pid="50" name="Investigate Scene" tags="" position="697,2624" size="100,100">The ogre lies face down. It wears basic rags and furs. Tufts of wolfhair and bloody scratches are noted.
@@ -710,7 +738,7 @@ You and your companion take a wide route around the fight, going deeper into the
 You search the ogre.
 
 You find a sack of ashes.
-[[Back|Choose Right Path]]</tw-passagedata><tw-passagedata pid="51" name="Interrogate Ogre" tags="" position="1035,2586" size="100,100">The ogre is knelt, slumped and bleeding. It seems to have recognized its defeat and has submitted to the whim of you and (if: $compan is 1)[Gorex](if: $compan is 2)[Lily].
+[[Back|Choose Right Path]]</tw-passagedata><tw-passagedata pid="51" name="Interrogate Ogre" tags="" position="1035,2586" size="100,100">The ogre is knelt, slumped and bleeding. It seems to have recognized its defeat and has submitted to the whim of you and (if: $compan is 1)[Gorex](if: $compan is 2)[Lily](else:)[Error, no companion set.].
 
 What do you do?
 
@@ -723,7 +751,7 @@ What do you do?
 (link: &quot;Leave him and move on&quot;) [(set: $previousPassage to &quot;Interrogate Ogre&quot;)(goto:&quot;Continue Deeper Into the Woods&quot;)]
 (link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Interrogate Ogre&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="52" name="Put him out out of his misery" tags="" position="760,2783" size="100,100">You approach the ogre silently from behind, its head still low, unable to see what is to come. You slowly unsheathe your blade and pull you arm back, aiming at a particular point in its back. Then, in one foul thrust, the ogres heart stops and it falls foward, motionless.
 
-(if: $compan is 2)[Lily looks to you with a look of sadness, but with some understanding behind it.](if: $compan is 1)[Gorex holds a cold, stoic face throughout.]
+(if: $compan is 2)[Lily looks to you with a look of sadness, but with some understanding behind it.](if: $compan is 1)[Gorex holds a cold, stoic face throughout.](else:)[Error, no companion set.]
 
 You search the ogre.
 
@@ -760,7 +788,7 @@ The ogre takes a moment and then nods.
 
 The ogre looks around, starts talking, hesitates, and then lowers his head, silently.
 
-You look to your companion. (if: $compan is 1)[He approaches the ogre, puts his hands on its shoulders, and sternly says &quot;Answer. Or. Die. Beast.&quot;](if: $compan is 2)[She approaches the ogre and gets on its level. She calmly places a finger under its chin and points its bloody visage up to match her eyes. She slowly and clearly says &quot;We are not here to hurt your people, they just have something we need.&quot;].
+You look to your companion. (if: $compan is 1)[He approaches the ogre, puts his hands on its shoulders, and sternly says &quot;Answer. Or. Die. Beast.&quot;](if: $compan is 2)[She approaches the ogre and gets on its level. She calmly places a finger under its chin and points its bloody visage up to match her eyes. She slowly and clearly says &quot;We are not here to hurt your people, they just have something we need.&quot;](else:)[Error, no companion set.]
 
 A long, drawn out silence commences. You feel as if you can not only feel your heartbeat aloud, but also your companions and even the much larger ogres heart too. After an unknown amount of time, you see your companion begin to reach for a weapon. Just then the ogre&#39;s voice rumbles back up.
 
@@ -790,7 +818,7 @@ The ogre tilts its head, looking genuinly confused.
 
 &quot;Bissup Rufty? I . . . I do not . . .&quot;
 
-(if: $compan is 1)[You scratch your head. &quot;He&#39;s a man. Uhh . . . a man in a dress with a pointy hat. Lots of shiny goodies with him. Have you seen him?&quot;](if: $compan is 2)[You scratch your head. Lily speaks up. &quot;An old man in a white dress with a stupid hat. Have you seen him?&quot;]
+(if: $compan is 1)[You scratch your head. &quot;He&#39;s a man. Uhh . . . a man in a dress with a pointy hat. Lots of shiny goodies with him. Have you seen him?&quot;](if: $compan is 2)[You scratch your head. Lily speaks up. &quot;An old man in a white dress with a stupid hat. Have you seen him?&quot;](else:)[Error, no companion set.]
 
 The ogres eyes widen in realization. &quot;Ohhh. I know this one. We were gonna eats him, I think, though not much meats. All skinses and bonses. He tied up back home.&quot;
 
@@ -823,10 +851,12 @@ You acquired a small sack of ashes.
 &quot;Thank you.&quot; You continue on.
 (set: $hasAsh to 1)
 
-[[Continue On|Front Entrance]]</tw-passagedata><tw-passagedata pid="58" name="Sneak Deeper into woods" tags="" position="1372,2515" size="100,100">(unf.)
+[[Continue On|Front Entrance]]</tw-passagedata><tw-passagedata pid="58" name="Sneak Deeper into woods" tags="" position="1374,2515" size="100,100">(unf.)
 
+[[Front Entrance]]
 [[Back|Choose Right Path]]</tw-passagedata><tw-passagedata pid="59" name="Front Entrance" tags="" position="824,3305" size="100,100">After a short trek, you and your companions find yourselves on a dirt path. Ahead of you lies a large, open entrance into a camp surrounded by spikes and wooden walls.
 
+(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Front Entrance&quot;)(goto:&quot;Check Status&quot;)]
 [[Back|Choose Right Path]]</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
