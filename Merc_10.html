@@ -11,7 +11,8 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="Merc" startnode="1" creator="Twine" creator-version="2.3.5" ifid="214A01F5-A9D6-4B1E-B58B-BC2D2486FEDB" zoom="1" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+<tw-storydata name="Merc" startnode="1" creator="Twine" creator-version="2.2.1" ifid="214A01F5-A9D6-4B1E-B58B-BC2D2486FEDB" zoom="1" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+
 
 
 
@@ -22,6 +23,7 @@
 
 
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
 
 
 
@@ -52,7 +54,7 @@ You glance upon your headquarters as you enter. Above the entrance is a wooden s
 [[About Coreston.]]
 [[What’re we sitting around for?]]</tw-passagedata><tw-passagedata pid="3" name="About Bishop Rafferty" tags="" position="187,226" size="100,100">	Rafferty? Hmph. Typical clergy member. He feigns virtue and holiness to maintain his position of power. He’s as debaucherous as any of us, just behind closed doors, but, of course, would never speak of it. I’ll just say this: he thinks he’s better than everybody and that he should be treated like a king. And, well, you better treat him as such or the Church may be disappointed and we might not get paid.
 
-[[Back to Brief|Ready]]</tw-passagedata><tw-passagedata pid="4" name="Ogres?" tags="" position="694,233" size="100,100">	Ogres are snarling buffoons with the weight three horses and the height of a hut. As you know, never approach these creatures head-on unless you are particularly, well, ambitious. It’s best to outsmart or avoid them at all costs. Not sure what they’re planning on doing with Rafferty. Not sure if they know either. They were probably just attracted to his funny hat and shiny trinkets. Or maybe they&#39;re just hungry.
+[[Back to Brief|Ready]]</tw-passagedata><tw-passagedata pid="4" name="Ogres?" tags="" position="694,233" size="100,100">	Ogres are snarling buffoons with the weight three horses and the height of a hut. As you know, never approach these creatures head-on unless you are particularly, well, ambitious. It&#39;s best to outsmart or avoid them at all costs. Not sure what they’re planning on doing with Rafferty. Not sure if they know either. They were probably just attracted to his funny hat and shiny trinkets. Or maybe they&#39;re just hungry.
 
 [[Back to Brief|Ready]]</tw-passagedata><tw-passagedata pid="5" name="The Ashenbark Forest?" tags="" position="681,414" size="100,100">	Quite the history to that place. A dragon was slain there, or so the locals say. A catapult had torn through its wing and it landed in those woods. The dragon was angered, and, although unable to fly, otherwise ready to fight. It was a catastrophe. Flames everywhere. More knights than I’ve ever seen, valiantly riding into the flames. Few returned. The ogres fled, only to return a full year later, still unsettled and bewildered by the flames. The woods were burnt to ash. But it regrew anew from a few resistant seeds and saplings, beautiful and lively once again. To this day, the ogres put ash on their face and worship their campfires to appease the Flame Gods, or as they call them, Fi’ju.
 
@@ -78,7 +80,7 @@ You glance upon your headquarters as you enter. Above the entrance is a wooden s
 [[Address left-most person]]
 [[Address right-most person]]</tw-passagedata><tw-passagedata pid="10" name="Address left-most person" tags="" position="272,1072" size="100,100">The large man begins speaking. “Hello. They call me Gorex. Call me what you’d like, though. I am your servant, your hound, your tool. I have sharpened blades and a toughened body to lend you. Nothing will so much as breathe on you without first being cut down. This is what I offer. What else could be needed?
 
-...
+. . .
 
 I was raised with a barbarian tribe on the northern mountains. These lands are treacherous and unkind to those who do not face the challenge of life head on. In our tribe, weakness is culled at youth. When a child is old enough to walk, we set them alone in the cold night. They must survive through the night to be accepted back into the tribe. If they give up and return before the night is done, they will have no place to rest their head. Most die. The mothers do not like this tradition, but if they wish to eat, they need strong tribesmen, not wriggling babes. This is our way of life, hardship and strength.&quot;
 
@@ -311,7 +313,7 @@ For the first time, Gorex reveals a slight smile and then dons his heavy metal a
 
 &quot;Let&#39;s move. My hands are starting to get twitchy.&quot;
 
-[[Set off to Ashenbark Forest]]</tw-passagedata><tw-passagedata pid="29" name="Check Status" tags="" position="1048,1869" size="100,100">&lt;b&gt;Status Screen:&lt;/b&gt;
+[[Set off to Ashenbark Forest]]</tw-passagedata><tw-passagedata pid="29" name="Check Status" tags="" position="1208,1875" size="100,100">&lt;b&gt;Status Screen:&lt;/b&gt;
 
 (if: $hasBishop is 0)[You&#39;ve yet to find the Bishop. Keep looking. He is captured by ogres in the Ashenbark Forest.]
 (else:)[You&#39;ve found the Bishop and now must make your way back to Monastery in Coreston]
@@ -359,7 +361,7 @@ Along the river, you see a bronze colored rock, a mushroom with a faint green gl
 [[Investigate Mushroom]]
 [[Investigate Banners]]
 [[Continue Along The River]]
-(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Choose Left Path&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="32" name="Ask Party For Advice" tags="" position="1052,2049" size="100,100">You ask your party, &quot;What do you think we should do?&quot;
+(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Choose Left Path&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="32" name="Ask Party For Advice" tags="" position="1206,2049" size="100,100">You ask your party, &quot;What do you think we should do?&quot;
 
 (if: $previousPassage is &quot;Wake up in Ashenbark Forest&quot;)[
 	(if: $compan is 1)[Gorex says, &quot;I like the idea of some commotion. Let&#39;s try the right path. It is up to you of course.&quot;]
@@ -378,10 +380,6 @@ Along the river, you see a bronze colored rock, a mushroom with a faint green gl
 	]
 	(else-if: $compan is 2)[It looks like our objective is all tied up. Well, I have a lockpick that could help us there. (if: $hasMush is 1)[Also, we should use that mushroom on the ogre. I could rub it on my knife and give him a dose.]
 	]
-]
-(if: $previousPassage is &quot;Choose Right Path&quot;)[
-	(if: $compan is 1)[Gorex says, &quot;It&#39;s just amazing to see an ogre fight. I&#39;m not sure what to do, but I&#39;m willing to fight, as always.&quot;]
-	(else-if: $compan is 2)[&quot;This looks. . .dangerous&quot;, Lily says, &quot;Maybe we could sneak around them if you follow my lead. Up to you, captain.&quot;]
 ]
 (if: $previousPassage is &quot;Choose Right Path&quot;)[
 	(if: $compan is 1)[Gorex says, &quot;It&#39;s just amazing to see an ogre fight. I&#39;m not sure what to do, but I&#39;m willing to fight, as always.&quot;]
@@ -456,9 +454,9 @@ You give her a light shove. &quot;Wake up, Lily. Can you move? We&#39;re losing 
 
 &quot;I. . .&quot;, she looks around a bit. She slowly stands up, takes a drink from the river, and stretches. &quot;I guess I&#39;m ready. Let&#39;s go then.&quot;]
 
-[[Continue Along The River]]</tw-passagedata><tw-passagedata pid="37" name="Continue Along The River" tags="" position="228,2689" size="100,100">After about twenty minutes of walking along the windy river, you come across what looks to be a side entrance to the ogre encampment.
+[[Continue Along The River]]</tw-passagedata><tw-passagedata pid="37" name="Continue Along The River" tags="" position="228,2689" size="100,100">After about twenty minutes of walking along the windy river, you come across what looks to be an open side entrance to the ogre encampment.
 
-Wodden walls and spikes surround the encampment. There is a larger entrance on the opposite side of the camp, with two ogres standing around a fire  nearby. Closer to you, you see a small hut and hear a muffled voice from within.
+Wodden walls and spikes surround the encampment. There is a larger entrance on the opposite side of the camp, with two ogres standing around a fire. Closer to you, you see a small hut and hear a muffled voice from within.
 
 (link: &quot;Ask Party For Advice&quot;) [(set: $previousPassage to &quot;Contine Along The River&quot;)(goto:&quot;Ask Party For Advice&quot;)]
 [[Investigate Hut]]
@@ -475,7 +473,29 @@ An ogre stands in there aswell facing away, looking out the window at his fellow
 [[Instruct Companion To Fight Guard Ogre]]
 (if: $hasMush is 1)[
 [[Instruct Companion To Use Mushroom On Guard Ogre]]
-]</tw-passagedata><tw-passagedata pid="39" name="Investigate Ogres" tags="" position="351,2831" size="100,100">(incomplete)
+]</tw-passagedata><tw-passagedata pid="39" name="Investigate Ogres" tags="" position="350,2830" size="100,100">You peer inside the encampment to more closely observe the ogres.
+
+Two ogres are sat accross from one another near a fire. The fire billows with dark, thick smoke, the cloud of smoke large enough to partially envelop them. Near the fire is a chest that glimmers.
+
+You observe one ogre pick up the chest and begin looking through the chest. You see it dig through the chest with deliberation and focus. Coins, glimmering jewels and precious metals spill out the sides as the ogre digs and sifts through the chest. He stops and looks in the chest for a moment, then stands up and points angrily at the other ogre.
+
+&quot;You take yummy shiny? You no have! I said mine!&quot;
+
+The other ogre lets loose a sound like a snarl and a growl. &quot;It in chest. I no touch.&quot;
+
+&quot;Hmm.&quot;
+
+It tilts it head for a moment, then dumps the chest out. A smile wider than a dinnerplate grows across its face as it lifts up a large ruby pendant, encrusted in gold, laced in a thick silver chain.
+
+It drops to its knees, closes its eyes, raises the necklace high above his head, and begins mumbling. This lasts for a few moments. Then, the ogre gets up and drops the necklace into the firepit. It slowly starts to melt, producing a foul, odor.
+
+Both ogres move close the the flame, standing directly above it. &quot;Praise the Fi&#39;ju&quot;, they both exclaim and then close their eyes. They stand there for quite awhile, inhaling the toxic smoke.
+
+Once the smoke quells some, one ogre slumpts back, its eyes to the sky and the chest of jewels in its lap, and the other begins dancing frantically and without balance.
+
+
+
+It is not terribly long until the sat ogre begins sifting through the chest again.
 
 [[Back|Continue Along The River]] </tw-passagedata><tw-passagedata pid="40" name="Instruct Companion To Sneak By Guard Ogre And Free Bishop" tags="" position="42,3201" size="100,100">(set: $hasBishop to 1)
 (if: $compan is 1)[(set: $compApproval to $compApproval-1)&quot;Go sneak by the ogre and free the Bishop.&quot;
@@ -646,19 +666,17 @@ He looks back to you, then raises his weapon victoriously and lets out a belting
 
 You equip your sword and shield and approach the battle, Lily following close behind.
 
-The ogre and wolf notice you first and the wolf quickly leaps at you. You push it far away with your shield and then make your way to the ogre. As you approach, you realize the ogre is much smaller than you would have expected, standing not much taller than you.
+The ogre and wolf notice you first and the wolf quickly leaps at you. You push it to the side your shield and then make your way to the ogre. As you approach, you realize the ogre is much smaller than you would have expected, standing not much taller than you.
 
 *Fwwwpt* *Fwwwpt* *Fwwwpt*
 
 You hear arrows zoom past your head and see them land deep into the ogre&#39;s hide.
 
-The ogre lets out a cry and falls to the ground, dead.
-
-The wolf scampers off.
+The ogre lets out a cry and falls to the ground, dead. The wolf scampers off.
 
 You detense and relax your body some. &quot;Well done&quot;, you say over your shoulder to Lilian.
 
-She nods to you as she resheathes her bow.
+She nods as she resheathes her bow, her gaze still on the ogre. She looks somewhat shaken from the encounter.
 ]
 
 [[Investigate Scene]]</tw-passagedata><tw-passagedata pid="48" name="Attack The Wolf" tags="" position="798,2434" size="100,100">You and your companion enter the fight, focusing on attacking the wolf. As you approach, you realize the ogre is much smaller than you would have expected, standing not much taller than you.
@@ -672,7 +690,7 @@ He slumps to his knees and lowers his head.
 [[Interrogate Ogre]]</tw-passagedata><tw-passagedata pid="49" name="Sneak By" tags="" position="994,2395" size="100,100">(if: $compan is 1)[(set: $compApproval to $compApproval-1)
 &quot;Let&#39;s not bother with this&quot;, you propose.
 
-Gorex frowns at you. &quot;You know how much I live to fight. . .So be it, we&#39;ll go around&quot;
+Gorex frowns at you. &quot;You know how much I live to fight . . . So be it, we&#39;ll go around&quot;
 
 ]
 (if: $compan is 2)[(set: $compApproval to $compApproval+1)
@@ -683,7 +701,11 @@ Lily says, &quot;Good plan, boss. Follow my lead.&quot; Lily crouches low to the
 ]
 You and your companion take a wide route around the fight, going deeper into the forest.
 
-[[Sneak Deeper into woods]]</tw-passagedata><tw-passagedata pid="50" name="Investigate Scene" tags="" position="585,2626" size="100,100">(incomplete)
+[[Sneak Deeper into woods]]</tw-passagedata><tw-passagedata pid="50" name="Investigate Scene" tags="" position="585,2626" size="100,100">
+
+You search the ogre for any valuables.
+
+You find a sack of ashes.
 [[Back|Choose Right Path]]</tw-passagedata><tw-passagedata pid="51" name="Interrogate Ogre" tags="" position="762,2638" size="100,100">The ogre is knelt, slumped and bleeding. It seems to have recognized its defeat and has submitted to the whim of you and (if: $compan is 1)[Gorex](if: $compan is 2)[Lily].
 
 What do you do?
@@ -711,7 +733,7 @@ The ogre takes a moment and then nods.
 
 The ogre answers in a low, slow voice in broken Common.
 
-&quot;I ... I lost. We were hunting, my father was helping. But I lost him. I yells out to him &#39;Fa! Fa!&#39;, but hear nothing. Then, I hear growls. I wanted its meats for the tribe, I wanted to prove myself strong.&quot;
+&quot;I . . . I lost. We were hunting, my father was helping. But I lost him. I yells out to him &#39;Fa! Fa!&#39;, but hear nothing. Then, I hear growls. I wanted its meats for the tribe, I wanted to prove myself strong.&quot;
 
 He lowers his head again.
 
@@ -735,7 +757,7 @@ You look to your companion. (if: $compan is 1)[He approaches the ogre, puts his 
 
 A long, drawn out silence commences. You feel as if you can not only feel your heartbeat aloud, but also your companions and even the much larger ogres heart too. After an unknown amount of time, you see your companion begin to reach for a weapon. Just then the ogre&#39;s voice rumbles back up.
 
-&quot;...Fi&#39;ju curse you....&quot;
+&quot;. . . Fi&#39;ju curse you . . .&quot;
 
 He looks up.
 
@@ -759,9 +781,9 @@ The ogre takes a moment and then nods.
 
 The ogre tilts its head, looking genuinly confused.
 
-&quot;Bissup Rufty? I ... I do not ...&quot;
+&quot;Bissup Rufty? I . . . I do not . . .&quot;
 
-(if: $compan is 1)[You scratch your head. &quot;He&#39;s a man. Uhh... a man in a dress with a pointy hat. Maybe had lots of shiny goodies with him. Have you seen him?&quot;](if: $compan is 2)[You scratch your head. Lily speaks up. &quot;An old man in a white dress with a stupid hat. Have you seen him?&quot;]
+(if: $compan is 1)[You scratch your head. &quot;He&#39;s a man. Uhh . . . a man in a dress with a pointy hat. Lots of shiny goodies with him. Have you seen him?&quot;](if: $compan is 2)[You scratch your head. Lily speaks up. &quot;An old man in a white dress with a stupid hat. Have you seen him?&quot;]
 
 The ogres eyes widen in realization. &quot;Ohhh. I know this one. We were gonna eats him, I think, though not much meats. All skinses and bonses. He tied up back home.&quot;
 
@@ -785,12 +807,14 @@ The ogre takes a moment and then nods.
 (link: &quot;Ask about him&quot;) [(set: $previousPassage to &quot;Interrogate Ogre&quot;)(goto:&quot;Ask about him&quot;)]
 (link: &quot;Ask about the encampment&quot;) [(set: $previousPassage to &quot;Interrogate Ogre&quot;)(goto:&quot;Ask about the encampment&quot;)]
 (link: &quot;Ask about the bishop&quot;) [(set: $previousPassage to &quot;Interrogate Ogre&quot;)(goto:&quot;Ask about the bishop&quot;)]
-(link: &quot;Leave him and move on&quot;) [(set: $previousPassage to &quot;Interrogate Ogre&quot;)(goto:&quot;Continue Deeper Into the Woods&quot;)]</tw-passagedata><tw-passagedata pid="57" name="Continue Deeper Into the Woods" tags="" position="740,3128" size="100,100">As you turn your back to the ogre to leave, you hear him speak up from behind.
+(link: &quot;Leave him and move on&quot;) [(set: $previousPassage to &quot;Interrogate Ogre&quot;)(goto:&quot;Continue Deeper Into the Woods&quot;)]</tw-passagedata><tw-passagedata pid="57" name="Continue Deeper Into the Woods" tags="" position="740,3128" size="100,100">As you turn your back to the ogre to leave, you hear his voice grumble up.
 
-&quot;Thank you. Here. Take this. It is an offering to our gods, the Fi&#39;ju. I am unworthy of their blessing.&quot;
+&quot;Thank you. Here. Take this. It is an offering to our gods, the Fi&#39;ju. We put the ash on our face to harness their power. I am . . . unworthy.&quot;
 
 You acquired a small sack of ashes.
-(set: $hasMush to 1)
+
+&quot;Thank you.&quot; You continue on.
+(set: $hasAsh to 1)
 
 (unfinished)
 [[Back|Choose Right Path]]</tw-passagedata><tw-passagedata pid="58" name="Sneak Deeper into woods" tags="" position="1010,2578" size="100,100">(unf.)
