@@ -11,7 +11,7 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="Merc" startnode="1" creator="Twine" creator-version="2.3.13" ifid="214A01F5-A9D6-4B1E-B58B-BC2D2486FEDB" zoom="0.6" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+<tw-storydata name="Merc" startnode="1" creator="Twine" creator-version="2.3.14" ifid="214A01F5-A9D6-4B1E-B58B-BC2D2486FEDB" zoom="0.6" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
 
 
 
@@ -1334,7 +1334,9 @@ Your party looks to you expectingly.
 
 [[Charge In]]
 [[Dispatch Companion]]
-[[Turn Around]]</tw-passagedata><tw-passagedata pid="82" name="Rest By The Fire" tags="" position="356,5653" size="100,100">You were waken with a start from what was a deep slumber. In the bushes, but a few yards away, you hear a shriek and a rustling of leaves.</tw-passagedata><tw-passagedata pid="83" name="Charge In" tags="" position="715,5619" size="100,100">You charge forward and plant yourself firmly between the goblin and the caged man. The goblin tilts its head and then barks at you, &quot;Get away! This my prize!&quot; He thrusts his spear in your direction.
+[[Turn Around]]</tw-passagedata><tw-passagedata pid="82" name="Rest By The Fire" tags="" position="349.3333333333333,5686.333333333333" size="100,100">You were waken with a start from what was a deep slumber. In the bushes, but a few yards away, you hear a shriek and a rustling of leaves.</tw-passagedata><tw-passagedata pid="83" name="Charge In" tags="" position="715,5619" size="100,100">(set: $karma to $karma+1)&lt;i&gt;(Your karma increases)&lt;/i&gt;
+
+You charge forward and plant yourself firmly between the goblin and the caged man. The goblin tilts its head and then barks at you, &quot;Get away! This my prize!&quot; He thrusts his spear in your direction.
 
 You lift your shield up and prepare for the attack. Rafferty stays hidden behind the bushes, though (if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[Error, no companion set] prepares to back you up. The goblin&#39;s thin spear cracks upon your firm shieldarm. The pointed end lands a few feet away from you.
 
@@ -1344,7 +1346,9 @@ To this, the goblin&#39;s eyes shoot up and grow wide. He turns away and immedia
 
 As you look toward the dead goblin, you see it has a rusty iron key hanging from a leather cord on its waist. You rip it off. (set: $manInfo to 0)
 
-[[Release The Man]]</tw-passagedata><tw-passagedata pid="84" name="Dispatch Companion" tags="" position="870,5620" size="100,100">(if: $compan is 1)[&quot;Go Karos! There&#39;s no time to waste!&quot;
+[[Release The Man]]</tw-passagedata><tw-passagedata pid="84" name="Dispatch Companion" tags="" position="870,5620" size="100,100">(set: $karma to $karma+1)&lt;i&gt;(Your karma increases)&lt;/i&gt;
+
+(if: $compan is 1)[&quot;Go Karos! There&#39;s no time to waste!&quot;
 
 Karos leaps into the glade. He lands directly in the way of the goblin&#39;s attack. Just as the goblin thrusts forward with his spear, Karos unsheathes his axe and cuts the spear down clean through the middle.
 
@@ -1358,7 +1362,7 @@ The goblin&#39;s eyes shoot up and grow wide. It looks down toward his pierced a
 
 As you look toward the dead goblin, you set it has a rusty iron key hanging from its waist from a leather cord. You rip it off. (set: $manInfo to 0)
 
-[[Release The Man]]</tw-passagedata><tw-passagedata pid="85" name="Turn Around" tags="" position="544,5620" size="100,100">After having investigated, you deem this to be too risky of a conflict and turn around back toward the path. Rafferty and (if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[Error, no companion set] follow suit. Behind you, you hear the man cry out in pain.
+[[Release The Man]]</tw-passagedata><tw-passagedata pid="85" name="Turn Around" tags="" position="545.6666666666666,5621.666666666667" size="100,100">After having investigated, you deem this to be too risky of a conflict and turn around back toward the path. Rafferty and (if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[Error, no companion set] follow suit. Behind you, you hear the man cry out in pain.
 
 (set: $karma to $karma-1)&lt;i&gt;(Your karma decreases)&lt;/i&gt;
 
@@ -1378,19 +1382,19 @@ After a few brief moments, the wind and light dies down. You look out to the rob
 
 [[Ask About Him|Who are you?]]
 [[Ask What He&#39;s Doing Here|What are you doing here?]]
-[[Continue On Your Journey]]</tw-passagedata><tw-passagedata pid="87" name="Who are you?" tags="" position="655,5920" size="100,100">(set: $manInfo to 1)You ask the man, &quot;Who are you?&quot;
+[[Continue On Your Journey]]</tw-passagedata><tw-passagedata pid="87" name="Who are you?" tags="" position="980,5911.666666666668" size="100,100">(set: $manInfo to 1)You ask the man, &quot;Who are you?&quot;
 
 &quot;I am Pyramus, a Wizard.&quot; He responds. &quot;I am the Court Wizard at Coreston. There, I assist the King in any sort of magical troubles he has. I have studied alchemy and spellcasting for centuries.&quot;
 
-[[Back|Release The Man]] </tw-passagedata><tw-passagedata pid="88" name="What are you doing here?" tags="" position="806,5924" size="100,100">(set: $manInfo to 1)You ask the man, &quot;What are you doing here?&quot;
+[[Back|Release The Man]] </tw-passagedata><tw-passagedata pid="88" name="What are you doing here?" tags="" position="984.3333333333334,5795.666666666668" size="100,100">(set: $manInfo to 1)You ask the man, &quot;What are you doing here?&quot;
 
 &quot;I often foray the Ashenbark Woods for reagents. There is quite a diversity of lifeforms here. I had been working on a new spell and had need of malachite dust, crushed eye of newt, as well as a few other reagents. So I ventured out to these woods. However, while I was inspecting a particularly odd herb, this goblin seemed to have caught the better of me. He knocked me out with a firm hit to the back of the head. Next thing I knew, I was locked up in this cage, feeling weak, with none of my equipment.
 
-[[Back|Release The Man]]</tw-passagedata><tw-passagedata pid="89" name="Accept His Proposition" tags="" position="880,6080" size="100,100">&quot;We will accept your proposition,&quot; you say with some authoirty.
+[[Back|Release The Man]]</tw-passagedata><tw-passagedata pid="89" name="Accept His Proposition" tags="" position="798.3333333333333,6091.666666666666" size="100,100">&quot;We will accept your proposition,&quot; you say with some authoirty.
 
 &quot;Tremendous!&quot; The wizard claps and smiles. &quot;We will be out of these woods in no time. Just give me a moment for the preparations.&quot;
 
-He takes his staff and slowly draws a deep square in the dirt. He takes one of his sacks of powders and lines these deep channels with this powder. He packs it down. He opens up his bag and places too runes into the center of this square; a blue and white one with a strange icon upon it.
+He takes his staff and slowly draws a deep square in the dirt. He takes one of his sacks of powders and lines these deep channels with this powder and packs it down. He opens up his bag and places two runes into the center of this square; a blue one and a white one with a strange icon upon it.
 
 &quot;Now if you wouldn&#39;t mind, please stand at each corner of the square.&quot; He gestures, toward the square.
 
@@ -1400,25 +1404,33 @@ The wizard commands, &quot;Take a deep breath everyone and hold it in until we s
 
 He stamps the middle of the square hard with his staff and shouts, &quot;Iya toray go ferandu!&quot; The square briefly bursts into flame.
 
-Your surroundings begin to swirl together. Everything starts to go dim. Your mind gives out like a knee buckling. Your thoughts are filled distant, intermingling colors. You feel a wind like force that seems to be origingating from inside of you, pushing you backwards. You feel almost as if you were falling, but laterally and up.
+Your surroundings begin to swirl together. Everything starts to go dim. Your mind gives out like a knee buckling. Your thoughts are filled with distant, intermingling colors. You feel a wind like force that seems to be origingating from inside of you, pushing you backwards. You feel almost as if you were falling, but laterally and up.
 
-After some time, you and your party find yourselves falling forward onto a stone road. You look behind yourself and see a white stone gateway filled with circular, purple swirling light. The wizard steps out of this light and it dies out behind him, leaving just the gateway behind, which seems to frame him perfectly as the dipping sun is directly behind him, casting rays out of each side. He reaches out a hand to you and provides a smile.
+After some time, you and your party find yourselves falling forward onto a stone road. You look behind yourself and see a white stone gateway filled with circular, purple swirling light. The wizard steps out of this light and it dies out behind him, leaving just the gateway behind. The gatway seems to frame him perfectly as the dipping sun is directly behind him, casting rays out of each side. He reaches out a hand to you and provides a smile.
 
 &quot;Not for the feint of heart, and evidently, you are not of such demeanor. You did well.&quot; With his help, you stand up. You look around at Rafferty and (if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[Error, no companion set] as they regain their bearings.
 
-(if: $compan is 1)[&quot;Incredible,&quot; Karos shakes his head and looks around, then down to his hands. I didn&#39;t know where I was. I thought perhaps I was going to see my ancestors.&quot; He stretches his shoulders and cracks his neck. &quot;Luckily, I did not. My task isn&#39;t over yet.&quot;](else-if: $compan is 2)[Loren looks at the wizard wide-eyed, looking almost fearful at his presence. After a moment, she lets out a hearty laugh. &quot;What fun! That was like nothing I&#39;ve done before, and I&#39;ve certainly had my fair share of, let&#39;s say, &lt;i&gt;experiences&lt;/i&gt;. You&#39;d make a killing down at the pub, I&#39;d say.](else:)[Error, no companion set]
+(if: $compan is 1)[&quot;Incredible,&quot; Karos shakes his head and looks around, then down to his hands. I didn&#39;t know where I was. I thought perhaps I was finally going to see my ancestors.&quot; He stretches his shoulders and cracks his neck. &quot;Luckily, I did not. My task isn&#39;t over yet.&quot;](else-if: $compan is 2)[Loren looks at the wizard wide-eyed, looking almost fearful at his presence. After a moment, she lets out a hearty laugh. &quot;What fun! That was like nothing I&#39;ve done before, and I&#39;ve certainly had my fair share of, let&#39;s say, &lt;i&gt;experiences&lt;/i&gt;. You&#39;d make a killing down at the pub, I&#39;d say.](else:)[Error, no companion set]
 
-You look over to the bishop. Rafferty puts his hands on his knees and vomits vigorously. He then brings his head back up and stands as upright as he can, still clearly having trouble with his balance. He wipes his mouth. He seems bewildered as he looks over to the wizard.
+You look over to the bishop. Rafferty puts his hands on his knees and retches vigorously. He then brings his head back up and stands as upright as he can, still clearly having trouble with his balance. He wipes his mouth. He seems bewildered as he looks over to the wizard.
 
-(Wizard says he must go)
+The wizard tries lays a hand gently on Rafferty to reassure him, but Rafferty shakes it off and looks at him angrily. &quot;This feeling will pass soon, once you start moving on your own two legs again.&quot; The wizard bows deeply. &quot;Thank you all again for your assistance. That goblin may have had its way with me if it weren&#39;t for your kind interference.&quot; And with that, the wizard turns away down the path toward Coreston and waves his hand while walking away. &quot;I must be off now. Much to do. A wizard&#39;s duty never ends.&quot;
 
-[[Arrive at Coreston]]</tw-passagedata><tw-passagedata pid="90" name="Ignore and Continue on the Path" tags="" position="1030,6080" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="91" name="Continue On Your Journey" tags="" position="955,5927" size="100,100">&quot;Well, I hope you are feeling well after all you&#39;ve been through. But, we must be off. We have at least a few days journey left on our mission.&quot; You and your party turn around and begin walking out of the glade.
+[[Arrive at Coreston]]</tw-passagedata><tw-passagedata pid="90" name="Ignore and Continue on the Path" tags="" position="648.3333333333333,5970.000000000001" size="100,100">You think about this man&#39;s strange proposition and opt for the conservative, yet safer, route. &quot;Though we appreciate your offer, I believe we best decline.&quot;
+
+&quot;Ahh. Well, that is quite understandable. You have indeed only just met me. In that case, I suppose you best be off then.&quot; The wizard bows deeply. &quot;Thank you all again for your assistance.&quot;
+
+Your party waves to the kind, yet curious, man and backtrack to the path toward Coreston.
+
+It isn&#39;t long before you find your way back from where you came. The woods open up into a wide field as the path continues. There are still some trees and bushes flanking your path, but much less than the tangled mess you last had to pass through. After a few hours of plodding along this path, with dusk quickly approaching, you all set up a quick camp right in the center of the road. Stones are gathered and set in a circle, as well as firewood, and a flame is drawn. Your party shares some of your food reserves. Tough dried meat and fruit is pased around the campfire, as well as some curt final words to end the day. Rafferty partakes the least in both, seeming discontent in both his company and their rations. Before long, you all setup what little comfort you can to prepare for a rest.
+
+[[Rest By The Fire]]</tw-passagedata><tw-passagedata pid="91" name="Continue On Your Journey" tags="" position="798.3333333333334,5940.333333333333" size="100,100">&quot;Well, I hope you are feeling well after all you&#39;ve been through. But, we must be off. We have at least a few days journey left on our mission.&quot; You and your party turn around and begin walking out of the glade.
 
 &quot;Now, if I may,&quot; You hear the man shout out from behind, &quot;where is it that you may be going?&quot;
 
 &quot;To Coreston,&quot; your respond with a curt nod.
 
-&quot;You know, I do owe you some repayment for all that you have done. And I do believe I have all the reagents I need to cast a spell that can help you on your journey. Let&#39;s see here.&quot; He rummages through his belongings. &quot;Rune of Law, rune of Air, dust of the Fae; yes I do think I have all I need. I could cast a teleportation and teleport all four of us straight to the arcane receiving gate at Coreston&#39;s entrance.&quot;
+&quot;You know, I do owe you some repayment for all that you have done. And I do believe I have all the reagents I need to cast a spell that can help you on your journey. Let&#39;s see here.&quot; He rummages through his belongings. &quot;Rune of Law, rune of Air, dust of the Fae; yes I do think I have all I need. I could cast a teleportation spell and transport all four of us straight to the arcane receiving gate at Coreston&#39;s entrance.&quot;
 
 You and your party, now quite downtrodden from your recent trials, exchange curious glances with one another.
 
@@ -1433,7 +1445,7 @@ You glance upon your headquarters as you enter. Above the entrance is a wooden s
 
 &quot;Greetings Captain! We’ve finally got another mission. Are you ready for your briefing?&quot;
 
-[[Ready]]</tw-passagedata><tw-passagedata pid="93" name="Arrive at Coreston" tags="" position="880,6230" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+[[Ready]]</tw-passagedata><tw-passagedata pid="93" name="Arrive at Coreston" tags="" position="651.6666666666667,6293.333333333333" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
