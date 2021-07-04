@@ -78,16 +78,16 @@ I&#39;m not sure what they’re planning on doing with Rafferty. Not sure if the
 
 [[Back to Brief|Ready]]	</tw-passagedata><tw-passagedata pid="6" name="About Coreston" tags="" position="189,423" size="100,100">&quot;Coreston is an old city, with a monastery placed right in its center. It was once the jewel of our kingdom because of its central location, receiving constant renovation and imperial funding. As the empire spread towards the coast, the kingdom prioritized these coastal cities instead, at the behest of the Clergy, wishing to spread their word to distant nations across the sea. Now, Coreston maintains its large population, but the city has fallen apart. Thieves, beggars, and highwaymen have ran rampart. Civil unrest is at an all time high. They are upset with what the Church has done to their beloved city, forcing the King to leave them behind. They won’t be happy with the site of Rafferty or any Clergy member for that matter, that’s for sure.&quot;
 
-[[Back to Brief|Ready]]</tw-passagedata><tw-passagedata pid="7" name="What’re We Sitting Around For?" tags="" position="433,614" size="100,100">&quot;Right, well if you feel as if you&#39;ve prepared enough, let’s see what companions we have available for you today. They are just on the other side of that door. Are you ready? Keep in mind the objectives of the mission when you make your decision.&quot;
+[[Back to Brief|Ready]]</tw-passagedata><tw-passagedata pid="7" name="What’re We Sitting Around For?" tags="" position="441.3333333333333,609" size="100,100">&quot;Right, well if you feel as if you&#39;ve prepared enough, let’s see what companions we have available for you today. They are just on the other side of that door. Are you ready? Keep in mind the objectives of the mission when you make your decision.&quot;
 
-[[&quot;Yes&quot;]]</tw-passagedata><tw-passagedata pid="8" name="&quot;Yes&quot;" tags="" position="431,767" size="100,100">You quietly enter a room with a desk and two intimidating fellows sat facing you.
+[[&quot;Yes&quot;]]</tw-passagedata><tw-passagedata pid="8" name="&quot;Yes&quot;" tags="" position="439.3333333333333,762" size="100,100">You quietly enter a room with a desk and two intimidating fellows sat facing you.
 
 The one on the left is a mountain of a man. He must be at least seven foot tall and is quite wide too. He has a large beard with his hair tied back and is tattooed from head to toe. He has two axes strapped to his back and a long spear sat against the wall. His eyes are closed, facing straightforward with his back upright. You conclude he must be meditating.
 
 The individual on the right is a slender young woman with short black hair, spinning and tossing a long dagger in her hands. She is in a relaxed position, with one arm over her chair. You notice she also has been reading a book that she left open on the desk, with a pencil nearby. On a brief glance, it seems to contain sketches and descriptions of monsters. You see a quiver strapped to her back. She notices your quiet entrance and her brow raises slightly, though she continues spinning her dagger and reading her book.
 
 
-[[Greet Them]]</tw-passagedata><tw-passagedata pid="9" name="Greet Them" tags="" position="422,922" size="100,100">(if: $displayGreetingText is 0)[&quot;Greetings, mercenaries.&quot;
+[[Greet Them]]</tw-passagedata><tw-passagedata pid="9" name="Greet Them" tags="" position="437,917" size="100,100">(if: $displayGreetingText is 0)[&quot;Greetings, mercenaries.&quot;
 	
 They both stop what they’re doing and look at you.
 	
@@ -1460,7 +1460,7 @@ You glance upon your headquarters as you enter. Above the entrance is a wooden s
 
 &quot;Greetings Captain! We’ve finally got another mission. Are you ready for your briefing?&quot;
 
-[[Ready]]</tw-passagedata><tw-passagedata pid="93" name="Arrive at Coreston" tags="" position="651,6293" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="94" name="Ignore The Noise And Continue On The Path" tags="" position="188,5847" size="100,100">After hearing these odd, alien sounds, you determine you best leave it be. You and your party continue down the path.</tw-passagedata><tw-passagedata pid="95" name="Follow The Strange Noise" tags="" position="387.3333333333333,5842.666666666666" size="100,100">&quot;Better to look at your threats head on than to have them bite you in the back. Let&#39;s investigate.&quot; Your party agrees and follows you into the bushes, though they appear somewhat tense and apprehensive.
+[[Ready]]</tw-passagedata><tw-passagedata pid="93" name="Arrive at Coreston" tags="" position="557.6666666666666,6351.333333333333" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="94" name="Ignore The Noise And Continue On The Path" tags="" position="188,5847" size="100,100">After hearing these odd, alien sounds, you determine you best leave it be. You and your party continue down the path.</tw-passagedata><tw-passagedata pid="95" name="Follow The Strange Noise" tags="" position="387,5842" size="100,100">&quot;Better to look at your threats head on than to have them bite you in the back. Let&#39;s investigate.&quot; Your party agrees and follows you into the bushes, though they appear somewhat tense and apprehensive.
 
 You see a patch of shrubbery with a portion of it a few yards wide patted down flat. Out in the direction of the loud stamping, you see that a path of broken twigs and cleared foilage branches out deep into the woods from this flattened plot.
 
@@ -1481,7 +1481,7 @@ Rafferty and (if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[Erro
 (link: &quot;Ask Party For Advice&quot;) [(set: $previousPassage to &quot;Follow The Strange Noise&quot;)(goto:&quot;Ask Party For Advice&quot;)]
 [[Take The Egg]]
 [[Leave The Egg]]
-(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Follow The Strange Noise&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="96" name="Take The Egg" tags="" position="333.33333333333337,5987" size="100,100">&quot;We&#39;ll take the egg then, if that is what your wish my bishophood.&quot; Rafferty gives you childish grin of joy and nods rapidly at your decision.
+(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Follow The Strange Noise&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="96" name="Take The Egg" tags="" position="333,5987" size="100,100">&quot;We&#39;ll take the egg then, if that is what your wish my bishophood.&quot; Rafferty gives you childish grin of joy and nods rapidly at your decision.
 
 (set: $bishopApproval to $bishopApproval +1)&lt;i&gt;(Bishop Rafferty approves)&lt;/i&gt;
 
@@ -1491,22 +1491,45 @@ You make your way back to the path and begin trodding along it for some time. Af
 
 Rafferty has been carrying the egg. However, you notice he is struggling hold the large egg. It slips frequently and he must readjust it continuously.
 
-&quot;I tire of this!&quot; He wails. &quot;One of you, carry this.&quot; He sets it down. You notice a small crack in the egg that you didn&#39;t see earlier. You seem to notice it some slight movement in it aswell.
+&quot;I tire of this!&quot; He wails. &quot;One of you, carry this.&quot; He sets it down, puts his hands on his knees, and begins panting loudly. You notice a small crack in the egg that you didn&#39;t see earlier. You seem to notice some slight movement in it aswell.
 
 (if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[Error, no companion set] and you exchange looks of frustration.
 
 [[Make Companion Carry It]]
-[[Carry It Yourself]]</tw-passagedata><tw-passagedata pid="97" name="Leave The Egg" tags="" position="472.00000000000006,5987.666666666667" size="100,100">(set: $bishopApproval to $bishopApproval -1)&lt;i&gt;(Bishop Rafferty disapproves)&lt;/i&gt;
+[[Carry It Yourself]]</tw-passagedata><tw-passagedata pid="97" name="Leave The Egg" tags="" position="472,5987" size="100,100">(set: $bishopApproval to $bishopApproval -1)&lt;i&gt;(Bishop Rafferty disapproves)&lt;/i&gt;
 
 (set: $karma to $karma +1)&lt;i&gt; (Your karma increases) &lt;/i&gt;
 
 You determine to not interfere with nature and leave the egg where you find, despite Rafferty&#39;s behest.
 
-The bishop moans loudy and then shuffles behind the rest of your party as you make your way back to the path.</tw-passagedata><tw-passagedata pid="98" name="Make Companion Carry It" tags="" position="285,6139" size="100,100">(set: $companApproval to $companApproval -1)(if: $compan is1)[&lt;i&gt;(Karos disapproves)&lt;/i&gt;](else-if: $compan is 2)[&lt;i&gt;(Loren disapproves)&lt;/i&gt;](else:)[Error, no companion set]
+The bishop moans loudy and then shuffles behind the rest of your party as you make your way back to the path.</tw-passagedata><tw-passagedata pid="98" name="Make Companion Carry It" tags="" position="285,6139" size="100,100">(set: $compan to 1)&quot;(if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[Error, no companion set]! You&#39;ll have to carry that thing for us.&quot;
 
-wriggling.
+(if: $compan is 1)[He](else-if: $compan is 2)[She](else:)[Error, no companion set] looks down, grimaces, then hesitantly picks up the heavy, oblong egg.
 
-(-if you take it with you, after one night, it hatches into a dragonling and flies away, hurting your companion, who was holding onto it)</tw-passagedata><tw-passagedata pid="99" name="Carry It Yourself" tags="" position="435,6139" size="100,100">wriggling.
+(set: $companApproval to $companApproval -1)(if: $compan is 1)[&lt;i&gt;(Karos disapproves)&lt;/i&gt;](else-if: $compan is 2)[&lt;i&gt;(Loren disapproves)&lt;/i&gt;](else:)[Error, no companion set]
+
+Your party continues along the dirt path, making your way toward Coreston. Two nights and days must pass until you approach the city gates. By the end of the first night, the egg&#39;s color has changed dramatically to a fiery red. It&#39;s veins are now inches high and thick. It has begun wriggling intermittently, but with some fierceness.
+
+(if: $compan is 1)[Karos looks down at the egg and wonders aloud, &quot;What in the world are we doing with this thing?&quot;](else-if: $compan is 2)[Loren examines the egg and says to herself, &quot;We truly have no business lugging this thing around.&quot;](else:)[Error, no companion set] Despite the concerns, your party continues along the path.
+
+After sitting down for your midday meal, (if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[Error, no companion set] picks back up the strange egg. Rafferty is admiring his prized pocession when suddenly, it starts cracking and breaking. Then, bursting out of (if: $compan is 1)[Karos&#39;s](else-if: $compan is 2)[Loren&#39;s](else:)[Error, no companion set] hands, a dragonling emerges from the egg!
+
+&quot;Grab it! Don&#39;t let it get away!&quot;, demands Bishop Rafferty. The baby is  wavering in the air, difting from side to side. (if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[Error, no companion set] lunges at the scaly, slimy hide of this dragonling, but (if: $compan is 1)[his](else-if: $compan is 2)[her](else:)[Error, no companion set] hands slide right off, unable to grasp it firmly.
+
+The dragonling swipes back, its tiny yet sharp talons piercing (if: $compan is 1)[Karos&#39;s](else-if: $compan is 2)[Loren&#39;s](else:)[Error, no companion set] skin and leaving quite the gash. It then haphazardly flies back down the path the way you came.
+
+&quot;It&#39;s getting away!&quot; The bishop runs after the dragonling. It&#39;s quite a ways ahead of him and much quicker, even in its nascent and fearful state.
+
+&quot;It&#39;s too far ahead Rafferty, there&#39;s no point now!&quot; You catch up to the bishop and pull him back in the direction of Coreston. &quot;We best just continue on our journey.&quot;
+
+&quot;My glorious dragon. . .&quot; He sulkingly agrees to take your lead and head toward the city of Coreston.
+
+(if: $compan is 1)[Your companion, Karos, looks to his newfound wound. He puts on a stoic face and soliders on.](else-if: $compan is 2)[Loren nurses her newly acquired gash, but still manages to flash you a brief smile as she follows along.](else:)[Error, no companion set]
+
+After one more uneasy, restless night and a day long trek, your party finally arrives at the gates of Coreston.
+
+
+[[Arrive at Coreston]] </tw-passagedata><tw-passagedata pid="99" name="Carry It Yourself" tags="" position="435,6139" size="100,100">wriggling.
 
 (-if you take it with you, after one night, it hatches into a dragonling and flies away, hurting your companion, who was holding onto it)</tw-passagedata></tw-storydata>
 
