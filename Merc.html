@@ -11,7 +11,7 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="Merc" startnode="1" creator="Twine" creator-version="2.3.14" ifid="214A01F5-A9D6-4B1E-B58B-BC2D2486FEDB" zoom="0.6" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+<tw-storydata name="Merc" startnode="1" creator="Twine" creator-version="2.3.13" ifid="214A01F5-A9D6-4B1E-B58B-BC2D2486FEDB" zoom="0.6" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
 
 
 
@@ -96,7 +96,7 @@ They both stop what they’re doing and look at you.
 Who would you like to speak to?
 
 [[Address Left-Most Person]]
-[[Address Right-Most Person]]</tw-passagedata><tw-passagedata pid="10" name="Address Left-Most Person" tags="" position="249.66666666666666,1042" size="100,100">The large man begins speaking. “Hello. They call me Karos. Call me what you’d like, though. I am your servant, your hound, your tool. I have sharpened blades and a toughened body to lend you. Nothing will so much as breathe on you without first being cut down. This is what I offer. What else could be needed?
+[[Address Right-Most Person]]</tw-passagedata><tw-passagedata pid="10" name="Address Left-Most Person" tags="" position="249,1042" size="100,100">The large man begins speaking. “Hello. They call me Karos. Call me what you’d like, though. I am your servant, your hound, your tool. I have sharpened blades and a toughened body to lend you. Nothing will so much as breathe on you without first being cut down. This is what I offer. What else could be needed?
 
 . . .
 
@@ -120,9 +120,9 @@ That’s right. What else could this mission be about?&quot;
 [[&quot;What equipment will you bring with you?&quot;|EQ2]]
 [[&quot;What made you want to be a mercenary?&quot;|MC2]]
 [[Pick Loren Feth For Your Mission]]
-[[Back|Greet Them]]</tw-passagedata><tw-passagedata pid="12" name="EQ1" tags="" position="120.66666666666667,1090" size="100,100">Primarily, my hardened mind and body. Secondarily, two broad axes, a long spear, four knives strapped to my legs, and a set of bolas, though I prefer to be up close. I don’t care much for burdensome heavy armor, but I have a set ready if needed.
+[[Back|Greet Them]]</tw-passagedata><tw-passagedata pid="12" name="EQ1" tags="" position="120,1090" size="100,100">Primarily, my hardened mind and body. Secondarily, two broad axes, a long spear, four knives strapped to my legs, and a set of bolas, though I prefer to be up close. I don’t care much for burdensome heavy armor, but I have a set ready if needed.
 
-[[Back|Address Left-Most Person]]</tw-passagedata><tw-passagedata pid="13" name="MC1" tags="" position="110,917.6666666666666" size="100,100">Life is a battle. I am built to fight it. It is all I know. When I left our tribe, there seemed to be no other work for me. I won&#39;t be a soldier and fight some pompous arse’s battles for him. I won&#39;t be a knight and uphold some arbitrary code. I fight to live - I always have. I need gold to live. So, I choose to fight for gold.
+[[Back|Address Left-Most Person]]</tw-passagedata><tw-passagedata pid="13" name="MC1" tags="" position="110,917" size="100,100">Life is a battle. I am built to fight it. It is all I know. When I left our tribe, there seemed to be no other work for me. I won&#39;t be a soldier and fight some pompous arse’s battles for him. I won&#39;t be a knight and uphold some arbitrary code. I fight to live - I always have. I need gold to live. So, I choose to fight for gold.
 
 [[Back|Address Left-Most Person]]</tw-passagedata><tw-passagedata pid="14" name="Pick Karos For Your Mission" tags="" position="253,1217" size="100,100">You sense Karos&#39;s strength, ferocity, and determination based on your conversation with him.
 
@@ -397,13 +397,13 @@ Along the river, you see a bronze colored rock, a mushroom with a faint green gl
 ]
 (if: $previousPassage is &quot;Rest By The Fire&quot;)[
 	(if: $compan is 1)[Karos furrows his brow and says to your party, &quot;A strange sound. Seems unnatural. No common wildlife that&#39;s for sure.&quot;]
-	(else-if: $compan is2)[Loren looks bewildered and says, &quot;Now, that just doesn&#39;t sound natural, does it? I wonder what it could be. Only one way to find out, I suppose.&quot;](else:)[Error, no companion set] Rafferty&#39;s face displays a strange combination of both fear and intrigue.
+	(else-if: $compan is 2)[Loren looks bewildered and says, &quot;Now, that just doesn&#39;t sound natural, does it? I wonder what it could be. Only one way to find out, I suppose.&quot;](else:)[Error, no companion set] Rafferty&#39;s face displays a strange combination of both fear and intrigue.
 ]
 (if: $previousPassage is &quot;Follow The Strange Noise&quot;)[
-	(if: $compan is 1)[Karos...]
-	(else-if: $compan is2)[Loren...](else:)[Error, no companion set] Rafferty... In ask companions, Companions indicate should just turn around. Rafferty insists on keeping it.
+	(if: $compan is 1)[&quot;I do not like the look of this, Captain,&quot; Karos says, with his eyes revealing the slightest hint of fear. &quot;Disturbing life&#39;s cycles often has dire consequences. Angry, sharp, and deadly ones in this case.&quot;]
+	(else-if: $compan is2)[&quot;This seems . . .&quot; Loren shudders. &quot;This seems wrong. I can&#39;t say I&#39;d recommend risking a dragonmother&#39;s wrath over our bishop&#39;s simple desire. I know he&#39;s our client, but . . .&quot; She glances over at Rafferty then quietly adds, &quot;We have to draw the line somewhere.&quot;](else:)[Error, no companion set] Rafferty injercts, heatedly. &quot;Oh, do not listen to this fool. I simply must have this. I&#39;m sure we&#39;ll be fine, we haven&#39;t too long left to go anyway. Now, who hired you in the first place anyway? I&#39;d suggest you listen to the ones who pay your salary.&quot;
 ]
-(link: &quot;Back&quot;)[(goto:$previousPassage)]</tw-passagedata><tw-passagedata pid="32" name="Investigate Rock" tags="" position="67.66666666666667,2553.3333333333335" size="100,100">You approach the bronze colored rock. It looks to be about fifty pounds, not something you could pick up and take with you. Upon further examination, it also seems to have some blue, green, and pink colors present. You determine it may be runite ore, a valuable material, but of no use to you now with no means of collecting it.
+(link: &quot;Back&quot;)[(goto:$previousPassage)]</tw-passagedata><tw-passagedata pid="32" name="Investigate Rock" tags="" position="67,2553" size="100,100">You approach the bronze colored rock. It looks to be about fifty pounds, not something you could pick up and take with you. Upon further examination, it also seems to have some blue, green, and pink colors present. You determine it may be runite ore, a valuable material, but of no use to you now with no means of collecting it.
 
 [[Back|Choose Left Path]]</tw-passagedata><tw-passagedata pid="33" name="Investigate Mushroom" tags="" position="225,2555" size="100,100">(set: $hasMush to 1)You approach the mysterious glowing mushroom carefully.
 
@@ -423,7 +423,7 @@ The first depicts two crossed lines, possibly representing spears.The second fur
 
 You determine you are heading in the right direction.
 
-[[Back|Choose Left Path]]</tw-passagedata><tw-passagedata pid="35" name="Test Mushroom On Companion" tags="" position="338.3333333333333,2684" size="100,100">(set: $compApproval to $compApproval-1)(set: $karma to $karma-1)&lt;i&gt;((if: $compan is 2)[Loren](else-if: $compan is 1)[Karos](else:)[Error, No companion set.] disapproves)&lt;/i&gt;
+[[Back|Choose Left Path]]</tw-passagedata><tw-passagedata pid="35" name="Test Mushroom On Companion" tags="" position="338,2684" size="100,100">(set: $compApproval to $compApproval-1)(set: $karma to $karma-1)&lt;i&gt;((if: $compan is 2)[Loren](else-if: $compan is 1)[Karos](else:)[Error, No companion set.] disapproves)&lt;/i&gt;
 
 &lt;i&gt; (Your karma lowers) &lt;/i&gt;
 
@@ -1341,7 +1341,7 @@ Your party looks to you expectingly.
 
 [[Charge In]]
 [[Dispatch Companion]]
-[[Turn Around]]</tw-passagedata><tw-passagedata pid="82" name="Rest By The Fire" tags="" position="337.3333333333333,5706" size="100,100">You were waken with a start from what was a deep slumber. It is predawn and you can barely make out your surroundings.
+[[Turn Around]]</tw-passagedata><tw-passagedata pid="82" name="Rest By The Fire" tags="" position="337,5706" size="100,100">You were waken with a start from what was a deep slumber. It is predawn and you can barely make out your surroundings.
 
 In the bushes, but a few yards away, you hear a rustling of leaves. Then, a high pritched shriek followed by heavy stamping going off away from you.
 
@@ -1431,7 +1431,7 @@ You look over to the bishop. Rafferty puts his hands on his knees and retches vi
 
 The wizard tries lays a hand gently on Rafferty to reassure him, but Rafferty shakes it off and looks at him angrily. &quot;This feeling will pass soon, once you start moving on your own two legs again.&quot; The wizard bows deeply. &quot;Thank you all again for your assistance. That goblin may have had its way with me if it weren&#39;t for your kind interference.&quot; And with that, the wizard turns away down the path toward Coreston and waves his hand while walking away. &quot;I must be off now. Much to do. A wizard&#39;s duty never ends.&quot;
 
-[[Arrive at Coreston]]</tw-passagedata><tw-passagedata pid="90" name="Ignore and Continue On The Path" tags="" position="624.6666666666666,5953.333333333333" size="100,100">You think about this man&#39;s strange proposition and opt for the conservative, yet safer, route. &quot;Though we appreciate your offer, I believe we best decline.&quot;
+[[Arrive at Coreston]]</tw-passagedata><tw-passagedata pid="90" name="Ignore and Continue On The Path" tags="" position="624,5953" size="100,100">You think about this man&#39;s strange proposition and opt for the conservative, yet safer, route. &quot;Though we appreciate your offer, I believe we best decline.&quot;
 
 &quot;Ahh. Well, that is quite understandable. You have indeed only just met me. In that case, I suppose you best be off then.&quot; The wizard bows deeply. &quot;Thank you all again for your assistance.&quot;
 
@@ -1460,11 +1460,11 @@ You glance upon your headquarters as you enter. Above the entrance is a wooden s
 
 &quot;Greetings Captain! We’ve finally got another mission. Are you ready for your briefing?&quot;
 
-[[Ready]]</tw-passagedata><tw-passagedata pid="93" name="Arrive at Coreston" tags="" position="651,6293" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="94" name="Ignore The Noise And Continue On The Path" tags="" position="188.99999999999997,5847.666666666667" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="95" name="Follow The Strange Noise" tags="" position="384,5846" size="100,100">&quot;Better to look at your threats head on than to have them bite you in the back. Let&#39;s investigate.&quot; Your party agrees and follows you into the bushes, though they appear somewhat tense and apprehensive.
+[[Ready]]</tw-passagedata><tw-passagedata pid="93" name="Arrive at Coreston" tags="" position="651,6293" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="94" name="Ignore The Noise And Continue On The Path" tags="" position="188,5847" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="95" name="Follow The Strange Noise" tags="" position="387.3333333333333,5844.333333333333" size="100,100">&quot;Better to look at your threats head on than to have them bite you in the back. Let&#39;s investigate.&quot; Your party agrees and follows you into the bushes, though they appear somewhat tense and apprehensive.
 
 You see a patch of shrubbery with a portion of it a few yards wide patted down flat. Out in the direction of the loud stamping, you see that a path of broken twigs and cleared foilage branches out deep into the woods from this flattened plot.
 
-Just as you begin to walk down this path, you hear Rafferty exclaim &quot;Woah!&quot; You all swing around to see the cause of this. He&#39;s looking down at a large pile of leaves, twigs, and other plant refuse, eyes squinted in inquisition. Yet, he is smiling.
+Just as you begin to walk down this path, you hear Rafferty exclaim &quot;Now, &lt;i&gt;this&lt;/i&gt; is curious.&quot; You all swing around to see the cause of this. He&#39;s looking down at a large pile of leaves, twigs, and other plant refuse, eyes squinted in inquisition. Yet, he is smiling.
 
 Reaching down he lifts a large object, about 2 feet tall, that looks like a cream colored, oblong stone. It appears to be oddly smooth aside from a patchwork of incredibly thin, red, elevated veins upon its surface.
 
@@ -1472,11 +1472,11 @@ Reaching down he lifts a large object, about 2 feet tall, that looks like a crea
 
 You ask the bishop, &quot;You are a collector?&quot;
 
-&quot;Why, yes, I most certainly do. One of my few accomplishments that I am truly proud of it. Many peculiarities and oddities, plus a menagerie of foreign species that I&#39;ve procured, well, let&#39;s just say through some connections I have. There are the wiry, little Marmukets from the arid region of Goltor, large voracious lupine Kixakuthes that truly make wonderful companion once they&#39;ve been well disciplined and of course, from the northern mount-&quot;
+&quot;Why, yes, I most certainly am. One of the few accomplishments that I am truly proud of it. Many peculiarities and oddities, plus a menagerie of foreign species that I&#39;ve procured, well, let&#39;s just say through some connections I have. There are the wiry, little Marmukets from the arid region of Goltor, large voracious lupine Kixakuthes that truly make wonderful companion once they&#39;ve been well disciplined and of course, from the northern mount-&quot;
 
 (if: $compan is 1)[Karos lifts up a swift and firm fist, silencing the bishop. &quot;We must remain quiet. Remember why we came out here. We heard loud stamping indicative of a large, fearsome beast. If this truly is a dragonling egg, then could there not be a dragon in our vicinity?&quot;](if: $compan is 2)[&quot;Shhh!&quot; Loren cuts off Rafferty&#39;s ramblings, to which he responds in anger. &quot;There&#39;s no time for this. If you genuinely think this is a dragonling egg, then what do you suppose was the source of the shrieking we heard earlier? It certainly wasn&#39;t that which you hold. It could easily be the mother of this egg!&quot;](else:)[Error, no companion set]
 
-Rafferty and (if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[Error, no companion set] exhange heated glances. Your party then looks back to you with deep judgement lining their face.
+Rafferty and (if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[Error, no companion set] exhange heated glances. Your party then looks back to you in unison, with deep judgement lining their face.
 
 (link: &quot;Ask Party For Advice&quot;) [(set: $previousPassage to &quot;Follow The Strange Noise&quot;)(goto:&quot;Ask Party For Advice&quot;)]
 [[Take The Egg]]
@@ -1484,7 +1484,7 @@ Rafferty and (if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[Erro
 (link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Follow The Strange Noise&quot;)(goto:&quot;Check Status&quot;)]
 
 
--Bishop would like to add it to his collection, companions disapprove. Morality lower for disturbing nature.</tw-passagedata><tw-passagedata pid="96" name="Take The Egg" tags="" position="340.6666666666667,5987.666666666666" size="100,100">(set: $bishopApproval to $bishopApproval +1)&lt;i&gt;(Bishop Rafferty approves)&lt;/i&gt;
+-Bishop would like to add it to his collection, companions disapprove. Morality lower for disturbing nature.</tw-passagedata><tw-passagedata pid="96" name="Take The Egg" tags="" position="340,5987" size="100,100">(set: $bishopApproval to $bishopApproval +1)&lt;i&gt;(Bishop Rafferty approves)&lt;/i&gt;
 
 As you leave, you hear a terrible, loud shriek.
 
@@ -1493,7 +1493,7 @@ Rafferty carries the egg, yet tires. He sets it down. You notice a small crack i
 (-if you take it with you, after one night, it hatches into a dragonling and flies away, hurting your companion, who was holding onto it)
 
 [[Make Companion Carry It]]
-[[Carry It Yourself]]</tw-passagedata><tw-passagedata pid="97" name="Leave The Egg" tags="" position="477.3333333333333,5991" size="100,100">(set: $bishopApproval to $bishopApproval -1)&lt;i&gt;(Bishop Rafferty disapproves)&lt;/i&gt;</tw-passagedata><tw-passagedata pid="98" name="Make Companion Carry It" tags="" position="285.6666666666667,6139.333333333333" size="100,100">(set: $companApproval to $companApproval +1)(if: $compan is1)[&lt;i&gt;(Karos disapproves)&lt;/i&gt;](else-if: $compan is 2)[&lt;i&gt;(Loren disapproves)&lt;/i&gt;](else:)[Error, no companion set]</tw-passagedata><tw-passagedata pid="99" name="Carry It Yourself" tags="" position="435.6666666666667,6139.333333333333" size="100,100"></tw-passagedata></tw-storydata>
+[[Carry It Yourself]]</tw-passagedata><tw-passagedata pid="97" name="Leave The Egg" tags="" position="477,5991" size="100,100">(set: $bishopApproval to $bishopApproval -1)&lt;i&gt;(Bishop Rafferty disapproves)&lt;/i&gt;</tw-passagedata><tw-passagedata pid="98" name="Make Companion Carry It" tags="" position="285,6139" size="100,100">(set: $companApproval to $companApproval +1)(if: $compan is1)[&lt;i&gt;(Karos disapproves)&lt;/i&gt;](else-if: $compan is 2)[&lt;i&gt;(Loren disapproves)&lt;/i&gt;](else:)[Error, no companion set]</tw-passagedata><tw-passagedata pid="99" name="Carry It Yourself" tags="" position="435,6139" size="100,100"></tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
