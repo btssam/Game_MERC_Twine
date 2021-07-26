@@ -11,7 +11,7 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="Merc" startnode="1" creator="Twine" creator-version="2.3.13" ifid="214A01F5-A9D6-4B1E-B58B-BC2D2486FEDB" zoom="0.6" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+<tw-storydata name="Merc" startnode="1" creator="Twine" creator-version="2.3.14" ifid="214A01F5-A9D6-4B1E-B58B-BC2D2486FEDB" zoom="0.6" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
 
 
 
@@ -284,7 +284,7 @@ For the first time, Karos reveals a slight smile and then dons his heavy metal a
 
 &quot;Let&#39;s move. My hands are starting to get twitchy.&quot;
 
-[[Set Off To Ashenbark Forest]]</tw-passagedata><tw-passagedata pid="28" name="Check Status" tags="Core" position="1202,1598.6666666666667" size="100,100">(text-style: &quot;blink&quot;)[&lt;b&gt;Status:&lt;/b&gt;]
+[[Set Off To Ashenbark Forest]]</tw-passagedata><tw-passagedata pid="28" name="Check Status" tags="Core" position="1202,1598" size="100,100">(text-style: &quot;blink&quot;)[&lt;b&gt;Status:&lt;/b&gt;]
 
 (if: $hasBishop is 0)[You&#39;ve yet to find the Bishop. Keep looking. He is captured by ogres in the Ashenbark Forest.](else:)[You&#39;ve found the Bishop and now must make your way back to Monastery in Coreston]
 
@@ -1599,7 +1599,7 @@ After one more uneasy, restless night and a day long trek, your party finally ar
 
 &quot;Ask your bishop friend there,&quot; he spits off to the right. When Rafferty responds only with an angry glance, the guard continues. &quot;His kind has left us all penniless. Encouraged the king to help spread their word off in other lands, leaving us behind. We were better off before you damn prattlers started poppin&#39; up out of nowhere.&quot;
 
-[[Back|Arrive at Coreston]]</tw-passagedata><tw-passagedata pid="101" name="Pay Up" tags="" position="398,6525.333333333333" size="100,100">(set: $noSilver to 1) You reluctantly pay the guards the fifteen silver.
+[[Back|Arrive at Coreston]]</tw-passagedata><tw-passagedata pid="101" name="Pay Up" tags="" position="398,6525" size="100,100">(set: $noSilver to 1) You reluctantly pay the guards the fifteen silver.
 
 The guards grin devilishly. Then, they move to the sides and bow slightly, gesturing with their hand to let your party through.
 
@@ -1629,7 +1629,7 @@ The guards cower and fall to the floor. They drop their weapons and stick close 
 
 Rafferty gathers his robe and quickly steps along behind you guys, happy to get out of this scene. He&#39;s looking down, but a slight smile is forming as he steps across. Some other folk follow your party before the guards are able to finally regain their bearings and stop the flow of people.
 
-[[Enter The City]]</tw-passagedata><tw-passagedata pid="103" name="Persuade The Guards" tags="" position="687,6525.333333333333" size="100,100">(if: $compan is 1)[You and Loren approach the guards. They hold up their shields and pull back their blades.
+[[Enter The City]]</tw-passagedata><tw-passagedata pid="103" name="Persuade The Guards" tags="" position="687,6525" size="100,100">(if: $compan is 1)[You and Loren approach the guards. They hold up their shields and pull back their blades.
 
 &quot;Now, now. That won&#39;t be neccessary. Let&#39;s just have a little chat.&quot; Loren bares her open palms to them. The guards respond by tightening their grip.
 
@@ -1661,7 +1661,11 @@ You get up close and whisper to them. &quot;If you were to let us through, there
 
 Rafferty gathers his robe and quickly steps along behind you guys, happy to get out of this scene. He&#39;s looking down, but a slight smile is forming as he steps across. Some other folk follow your party before the guards are able to finally regain their bearings and stop the flow of people.](else:)[Error, no companion set]
 
-[[Enter The City]]</tw-passagedata><tw-passagedata pid="104" name="Enter The City" tags="" position="542,6682" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+[[Enter The City]]</tw-passagedata><tw-passagedata pid="104" name="Enter The City" tags="" position="543.6666666666666,6682" size="100,100">Your party enters through the city gates. You are immediately greeted by the site of a city in clear disarray.
+
+You see a rundown stone courtyard, with a fountain in its center. The fountain itself is cracking and filled with brownwater and refuse. The courtyard is filled with beggars.
+
+The paths branching out from your location are missing several stones. Most of the ground is covered in dirt. Several  surround you on both sides.</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
