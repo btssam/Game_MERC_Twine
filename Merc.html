@@ -1480,9 +1480,9 @@ You and (if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[Error, no
 
 One of them spits off to his side. &quot;You an&#39; everybody else. Best pay up then.&quot; He opens up a dirty palm to you.
 
-&quot;What&#39;s that?&quot;, you inquisite.
+&quot;Pay up?&quot;, you inquisite.
 
-&quot;You daft? Five silver pieces, it is, to get in the city. Them&#39;s the rules. Otherwise, best just turn around.&quot; He clangs his sword against his shield. The guard suspiciously eyes the bishop. He elbows one of his fellow guards and points. &quot;A clergy member, eh? You expect us to let him in too, huh?&quot;
+&quot;You daft? We&#39;re Kingsguard. Five silver pieces, it is, to get in the city. Them&#39;s the rules. Otherwise, best just turn around.&quot; He clangs his sword against his shield. The guard suspiciously eyes the bishop. He elbows one of his fellow guards and points. &quot;A clergy member, eh? You expect us to let him in too, huh?&quot;
 
 You hear the crowd murmuring at the sight of the bishop. He cowers behind your companion. Another guard cuts in. &quot;It ain&#39;t easy to bring one of his kind into these walls safely. That&#39;ll have to be fifteen silvers then. Pay up or get out.&quot;]
 (else-if: $displayCorestonText is 1)[&quot;That&#39;ll have to be fifteen silvers then. Pay up or get out.&quot;]
@@ -1629,7 +1629,7 @@ The guards cower and fall to the floor. They drop their weapons and stick close 
 
 Rafferty gathers his robe and quickly steps along behind you guys, happy to get out of this scene. He&#39;s looking down, but a slight smile is forming as he steps across. Some other folk follow your party before the guards are able to finally regain their bearings and stop the flow of people.
 
-[[Enter The City]]</tw-passagedata><tw-passagedata pid="103" name="Persuade The Guards" tags="" position="702,6527" size="100,100">(if: $compan is 1)[You and Loren approach the guards. They hold up their shields and pull back their blades.
+[[Enter The City]]</tw-passagedata><tw-passagedata pid="103" name="Persuade The Guards" tags="" position="687,6525.333333333333" size="100,100">(if: $compan is 1)[You and Loren approach the guards. They hold up their shields and pull back their blades.
 
 &quot;Now, now. That won&#39;t be neccessary. Let&#39;s just have a little chat.&quot; Loren bares her open palms to them. The guards respond by tightening their grip.
 
@@ -1647,11 +1647,21 @@ Loren says, &quot;Just let us through then and I promise not to tell the true au
 
 Rafferty gathers his robe and quickly steps along behind you guys, happy to get out of this scene. He&#39;s looking down, but a slight smile is forming as he steps across. Many other folk follow your party before the guards are able to finally regain their bearings.](else-if: $compan is 2)[You and Karos approach the guards. They hold up their shields and pull back their blades.
 
-](else:)[Error, no companion set]
+&quot;Let&#39;s not jump to violence.&quot; You calmly ask of them. &quot;I think we can arrange something here.&quot; The guards respond by tightening their grip.
 
-[[Enter The City]]
+&quot;I can see that you all have quite the operation going on here. Now, I wouldn&#39;t want to intefere with the authority of the Kingsguard. It would not be my place to do so. However,&quot; you approach them with a discerning glance and quietly say, &quot;it doesn&#39;t seem to me that you are of the Kingsguard.&quot;
 
-Indicate that they&#39;re not real guards and that they will get them in trouble.</tw-passagedata><tw-passagedata pid="104" name="Enter The City" tags="" position="542,6682" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+The guards shift around uncomfortably.  &quot;Y-yes we are. How would you know?&quot;
+
+&quot;Calm yourselves. I don&#39;t think we want to make a scene here,&quot; you quietly say to them, reassuring them. You look back to the crowd surrounding you and to your companion, Karos, who is has unsheathed his axes. &quot;You have none of the Kingsguards equipment and certainly none of their training. I don&#39;t think one issued to guard its people would kick them aside.&quot; The guards look both angry and concerned.
+
+You get up close and whisper to them. &quot;If you were to let us through, there wouldn&#39;t be a word of this masquerading. Not to this upset crowd surrounding us, not to my burly friend back there,&quot; you point back to Karos and he smiles lightly, &quot;and certainly not a word to the true Kingsguard themselves. I can assure of that.&quot;
+
+&quot;What do you say?&quot; The guards mumble amongst themselves angrily, then  defeatedly acqueisce and move to their sides. You thank them as Karos follows behind.
+
+Rafferty gathers his robe and quickly steps along behind you guys, happy to get out of this scene. He&#39;s looking down, but a slight smile is forming as he steps across. Some other folk follow your party before the guards are able to finally regain their bearings and stop the flow of people.](else:)[Error, no companion set]
+
+[[Enter The City]]</tw-passagedata><tw-passagedata pid="104" name="Enter The City" tags="" position="542,6682" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
