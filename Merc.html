@@ -404,11 +404,14 @@ Along the river, you see a bronze colored rock, a mushroom with a faint green gl
 	(if: $compan is 1)[&quot;I do not like the look of this, Captain,&quot; Karos says, with his eyes revealing the slightest hint of fear. &quot;Disturbing life&#39;s cycles often has dire consequences. Angry, sharp, and deadly ones in this case.&quot;]
 	(else-if: $compan is 2)[&quot;This seems . . .&quot; Loren shudders. &quot;This seems wrong. I can&#39;t say I&#39;d recommend risking a dragonmother&#39;s wrath over our bishop&#39;s simple desire. I know he&#39;s our client, but . . .&quot; She glances over at Rafferty then quietly adds, &quot;We have to draw the line somewhere.&quot;](else:)[Error, no companion set] Rafferty injercts, heatedly. &quot;Oh, do not listen to this fool. I simply must have this. I&#39;m sure we&#39;ll be fine, we haven&#39;t too long left to go anyway. Now, who hired you in the first place anyway? I&#39;d suggest you listen to the ones who pay your salary.&quot;
 ]
-(if: $previousPassage is &quot;Arrive at Coreston&quot;)[
+(if: $previousPassage is &quot;Arrive At Coreston&quot;)[
 	(if: $compan is 1)[&quot;I see no strength in these men.&quot; Karos eyes the guards ferociously. &quot;They prey upon the weak and hold their blades with tender hands. Wonder how they&#39;d act around a true warrior.&quot; He grips his axe tightly.]
 	(else-if: $compan is 2)[Loren looks suspiciously at the guards. &quot;These don&#39;t seem like genuine Kingsguard. Some common thugs, perhaps. I don&#39;t think they hold as much authority as they&#39;d like to make us believe.&quot;](else:)[Error, no companion set] You look over to the bishop and he is so scared, he can barely form a whisper, &quot;Just . . . get us in.&quot;
 ]
-
+(if: $previousPassage is &quot;Enter The City&quot;)[
+	(if: $compan is 1)[/tochange &quot;I see no strength in these men.&quot; Karos eyes the guards ferociously. &quot;They prey upon the weak and hold their blades with tender hands. Wonder how they&#39;d act around a true warrior.&quot; He grips his axe tightly.]
+	(else-if: $compan is 2)[/tochange Loren looks suspiciously at the guards. &quot;These don&#39;t seem like genuine Kingsguard. Some common thugs, perhaps. I don&#39;t think they hold as much authority as they&#39;d like to make us believe.&quot;](else:)[Error, no companion set] /tochange You look over to the bishop and he is so scared, he can barely form a whisper, &quot;Just . . . get us in.&quot;
+]
 (link: &quot;Back&quot;)[(goto:$previousPassage)]</tw-passagedata><tw-passagedata pid="32" name="Investigate Rock" tags="" position="67,2553" size="100,100">You approach the bronze colored rock. It looks to be about fifty pounds, not something you could pick up and take with you. Upon further examination, it also seems to have some blue, green, and pink colors present. You determine it may be runite ore, a valuable material, but of no use to you now with no means of collecting it.
 
 [[Back|Choose Left Path]]</tw-passagedata><tw-passagedata pid="33" name="Investigate Mushroom" tags="" position="225,2555" size="100,100">(set: $hasMush to 1)You approach the mysterious glowing mushroom carefully.
@@ -1437,7 +1440,7 @@ You look over to the bishop. Rafferty puts his hands on his knees and retches vi
 
 The wizard tries lays a hand gently on Rafferty to reassure him, but Rafferty shakes it off and looks at him angrily. &quot;This feeling will pass soon, once you start moving on your own two legs again.&quot; The wizard bows deeply. &quot;Thank you all again for your assistance. That goblin may have had its way with me if it weren&#39;t for your kind interference.&quot; And with that, the wizard turns away down the path toward Coreston and waves his hand while walking away. &quot;I must be off now. Much to do. A wizard&#39;s duty never ends.&quot;
 
-[[Arrive at Coreston]]</tw-passagedata><tw-passagedata pid="90" name="Ignore and Continue On The Path" tags="" position="635,5971" size="100,100">You think about this man&#39;s strange proposition and opt for the conservative, yet safer, route. &quot;Though we appreciate your offer, I believe we best decline.&quot;
+[[Arrive At Coreston]]</tw-passagedata><tw-passagedata pid="90" name="Ignore and Continue On The Path" tags="" position="635,5971" size="100,100">You think about this man&#39;s strange proposition and opt for the conservative, yet safer, route. &quot;Though we appreciate your offer, I believe we best decline.&quot;
 
 &quot;Ahh. Well, that is quite understandable. You have indeed only just met me. In that case, I suppose you best be off then.&quot; The wizard bows deeply. &quot;Thank you all again for your assistance.&quot;
 
@@ -1466,7 +1469,7 @@ You glance upon your headquarters as you enter. Above the entrance is a wooden s
 
 &quot;Greetings Captain! We’ve finally got another mission. Are you ready for your briefing?&quot;
 
-[[Ready]]</tw-passagedata><tw-passagedata pid="93" name="Arrive at Coreston" tags="" position="557,6351" size="100,100">(if: $displayCorestonText is 0)[Looking at the gates of Coreston, you can clearly observe this is a city of grandeur, or at least was at one point. The two carven doors at its entrance are both ornate and massive. They are surrounded by an arch of white stone. However, the gateway itself is showing signs of wear. The stone is starting to lose some of its color and the wooden doors are starting to fade, its engravings smoothing out in many parts. A high wall, wtih some stones missing, surrounds these doors far to its sides.
+[[Ready]]</tw-passagedata><tw-passagedata pid="93" name="Arrive At Coreston" tags="" position="557,6351" size="100,100">(if: $displayCorestonText is 0)[Looking at the gates of Coreston, you can clearly observe this is a city of grandeur, or at least was at one point. The two carven doors at its entrance are both ornate and massive. They are surrounded by an arch of white stone. However, the gateway itself is showing signs of wear. The stone is starting to lose some of its color and the wooden doors are starting to fade, its engravings smoothing out in many parts. A high wall, wtih some stones missing, surrounds these doors far to its sides.
 
 The entrance area itself is somewhat crowded. There are several people sitting at the side of the path, sleeping or begging for coins. The entranceway itself is filled with a throng of people, seemingly trying to get into the city. Three men stand in front of the doors with tall shields, thick blades, and baleful visages.
 
@@ -1498,7 +1501,7 @@ Your party continues along the dirt path, making your way toward Coreston.
 
 Two uneasy nights and long days pass before you approach the city gates. You pass a few caravans and weary travellers at the tail end of your journey.
 
-[[Arrive at Coreston]] </tw-passagedata><tw-passagedata pid="95" name="Follow The Strange Noise" tags="" position="338,5840" size="100,100">&quot;Better to look at your threats head on than to have them bite you in the back. Let&#39;s investigate.&quot; Your party agrees and follows you into the bushes, though they appear somewhat tense and apprehensive.
+[[Arrive At Coreston]] </tw-passagedata><tw-passagedata pid="95" name="Follow The Strange Noise" tags="" position="338,5840" size="100,100">&quot;Better to look at your threats head on than to have them bite you in the back. Let&#39;s investigate.&quot; Your party agrees and follows you into the bushes, though they appear somewhat tense and apprehensive.
 
 You see a patch of shrubbery with a portion of it a few yards wide patted down flat. Out in the direction of the loud stamping, you see that a path of broken twigs and cleared foilage branches out deep into the woods from this flattened plot.
 
@@ -1546,7 +1549,7 @@ Your party continues along the dirt path, making your way toward Coreston.
 
 Two uneasy nights and long days pass before you approach the city gates. You pass a few caravans and weary travellers at the tail end of your journey.
 
-[[Arrive at Coreston]]</tw-passagedata><tw-passagedata pid="98" name="Make Companion Carry It" tags="" position="202,6127" size="100,100">&quot;(if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[Error, no companion set]! You&#39;ll have to carry that thing for us.&quot;
+[[Arrive At Coreston]]</tw-passagedata><tw-passagedata pid="98" name="Make Companion Carry It" tags="" position="202,6127" size="100,100">&quot;(if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[Error, no companion set]! You&#39;ll have to carry that thing for us.&quot;
 
 (if: $compan is 1)[He](else-if: $compan is 2)[She](else:)[Error, no companion set] looks down, grimaces, then hesitantly picks up the heavy, oblong egg.
 
@@ -1572,7 +1575,7 @@ The dragonling swipes back, its tiny yet sharp talons piercing (if: $compan is 1
 
 After one more uneasy, restless night and a day long trek, your party finally arrives at the gates of Coreston.
 
-[[Arrive at Coreston]] </tw-passagedata><tw-passagedata pid="99" name="Carry It Yourself" tags="" position="383,6124" size="100,100">&quot;I can carry that for you, Rafferty. Not a problem&quot;
+[[Arrive At Coreston]] </tw-passagedata><tw-passagedata pid="99" name="Carry It Yourself" tags="" position="383,6124" size="100,100">&quot;I can carry that for you, Rafferty. Not a problem&quot;
 
 You looks down, grimaces, then hesitantly pick up the heavy, oblong egg.
 
@@ -1595,11 +1598,11 @@ You look down to your newly acquired wound. There&#39;s little that can be done 
 
 After one more uneasy, restless night and a day long trek, your party finally arrives at the gates of Coreston.
 
-[[Arrive at Coreston]] </tw-passagedata><tw-passagedata pid="100" name="Ask About The City" tags="" position="337,6416" size="100,100">(set: $displayCorestonText to 1)You ask one of the guards, &quot;What&#39;s going on in this city here?&quot;
+[[Arrive At Coreston]] </tw-passagedata><tw-passagedata pid="100" name="Ask About The City" tags="" position="337,6416" size="100,100">(set: $displayCorestonText to 1)You ask one of the guards, &quot;What&#39;s going on in this city here?&quot;
 
 &quot;Ask your bishop friend there,&quot; he spits off to the right. When Rafferty responds only with an angry glance, the guard continues. &quot;His kind has left us all penniless. Encouraged the king to help spread their word off in other lands, leaving us behind. We were better off before you damn prattlers started poppin&#39; up out of nowhere.&quot;
 
-[[Back|Arrive at Coreston]]</tw-passagedata><tw-passagedata pid="101" name="Pay Up" tags="" position="398,6525" size="100,100">(set: $noSilver to 1) You reluctantly pay the guards the fifteen silver.
+[[Back|Arrive At Coreston]]</tw-passagedata><tw-passagedata pid="101" name="Pay Up" tags="" position="398,6525" size="100,100">(set: $noSilver to 1) You reluctantly pay the guards the fifteen silver.
 
 The guards grin devilishly. Then, they move to the sides and bow slightly, gesturing with their hand to let your party through.
 
@@ -1661,11 +1664,24 @@ You get up close and whisper to them. &quot;If you were to let us through, there
 
 Rafferty gathers his robe and quickly steps along behind you guys, happy to get out of this scene. He&#39;s looking down, but a slight smile is forming as he steps across. Some other folk follow your party before the guards are able to finally regain their bearings and stop the flow of people.](else:)[Error, no companion set]
 
-[[Enter The City]]</tw-passagedata><tw-passagedata pid="104" name="Enter The City" tags="" position="543.6666666666666,6682" size="100,100">Your party enters through the city gates. You are immediately greeted by the site of a city in clear disarray.
+[[Enter The City]]</tw-passagedata><tw-passagedata pid="104" name="Enter The City" tags="" position="543.6666666666666,6682" size="100,100">By the time the party enters the city gates, evening has begun. There is scant lighting provided by diffuse torches. You see a rundown stone courtyard, with a fountain in its center. There are buildings surrounding you, though many are rundown, missing some walls or even a roof. The fountain itself is cracking and filled with brownwater and refuse. The stonework in the floor of the courtyard is broken and dirt is spread throughout. Several caravans are downturned and looted. Barrels are turned over and broken into, one being filled with skittering rats.
 
-You see a rundown stone courtyard, with a fountain in its center. The fountain itself is cracking and filled with brownwater and refuse. The courtyard is filled with beggars.
+You are immediately greeted by the slippery fingers of a surreptitious thief attempting to pickpocket you. (if: $compan is 1)[Loren notices the thief long before you do. She quickly gets in his way and send the scrawny thief away. &quot;Don&#39;t go dozing off on me now, &#39;Cap,&quot; she says.](else-if: $compan is 2)[One firm look by Karos is enough to terrify the scrawny thief into submission. He takes off. &quot;Stand close,&quot; he says.](else:)[Error, no companion set]
 
-The paths branching out from your location are missing several stones. Most of the ground is covered in dirt. Several  surround you on both sides.</tw-passagedata></tw-storydata>
+The paths branching out from the courtyard are missing several stones. Most of the paths are covered in dirt and are hard to trace. Several beggars surround you by.
+
+Raffrety begins to walk down one of these paths. &quot;This way, you imbeciles. Hurry. We should not be in this district at this hour.&quot;
+
+You exchange a quick look of concern with (if: $compan is 1)[Loren](else-if: $compan is 2)[Karos](else:)[Error, no companion set]&quot;Hold up there, your bishophood.&quot; Rafferty stops and looks back at you with frustation. &quot;I&#39;m just not sure if it&#39;s wise for you to lead in such a dangerous area.&quot;
+
+&quot;I know these streets better than any of you. What would you suggest then?&quot;, the bishop eagerly questions you.
+
+&quot;Just . . . let me think a moment.&quot;
+
+(link: &quot;Ask Party For Advice&quot;) [(set: $previousPassage to &quot;Enter The City&quot;)(goto:&quot;Ask Party For Advice&quot;)]
+[[Let Rafferty Lead]]
+[[Choose To Lead Yourself]]
+(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Enter The City&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="105" name="Let Rafferty Lead" tags="" position="468.66666666666663,6832" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="106" name="Choose To Lead Yourself" tags="" position="618.6666666666666,6832" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
