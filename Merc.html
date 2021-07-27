@@ -409,8 +409,10 @@ Along the river, you see a bronze colored rock, a mushroom with a faint green gl
 	(else-if: $compan is 2)[Loren looks suspiciously at the guards. &quot;These don&#39;t seem like genuine Kingsguard. Some common thugs, perhaps. I don&#39;t think they hold as much authority as they&#39;d like to make us believe.&quot;](else:)[Error, no companion set] You look over to the bishop and he is so scared, he can barely form a whisper, &quot;Just . . . get us in.&quot;
 ]
 (if: $previousPassage is &quot;Enter The City&quot;)[
-	(if: $compan is 1)[/tochange &quot;I see no strength in these men.&quot; Karos eyes the guards ferociously. &quot;They prey upon the weak and hold their blades with tender hands. Wonder how they&#39;d act around a true warrior.&quot; He grips his axe tightly.]
-	(else-if: $compan is 2)[/tochange Loren looks suspiciously at the guards. &quot;These don&#39;t seem like genuine Kingsguard. Some common thugs, perhaps. I don&#39;t think they hold as much authority as they&#39;d like to make us believe.&quot;](else:)[Error, no companion set] /tochange You look over to the bishop and he is so scared, he can barely form a whisper, &quot;Just . . . get us in.&quot;
+	You speak privately with your hired companion. (if: $compan is 1)[&quot;We&#39;ve seen much danger in the city already,&quot; Karos says with some concern. &quot;Our bishop here is not well equipped for combat, or for anything physical for that matter. I would feel most comfortable with you leading. He&#39;s liable to get hurt.]
+	(else-if: $compan is 2)[&quot;The people of this city despise the clergy. If he is to lead, he may encounter one of these unsavoury types head on. I wouldn&#39;t have the target of our mission serve as vanguard. Better the shielded one,&quot; Loren gestures toward you.](else:)[Error, no companion set] You then look toward Rafferty. &quot;Why do you think you should lead?&quot;
+	
+	Rafferty shakes his head heatedly. &quot;I know the backroads of this city like the back of my hand. I&#39;ve been all throughout it in my time here, getting to know its subjects personally. All you people have lead me toward is increasing turmoil. Please, just allow me the lead this time.&quot;
 ]
 (link: &quot;Back&quot;)[(goto:$previousPassage)]</tw-passagedata><tw-passagedata pid="32" name="Investigate Rock" tags="" position="67,2553" size="100,100">You approach the bronze colored rock. It looks to be about fifty pounds, not something you could pick up and take with you. Upon further examination, it also seems to have some blue, green, and pink colors present. You determine it may be runite ore, a valuable material, but of no use to you now with no means of collecting it.
 
@@ -1606,7 +1608,17 @@ After one more uneasy, restless night and a day long trek, your party finally ar
 
 The guards grin devilishly. Then, they move to the sides and bow slightly, gesturing with their hand to let your party through.
 
-[[Enter The City]]</tw-passagedata><tw-passagedata pid="102" name="Intimidate The Guards" tags="" position="547,6526" size="100,100">(if: $compan is 1)[You and Loren approach the guards. They hold up their shields and pull back their blades.
+[[Enter The City]]</tw-passagedata><tw-passagedata pid="102" name="Intimidate The Guards" tags="" position="547,6526" size="100,100">(if: $compan is 1)[You and Karos approach the guards. They hold up their shields and pull back their blades.
+
+&quot;Not . . not a step closer.&quot; They command, voices slightly faltering.
+
+Karos unstraps his heavy armor chest plate throwing it to the ground, his chest bare, yet still intimidating. He unsheathes his axes and holds them to his sides, strong, firm arms bulging.
+
+&quot;Strike me then!&quot; He snarls at them. &quot;Do it, you filth! My flesh is open to your blades, just do it!&quot; He bounds forward, as you unsheathe your sword and prepare to provide support. The surrounding crowd steps back.
+
+They hesitate as he approaches. &quot;You call yourself warriors; what war do you live? How could you resist such a challenge?&quot; He scoffs at them. &quot;I am from the &lt;i&gt;north&lt;/i&gt;, you fools! Our suckling babes have fought greater foes than you ever will.&quot; Karos sheathes his axes and grabs one of the guard&#39;s heads with his bare hands. The guard drops his weapons, as your barbarian companion roars, close enough that spittle lands right on him.
+
+The guards cower and fall to the floor. They drop their weapons and stick close to the sides of the archway. You sheathe your blade, impressed and quite a bit intimidated by your apt companion. Karos calmly straps back on his gear and makes his way past the gates. He leaves the guards with a quick light nod, to which they respond with a yelp and back away from him even more.](else-if: $compan is 2)[You and Loren approach the guards. They hold up their shields and pull back their blades.
 
 &quot;Not . . not a step closer.&quot; They command, voices slightly faltering.
 
@@ -1618,21 +1630,25 @@ The guard in the middle steps forward and attempts to strike at Loren. You step 
 
 &quot;Ah &#39;Cap! Do we have to? I was looking forward to having a little fun with this one.&quot; Loren kisses the sweaty, fearful guard&#39;s hairy cheek and then digs her knife a bit into his neck.
 
-They acqueisce almost instantly, dropping their swords and shields. &quot;Thank you,&quot; you say as you make your way into the city. Loren shoves the guard to the ground and blows him a kiss as she struts through the gates.](else-if: $compan is 2)[You and Karos approach the guards. They hold up their shields and pull back their blades.
-
-&quot;Not . . not a step closer.&quot; They command, voices slightly faltering.
-
-Karos unstraps his heavy armor chest plate throwing it to the ground, his chest bare, yet still intimidating. He unsheathes his axes and holds them to his sides, strong, firm arms bulging.
-
-&quot;Strike me then!&quot; He snarls at them. &quot;Do it, you filth! My flesh is open to your blades, just do it!&quot; He bounds forward, as you unsheathe your sword and prepare to provide support. The surrounding crowd steps back.
-
-They hesitate as he approaches. &quot;You call yourself warriors; what war do you live? How could you resist such a challenge?&quot; He scoffs at them. &quot;I am from the &lt;i&gt;north&lt;/i&gt;, you fools! Our suckling babes have fought greater foes than you ever will.&quot; Karos sheathes his axes and grabs one of the guard&#39;s heads with his bare hands. The guard drops his weapons, as your barbarian companion roars, close enough that spittle lands right on him.
-
-The guards cower and fall to the floor. They drop their weapons and stick close to the sides of the archway. You sheathe your blade, impressed and quite a bit intimidated by your apt companion. Karos calmly straps back on his gear and makes his way past the gates. He leaves the guards with a quick light nod, to which they respond with a yelp and back away from him even more.](else:)[Error, no companion set]
+They acqueisce almost instantly, dropping their swords and shields. &quot;Thank you,&quot; you say as you make your way into the city. Loren shoves the guard to the ground and blows him a kiss as she struts through the gates.](else:)[Error, no companion set]
 
 Rafferty gathers his robe and quickly steps along behind you guys, happy to get out of this scene. He&#39;s looking down, but a slight smile is forming as he steps across. Some other folk follow your party before the guards are able to finally regain their bearings and stop the flow of people.
 
-[[Enter The City]]</tw-passagedata><tw-passagedata pid="103" name="Persuade The Guards" tags="" position="687,6525" size="100,100">(if: $compan is 1)[You and Loren approach the guards. They hold up their shields and pull back their blades.
+[[Enter The City]]</tw-passagedata><tw-passagedata pid="103" name="Persuade The Guards" tags="" position="687,6525" size="100,100">(if: $compan is 1)[You and Karos approach the guards. They hold up their shields and pull back their blades.
+
+&quot;Let&#39;s not jump to violence.&quot; You calmly ask of them. &quot;I think we can arrange something here.&quot; The guards respond by tightening their grip.
+
+&quot;I can see that you all have quite the operation going on here. Now, I wouldn&#39;t want to intefere with the authority of the Kingsguard. It would not be my place to do so. However,&quot; you approach them with a discerning glance and quietly say, &quot;it doesn&#39;t seem to me that you are of the Kingsguard.&quot;
+
+The guards shift around uncomfortably.  &quot;Y-yes we are. How would you know?&quot;
+
+&quot;Calm yourselves. I don&#39;t think we want to make a scene here,&quot; you quietly say to them, reassuring them. You look back to the crowd surrounding you and to your companion, Karos, who is has unsheathed his axes. &quot;You have none of the Kingsguards equipment and certainly none of their training. I don&#39;t think one issued to guard its people would kick them aside.&quot; The guards look both angry and concerned.
+
+You get up close and whisper to them. &quot;If you were to let us through, there wouldn&#39;t be a word of this masquerading. Not to this upset crowd surrounding us, not to my burly friend back there,&quot; you point back to Karos and he smiles lightly, &quot;and certainly not a word to the true Kingsguard themselves. I can assure of that.&quot;
+
+&quot;What do you say?&quot; The guards mumble amongst themselves angrily, then  defeatedly acqueisce and move to their sides. You thank them as Karos follows behind.
+
+Rafferty gathers his robe and quickly steps along behind you guys, happy to get out of this scene. He&#39;s looking down, but a slight smile is forming as he steps across. Some other folk follow your party before the guards are able to finally regain their bearings and stop the flow of people.](else-if: $compan is 2)[You and Loren approach the guards. They hold up their shields and pull back their blades.
 
 &quot;Now, now. That won&#39;t be neccessary. Let&#39;s just have a little chat.&quot; Loren bares her open palms to them. The guards respond by tightening their grip.
 
@@ -1648,33 +1664,19 @@ The guards prepare to unsheathe their blades.
 
 Loren says, &quot;Just let us through then and I promise not to tell the true authorities of what&#39;s going on here.&quot; The guards mumble amongst themselves angrily, eyes open wide to the deadly crowd clamoring to be let in. They quickly acqueisce and move to their sides. You and Loren walk right through and she winks toward the grimacing guards.
 
-Rafferty gathers his robe and quickly steps along behind you guys, happy to get out of this scene. He&#39;s looking down, but a slight smile is forming as he steps across. Many other folk follow your party before the guards are able to finally regain their bearings.](else-if: $compan is 2)[You and Karos approach the guards. They hold up their shields and pull back their blades.
+Rafferty gathers his robe and quickly steps along behind you guys, happy to get out of this scene. He&#39;s looking down, but a slight smile is forming as he steps across. Many other folk follow your party before the guards are able to finally regain their bearings.](else:)[Error, no companion set]
 
-&quot;Let&#39;s not jump to violence.&quot; You calmly ask of them. &quot;I think we can arrange something here.&quot; The guards respond by tightening their grip.
+[[Enter The City]]</tw-passagedata><tw-passagedata pid="104" name="Enter The City" tags="" position="543.6666666666666,6683.666666666667" size="100,100">By the time the party enters the city gates, evening has begun. There is scant lighting provided by diffuse torches. You see a rundown stone courtyard, with a fountain in its center. There are buildings surrounding you, though many are rundown, missing some walls or even a roof. The fountain itself is cracking and filled with brownwater and refuse. The stonework in the floor of the courtyard is broken and dirt is spread throughout. Several caravans are downturned and looted. Barrels are turned over and broken into, one being filled with skittering rats.
 
-&quot;I can see that you all have quite the operation going on here. Now, I wouldn&#39;t want to intefere with the authority of the Kingsguard. It would not be my place to do so. However,&quot; you approach them with a discerning glance and quietly say, &quot;it doesn&#39;t seem to me that you are of the Kingsguard.&quot;
+You are immediately greeted by the slippery fingers of a surreptitious thief attempting to pickpocket you. (if: $compan is 1)[One firm look by Karos is enough to terrify the scrawny thief into submission. He takes off. &quot;Stand close,&quot; he says.](else-if: $compan is 2)[Loren notices the thief long before you do. She quickly gets in his way and send the scrawny thief away. &quot;Don&#39;t go dozing off on me now, &#39;Cap,&quot; she says.](else:)[Error, no companion set]
 
-The guards shift around uncomfortably.  &quot;Y-yes we are. How would you know?&quot;
-
-&quot;Calm yourselves. I don&#39;t think we want to make a scene here,&quot; you quietly say to them, reassuring them. You look back to the crowd surrounding you and to your companion, Karos, who is has unsheathed his axes. &quot;You have none of the Kingsguards equipment and certainly none of their training. I don&#39;t think one issued to guard its people would kick them aside.&quot; The guards look both angry and concerned.
-
-You get up close and whisper to them. &quot;If you were to let us through, there wouldn&#39;t be a word of this masquerading. Not to this upset crowd surrounding us, not to my burly friend back there,&quot; you point back to Karos and he smiles lightly, &quot;and certainly not a word to the true Kingsguard themselves. I can assure of that.&quot;
-
-&quot;What do you say?&quot; The guards mumble amongst themselves angrily, then  defeatedly acqueisce and move to their sides. You thank them as Karos follows behind.
-
-Rafferty gathers his robe and quickly steps along behind you guys, happy to get out of this scene. He&#39;s looking down, but a slight smile is forming as he steps across. Some other folk follow your party before the guards are able to finally regain their bearings and stop the flow of people.](else:)[Error, no companion set]
-
-[[Enter The City]]</tw-passagedata><tw-passagedata pid="104" name="Enter The City" tags="" position="543.6666666666666,6682" size="100,100">By the time the party enters the city gates, evening has begun. There is scant lighting provided by diffuse torches. You see a rundown stone courtyard, with a fountain in its center. There are buildings surrounding you, though many are rundown, missing some walls or even a roof. The fountain itself is cracking and filled with brownwater and refuse. The stonework in the floor of the courtyard is broken and dirt is spread throughout. Several caravans are downturned and looted. Barrels are turned over and broken into, one being filled with skittering rats.
-
-You are immediately greeted by the slippery fingers of a surreptitious thief attempting to pickpocket you. (if: $compan is 1)[Loren notices the thief long before you do. She quickly gets in his way and send the scrawny thief away. &quot;Don&#39;t go dozing off on me now, &#39;Cap,&quot; she says.](else-if: $compan is 2)[One firm look by Karos is enough to terrify the scrawny thief into submission. He takes off. &quot;Stand close,&quot; he says.](else:)[Error, no companion set]
-
-The paths branching out from the courtyard are missing several stones. Most of the paths are covered in dirt and are hard to trace. Several beggars surround you by.
+The paths branching out from the courtyard are missing several stones. Most of the paths are covered in dirt and are hard to trace. Several beggars surround you.
 
 Raffrety begins to walk down one of these paths. &quot;This way, you imbeciles. Hurry. We should not be in this district at this hour.&quot;
 
-You exchange a quick look of concern with (if: $compan is 1)[Loren](else-if: $compan is 2)[Karos](else:)[Error, no companion set]&quot;Hold up there, your bishophood.&quot; Rafferty stops and looks back at you with frustation. &quot;I&#39;m just not sure if it&#39;s wise for you to lead in such a dangerous area.&quot;
+You exchange a quick look of concern with (if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[Error, no companion set]. &quot;Hold up there, your bishophood.&quot; Rafferty stops and looks back at you with frustation. &quot;I&#39;m just not sure if it&#39;s wise for you to lead in such a dangerous area.&quot;
 
-&quot;I know these streets better than any of you. What would you suggest then?&quot;, the bishop eagerly questions you.
+&quot;What would you suggest then?&quot;, the bishop eagerly questions you.
 
 &quot;Just . . . let me think a moment.&quot;
 
