@@ -415,10 +415,10 @@ Along the river, you see a bronze colored rock, a mushroom with a faint green gl
 	Rafferty shakes his head heatedly. &quot;I know the backroads of this city like the back of my hand. I&#39;ve been all throughout it in my time here, getting to know its subjects personally. All you people have lead me toward is increasing turmoil. Please, just allow me the lead this time.&quot;
 ]
 (if: $previousPassage is &quot;Choose To Lead Yourself&quot; or &quot;Let Rafferty Lead&quot;)[
-	You speak privately with your hired companion. (if: $compan is 1)[xx]
-	(else-if: $compan is 2)[xx](else:)[Error, no companion set] You then look toward Rafferty. &quot;Why do you think you should lead?&quot;
+	With little time to act, you look to your side and quickly exchange words with (if: $compan is 1)[Karos. He looks on at the mob with a hint of bewilderment. &quot;There&#39;s just . . . too many of them. I normally would have no trouble dealing with a couple of ruffians, but, well, I can&#39;t even tell if they&#39;re armed. If we get them any more upset, they&#39;ll be at our throats.&quot;]
+	(else-if: $compan is 2)[Loren. She quietly says, &quot;They are not at all happy with us. I doubt there&#39;s anything we could say to convince them to let through. We can&#39;t deal with them head on. We need a different approach. Best try not to upset them, to say the least.&quot;](else:)[Error, no companion set] You look over your shoulder and say to Rafferty, &quot;Any thoughts, bishop?&quot;
 	
-	yy
+	He looks as angry as he&#39;s ever been. He snarls at you and says, &quot;As far as I&#39;m concerned, these people need to be punished! They are just a perfect exemplar for what has become of this city. There was a day when a clergy member would be treated with respect and tithes. Absolute filth, they are. I would see them suffer.&quot;
 ]
 (link: &quot;Back&quot;)[(goto:$previousPassage)]</tw-passagedata><tw-passagedata pid="32" name="Investigate Rock" tags="" position="67,2553" size="100,100">You approach the bronze colored rock. It looks to be about fifty pounds, not something you could pick up and take with you. Upon further examination, it also seems to have some blue, green, and pink colors present. You determine it may be runite ore, a valuable material, but of no use to you now with no means of collecting it.
 
@@ -1414,7 +1414,7 @@ After a few brief moments, the wind and light dies down. You look out to the rob
 
 [[Ask About Him|Who are you?]]
 [[Ask What He&#39;s Doing Here|What are you doing here?]]
-[[Continue On Your Journey]]</tw-passagedata><tw-passagedata pid="87" name="Who are you?" tags="" position="980,5911" size="100,100">(set: $manInfo to 1)You ask the man, &quot;Who are you?&quot;
+[[Continue On Your Journey]]</tw-passagedata><tw-passagedata pid="87" name="Who are you?" tags="" position="981.6666666666666,5911" size="100,100">(set: $manInfo to 1)You ask the man, &quot;Who are you?&quot;
 
 &quot;I am Pyramus, a Wizard.&quot; He responds. &quot;I am the Court Wizard at Coreston. There, I assist the King in any sort of magical troubles he has. I have studied alchemy and spellcasting for centuries.&quot;
 
@@ -1689,7 +1689,7 @@ You exchange a quick look of concern with (if: $compan is 1)[Karos](else-if: $co
 (link: &quot;Ask Party For Advice&quot;) [(set: $previousPassage to &quot;Enter The City&quot;)(goto:&quot;Ask Party For Advice&quot;)]
 [[Let Rafferty Lead]]
 [[Choose To Lead Yourself]]
-(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Enter The City&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="105" name="Let Rafferty Lead" tags="" position="469.6666666666667,6832" size="100,100">&quot;Okay, Rafferty, you can lead. Let&#39;s just get through here quickly and get you back to the monastery.&quot;
+(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Enter The City&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="105" name="Let Rafferty Lead" tags="" position="468,6830.333333333333" size="100,100">&quot;Okay, Rafferty, you can lead. Let&#39;s just get through here quickly and get you back to the monastery.&quot;
 
 (set: $bishopApproval to $bishopApproval -1)&lt;i&gt;(Bishop Rafferty approves)&lt;/i&gt;
 
@@ -1697,9 +1697,9 @@ You light a torch and hand it to the bishop. &quot;Thank you. We should get back
 
 The open coutyard path becomes increasingly narrow, as you are surrounded by rundown buildings. &quot;This way!&quot;, Rafferty instructs. You party turns sharply. It&#39;s hard to see more than a few feet ahead of you. Rafferty swiftly turns to the left. You follow. Rafferty continues to lead you for some time. Your party is rapidly changing directions and it isn&#39;t long before you&#39;ve completely lost your bearings, relying, now, entirely on the bishop.
 
-As you are moving quickly through these spiraling, mazelike alleyways, you turn a corner. You encounter a dimly lit bazaar that has closed for the night. A mob is there, punching and shoving each other, looting the scraps remaining in the stalls. They notice your party and begin heading your way with nefarious grins.
+As you are moving quickly through these spiraling, mazelike alleyways, you turn a corner. You encounter a dimly lit bazaar that has closed for the night. A mob is there, punching and shoving each other, looting the scraps remaining in the stalls. They notice your party and begin heading your way with nefarious grins. There must be at least fifteen of them.
 
-They immediately notice the Bishop and begin shouting and pointing at him. He cowers behind you. As you look behind, with thoughts of escape, Rafferty lets you know, &quot;There&#39;s no other way. We have to get through this district.&quot; The crowd is close now, and they begin to reach out past you, toward the bishop.
+They immediately notice the Bishop and begin shouting and pointing at him.  They grab onto his robe and you must tear them off. He cowers behind you. As you look behind, with thoughts of escape, Rafferty lets you know, &quot;There&#39;s no other way. We have to get through this district.&quot; The crowd is close now, and they begin to reach out past you, toward the bishop.
 
 You shout, &quot;Protect the bishop. Turtle formation!&quot; (if: $compan is 1)[Karos leaps to stand in front of the bishop and draws his axes, taking a defensive posture.](else-if: $compan is 2)[Loren leaps to stand in front of the bishop and draws her bow, taking a defensive posture.](else:)[Error, no companion set] You stand shoulder to shoulder with (if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[Error, no companion set], pushing the bishop back.
 
@@ -1718,7 +1718,7 @@ You must get through this crowd.
 
 The open coutyard path becomes increasingly narrow, as you are surrounded by rundown buildings. &quot;This way!&quot;, Rafferty instructs. You party turns sharply. It&#39;s hard to see more than a few feet ahead of you. &quot;Now turn left,&quot; says Rafferty. You follow. Rafferty continues to shout out directions to you for some time. Your party is rapidly changing directions and it isn&#39;t long before you&#39;ve completely lost your bearings, relying, now, entirely on the bishop.
 
-As you are moving quickly through these spiraling, mazelike alleyways, you turn a corner. You encounter a dimly lit bazaar that has closed for the night. A mob is there, punching and shoving each other, looting the scraps remaining in the stalls. They notice your party and begin heading your way with nefarious grins.
+As you are moving quickly through these spiraling, mazelike alleyways, you turn a corner. You encounter a dimly lit bazaar that has closed for the night. A mob is there, punching and shoving each other, looting the scraps remaining in the stalls. They notice your party and begin heading your way with nefarious grins. There must be at least fifteen of them.
 
 They see Rafferty and begin shouting and pointing at him. As you look behind, with thoughts of escape, Rafferty lets you know, &quot;There&#39;s no other way. We have to get through this district.&quot; The crowd is close now, and they begin to reach out past you, toward the bishop.
 
@@ -1731,7 +1731,31 @@ You must get through this crowd.
 (link: &quot;Ask Party For Advice&quot;) [(set: $previousPassage to &quot;Choose To Lead Yourself&quot;)(goto:&quot;Ask Party For Advice&quot;)]
 [[Defend The Bishop And Passively Move Through]]
 (if: $compan is 1)[(link: &quot;Tell Karos To Fight Them Off&quot;) [(goto:&quot;Tell Karos To Fight Them Off&quot;)]](else-if: $compan is 2)[(link: &quot;Tell Loren To Persuade Them&quot;) [(goto:&quot;Tell Loren To Persuade Them&quot;)]](else:)[Error, no companion set]
-(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Choose To Lead Yourself&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="107" name="Tell Karos To Fight Them Off" tags="" position="419.66666666666663,6988.666666666666" size="100,100">test1</tw-passagedata><tw-passagedata pid="108" name="Tell Loren To Persuade Them" tags="" position="671.3333333333334,6990.333333333333" size="100,100">test2</tw-passagedata><tw-passagedata pid="109" name="Defend The Bishop And Passively Move Through" tags="" position="548,6985.333333333333" size="100,100">test</tw-passagedata></tw-storydata>
+(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Choose To Lead Yourself&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="107" name="Tell Karos To Fight Them Off" tags="" position="419.66666666666663,6988.666666666666" size="100,100">test1</tw-passagedata><tw-passagedata pid="108" name="Tell Loren To Persuade Them" tags="" position="671.3333333333334,6990.333333333333" size="100,100">&quot;Loren, use that silver tongue and try to convince them to let us through. I&#39;m counting on you.&quot;
+
+Loren looks exasperated. &quot;This . . . doesn&#39;t seem feasible. Not something I&#39;m used to, to be honest. I mean, this is drastically different than trying to convice a group of drunkards to move from one pub to the next.&quot; She sighs. &quot;But if you think, it&#39;s best, I&#39;m willing to give it a shot.&quot;
+
+(set: $companApproval to $companApproval -1)&lt;i&gt;(Loren disapproves)&lt;/i&gt;
+
+# Gets frutrated because she can&#39;t get through them and eventually shoots arrow right by their ears.</tw-passagedata><tw-passagedata pid="109" name="Defend The Bishop And Passively Move Through" tags="" position="548,6985.333333333333" size="100,100">&quot;Let&#39;s not hurt anyone if we don&#39;t need to. There&#39;s many villains here and we&#39;ll be risking more than we can handle.&quot;
+
+(set: $bishopApproval to $bishopApproval -1)&lt;i&gt;(Bishop Rafferty disapproves)&lt;/i&gt;
+
+The bishop is twitching with anger as you and (if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[Error, no companion set] flank him on bath sides. You shield is drawn high and close, whereas (if: $compan is 1)[Karos hold both axes out in a parrying posture.](else-if: $compan is 2)[Loren holds her long knife out in a parrying posture.](else:)[Error, no companion set]
+
+&quot;Let&#39;s move.&quot; Slowly, your party advances forward through the crowd. It is heated and chaotic. Many try to reach and grab at the defenseless Rafferty. You and (if: $compan is 1)[your barbarian companion](else-if: $compan is 2)[your rogue companion](else:)[Error, no companion set] do your best to intercept these attacks. 
+
+Rafferty spits at one of those who attempts to reach at him. To this, the ruffian voraciously attacks back, lunging at the bishop. Just in time, you push back the ruffian with the your shield and he falls to the ground. Another comes for the other side, wielding a thin blade. (if: $compan is 1)[Karos responds by knocking the blade out of his hand with one heavy swing.](else-if: $compan is 2)[Loren parries the attack and twists the opponent&#39;s hand, causing him to release his blade.](else:)[Error, no companion set] At this, some of the mob takes a step back.
+
+You continue on, staying close to the bishop. You start approaching the other end of the bazaar, where the road narrows again. Your party turns around so that Rafferty is now within the path, with you and (if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[Error, no companion set] standing in the way of what remains of the crowd.
+
+Their attempts to reach Rafferty unsuccesful, they go back to looting the stalls and causing harm to one another.
+
+&quot;The religious distrcit is just a little futher this way, let&#39;s keep going.&quot;
+
+[[Continue On|Religious Distrcit]]
+
+(if: $compan is 1)[](else-if: $compan is 2)[](else:)[Error, no companion set]</tw-passagedata><tw-passagedata pid="110" name="Religious Distrcit" tags="" position="546.3333333333334,7173.666666666667" size="100,100">You contine down more winding corridiors. The roads finally starts to open up some. As you enter the Religious District, you see in the dim light ornate articheture and stained glass throughout, a stark contrast to what you&#39;ve been used to within Coreston.</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
