@@ -1731,13 +1731,31 @@ You must get through this crowd.
 (link: &quot;Ask Party For Advice&quot;) [(set: $previousPassage to &quot;Choose To Lead Yourself&quot;)(goto:&quot;Ask Party For Advice&quot;)]
 [[Defend The Bishop And Passively Move Through]]
 (if: $compan is 1)[(link: &quot;Tell Karos To Fight Them Off&quot;) [(goto:&quot;Tell Karos To Fight Them Off&quot;)]](else-if: $compan is 2)[(link: &quot;Tell Loren To Persuade Them&quot;) [(goto:&quot;Tell Loren To Persuade Them&quot;)]](else:)[Error, no companion set]
-(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Choose To Lead Yourself&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="107" name="Tell Karos To Fight Them Off" tags="" position="419.66666666666663,6988.666666666666" size="100,100">test1</tw-passagedata><tw-passagedata pid="108" name="Tell Loren To Persuade Them" tags="" position="671.3333333333334,6990.333333333333" size="100,100">&quot;Loren, use that silver tongue and try to convince them to let us through. I&#39;m counting on you.&quot;
+(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Choose To Lead Yourself&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="107" name="Tell Karos To Fight Them Off" tags="" position="419.66666666666663,6988.666666666666" size="100,100">&quot;Karos, these people should be no match for you. Carve a path for us. I&#39;m counting on you.&quot;
+
+Karos looks down and contemplates for a few moments. He finally shakes his head, then looks up to you. &quot;I do not see this as a wise course, Captain,&quot; he says. &quot;There are so many of them. You put much stock into my strength.&quot; He unsheathes his spear and steps forward. He looks over his shoulder and says, &quot;I will try not to disappoint.&quot;</tw-passagedata><tw-passagedata pid="108" name="Tell Loren To Persuade Them" tags="" position="671.3333333333334,6990.333333333333" size="100,100">&quot;Loren, use that silver tongue and try to convince them to let us through. I&#39;m counting on you.&quot;
 
 Loren looks exasperated. &quot;This . . . doesn&#39;t seem feasible. Not something I&#39;m used to, to be honest. I mean, this is drastically different than trying to convice a group of drunkards to move from one pub to the next.&quot; She sighs. &quot;But if you think, it&#39;s best, I&#39;m willing to give it a shot.&quot;
 
 (set: $companApproval to $companApproval -1)&lt;i&gt;(Loren disapproves)&lt;/i&gt;
 
-# Gets frutrated because she can&#39;t get through them and eventually shoots arrow right by their ears.</tw-passagedata><tw-passagedata pid="109" name="Defend The Bishop And Passively Move Through" tags="" position="548,6985.333333333333" size="100,100">&quot;Let&#39;s not hurt anyone if we don&#39;t need to. There&#39;s many villains here and we&#39;ll be risking more than we can handle.&quot;
+Loren steps forward and tells them, &quot;Please, if you would settle down and listen I&#39;m sure we can arrange something.&quot; They begin to crowd around her and she looks somewhat disconcerted. &quot;What is it you want from us?&quot;
+
+The crowd shouts and so many voices are speaking at once that it comes out as  garbled mess. Over the rabble, she shouts, &quot;Don&#39;t you want your old lives back? You want your city to be at peace? If you let us through we promise -&quot; The crowd isn&#39;t listening. They continue to shout and reach out toward the bishop. Loren isn&#39;t getting frustrated and flustered.
+
+&quot;Now, please settle down so we can talk about this!&quot; The crowd doesn&#39;t adhere whatsoever and comes dangerously close to Loren. &quot;Alright then, enough of this!&quot;
+
+Loren unsheathes her bow and fires a quick succession of arrows, each one skimming past their heads by just an inch, taking off some hairs with them. The crowd quiets down. &quot;It seems you don&#39;t want to listen to negotiations. Well, let me propose this: if you want to keep your heads, you&#39;ll let us through. Otherwise I&#39;ll be sure to be a tad bit more accurate with my next volley.&quot;
+
+The crowd murmurs angrily but, after much consideration, finally let you all through. They go straight back to looting the stalls and fighting amongst themselves.
+
+&quot;Well done, Loren. Thank you,&quot; you express to her.
+
+&quot;I&#39;m just glad that&#39;s over with. Let&#39;s move on already,&quot; she says. She is sweating and clearly was feeling afraid during the whole of the interaction.
+
+You start approaching the other end of the bazaar, where the road narrows again. Rafferty says, &quot;The religious distrcit is just a little futher this way, let&#39;s keep going.&quot;
+
+[[Continue On|Religious Distrcit]]</tw-passagedata><tw-passagedata pid="109" name="Defend The Bishop And Passively Move Through" tags="" position="548,6985.333333333333" size="100,100">&quot;Let&#39;s not hurt anyone if we don&#39;t need to. There&#39;s many villains here and we&#39;ll be risking more than we can handle.&quot;
 
 (set: $bishopApproval to $bishopApproval -1)&lt;i&gt;(Bishop Rafferty disapproves)&lt;/i&gt;
 
