@@ -1733,7 +1733,23 @@ You must get through this crowd.
 (if: $compan is 1)[(link: &quot;Tell Karos To Fight Them Off&quot;) [(goto:&quot;Tell Karos To Fight Them Off&quot;)]](else-if: $compan is 2)[(link: &quot;Tell Loren To Persuade Them&quot;) [(goto:&quot;Tell Loren To Persuade Them&quot;)]](else:)[Error, no companion set]
 (link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Choose To Lead Yourself&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="107" name="Tell Karos To Fight Them Off" tags="" position="419.66666666666663,6988.666666666666" size="100,100">&quot;Karos, these people should be no match for you. Carve a path for us. I&#39;m counting on you.&quot;
 
-Karos looks down and contemplates for a few moments. He finally shakes his head, then looks up to you. &quot;I do not see this as a wise course, Captain,&quot; he says. &quot;There are so many of them. You put much stock into my strength.&quot; He unsheathes his spear and steps forward. He looks over his shoulder and says, &quot;I will try not to disappoint.&quot;</tw-passagedata><tw-passagedata pid="108" name="Tell Loren To Persuade Them" tags="" position="671.3333333333334,6990.333333333333" size="100,100">&quot;Loren, use that silver tongue and try to convince them to let us through. I&#39;m counting on you.&quot;
+Karos looks down and contemplates for a few moments. He finally shakes his head, then looks up to you. &quot;I do not see this as a wise course, Captain,&quot; he says. &quot;There are so many of them. You put much stock into my strength.&quot; He unsheathes his spear and steps forward. He looks over his shoulder and says, &quot;I will try not to disappoint.&quot;
+
+(set: $companApproval to $companApproval -1)&lt;i&gt;(Karos disapproves)&lt;/i&gt;
+
+Suddenly, Karos lets out a harsh yowl. &quot;Stand back or be forced!&quot; A man with a thin blade seperates him self from the crowd and rushes for your barbarian companion. He manages to manuveur around Karos&#39;s spear, but just before he strikes him, Karos quickly unsheathes one of his hidden knives and throws it straight at the man&#39;s eye. He falls down backwards.
+
+Another man unsheathes a great claymore and begins to charge at Karos. Karos throws his spear straight through the man&#39;s chest, as he also falls. Karos belts a deep and intimidating scream. He unsheathes his axes and yells, &quot;Who else wishes to die today? Make way, or perish.&quot;
+
+The crowd begins to cower at the sight of him. As Karos strides forward, their fear finally takes hold of them and flee. Several run into the surrounding buildings, some hide behind stalls, whereas others sprint down the road you came.
+
+&quot;I knew you could do it, Karos,&quot; you tell him, reassuringly.
+
+&quot;A battle is never a guarantee. If they all attacked me at once, they could have potentially overtaken me. Or, if they instead directed their attacks on you or our bishop, I would&#39;ve been completely out of position to defend you.&quot; Karos sighs. &quot;I thank you. Let us move on.&quot;
+
+You start approaching the other end of the bazaar, where the road narrows again. Rafferty says, &quot;The religious distrcit is just a little futher this way, let&#39;s keep going.&quot;
+
+[[Continue On|Religious Distrcit]]</tw-passagedata><tw-passagedata pid="108" name="Tell Loren To Persuade Them" tags="" position="671.3333333333334,6985.333333333333" size="100,100">&quot;Loren, use that silver tongue and try to convince them to let us through. I&#39;m counting on you.&quot;
 
 Loren looks exasperated. &quot;This . . . doesn&#39;t seem feasible. Not something I&#39;m used to, to be honest. I mean, this is drastically different than trying to convice a group of drunkards to move from one pub to the next.&quot; She sighs. &quot;But if you think, it&#39;s best, I&#39;m willing to give it a shot.&quot;
 
