@@ -1814,9 +1814,27 @@ You ponder his desire.
 
 &quot;Lead the way then. . .&quot;
 
-As you begin to walk through the district, Rafferty looks straight down, avoiding the look of his colleagues. You hear several whispers from the surrounding clergymen and many seem actively afraid of your party.</tw-passagedata><tw-passagedata pid="112" name="Leave The Bishop" tags="" position="619.3333333333334,7346.333333333333" size="100,100">Double-click this passage to edit it.
+As you begin to walk through the district, Rafferty looks straight down, avoiding the look of his colleagues. You hear several whispers from the surrounding clergymen and many seem actively afraid of your party. You and (if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[error, No companion set] keep your eyes set on the shadows, looking for any sign of danger.
 
-(set: $bishopApproval to $bishopApproval +1)&lt;i&gt;(Bishop Rafferty approves)&lt;/i&gt;</tw-passagedata></tw-storydata>
+After about a hundred yards of walking on an upward slope of fine cobblestone, you find yourself at a tall pointed building. It has colorful stained glass and two statues at its front; one of a woman with a blindfold, standing straight up and looking down at a book in her hands, and the other of a man striking an anvil, with a large hammer in one hand and the other in a sling.
+
+The bishop immediately walks toward the entrance. Just before he enters, he looks back to you and stoically says, &quot;Thank you for your assistance.&quot; He then enters the building and slams the large door behind you.
+
+At this, it seems you&#39;ve completed your task. You look to (if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[error, No companion set] and give (if: $compan is 1)[him](else-if: $compan is 2)[her](else:)[error, No companion set] a nod of approval and a pat on the back.
+
+(if: $compan is 1)[Karos flashes a light smile. &quot;A worthy task, that was. I am thankful I don&#39;t have to listen to that man&#39;s whimpering anymore. We best get back to collect our reward and get some rest.&quot; You sense his posture relaxes a bit and his eyes lose their sense of perpetual vigilence.](else-if: $compan is 2)[She returns by giving you a large smile and says, &quot;You mean we&#39;ve finally done it? We don&#39;t have to serve that pompous fool anymore?&quot; She leaps into the air and does a quick little jig. &quot;Ahaha! Let&#39;s go collect our reward, then, shall we?](else:)[error, No companion set]
+
+[[Journey Back To Collect Your Reward]]</tw-passagedata><tw-passagedata pid="112" name="Leave The Bishop" tags="" position="619.3333333333334,7346.333333333333" size="100,100">&quot;Okay, Rafferty. We will leave you be. Please be safe on the last leg of your journey.&quot;
+
+(set: $bishopApproval to $bishopApproval +1)&lt;i&gt;(Bishop Rafferty approves)&lt;/i&gt;
+
+&quot;Thank you.&quot; With a dispassionate handshake and a nod of approval, the Bishop quickly makes his way up a steep pathway of fine cobblestone. It isn&#39;t long before he dissapears into the crowd of finely dressed clergymen.
+
+At this, it seems you&#39;ve completed your task. You look to (if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[error, No companion set] and give (if: $compan is 1)[him](else-if: $compan is 2)[her](else:)[error, No companion set] a nod of approval and a pat on the back.
+
+(if: $compan is 1)[Karos flashes a light smile. &quot;A worthy task, that was. I am thankful I don&#39;t have to listen to that man&#39;s whimpering anymore. We best get back to collect our reward and get some rest.&quot; You sense his posture relaxes a bit and his eyes lose their sense of perpetual vigilence.](else-if: $compan is 2)[She returns by giving you a large smile and says, &quot;You mean we&#39;ve finally done it? We don&#39;t have to serve that pompous fool anymore?&quot; She leaps into the air and does a quick little jig. &quot;Ahaha! Let&#39;s go collect our reward, then, shall we?](else:)[error, No companion set]
+
+[[Journey Back To Collect Your Reward]]</tw-passagedata><tw-passagedata pid="113" name="Journey Back To Collect Your Reward" tags="" position="534.3333333333334,7489.666666666666" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
