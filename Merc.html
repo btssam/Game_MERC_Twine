@@ -11,7 +11,7 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="Merc" startnode="1" creator="Twine" creator-version="2.3.13" ifid="214A01F5-A9D6-4B1E-B58B-BC2D2486FEDB" zoom="0.6" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+<tw-storydata name="Merc" startnode="1" creator="Twine" creator-version="2.3.14" ifid="214A01F5-A9D6-4B1E-B58B-BC2D2486FEDB" zoom="0.6" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
 
 
 
@@ -419,6 +419,12 @@ Along the river, you see a bronze colored rock, a mushroom with a faint green gl
 	(else-if: $compan is 2)[Loren. She quietly says, &quot;They are not at all happy with us. I doubt there&#39;s anything we could say to convince them to let through. We can&#39;t deal with them head on. We need a different approach. Best try not to upset them, to say the least.&quot;](else:)[Error, no companion set] You look over your shoulder and say to Rafferty, &quot;Any thoughts, bishop?&quot;
 	
 	He looks as angry as he&#39;s ever been. He snarls at you and says, &quot;As far as I&#39;m concerned, these people need to be punished! They are just a perfect exemplar for what has become of this city. There was a day when a clergy member would be treated with respect and tithes. Absolute filth, they are. I would see them suffer.&quot;
+]
+(if: $previousPassage is &quot;Religious District&quot;)[
+	You exchange a few words with (if: $compan is 1)[Karos. He looks toward the defenseless bishop. &quot;I&#39;m not sure what is best. Perhaps we best see our task through to its end. We&#39;ve come so far already. Yet, our bishop can be quite . . . particular with his desires.]
+	(else-if: $compan is 2)[Loren. She looks around at the opulence of the surrounding district. &quot;Well, if any area of Coreston would be safe enough to leave our man behind, this would be it. On the other hand, this town has been inordinately dangerous up to this point. It&#39;s hard to know what might jump out from the shadows. It&#39;s up to you, &#39;Cap.](else:)[Error, no companion set] You look over to Rafferty and say, &quot;What do you think about this?&quot;
+	
+	Rafferty has a look of complete exhaustian and desperation. &quot;Look at me. I&#39;m already covered in the filth of our travels and tribulations. What do you think my colleagues would think of me if I&#39;m surrounded by blade wielding ruffians. I would not have it. I can get on by myself.&quot;
 ]
 (link: &quot;Back&quot;)[(goto:$previousPassage)]</tw-passagedata><tw-passagedata pid="32" name="Investigate Rock" tags="" position="67,2553" size="100,100">You approach the bronze colored rock. It looks to be about fifty pounds, not something you could pick up and take with you. Upon further examination, it also seems to have some blue, green, and pink colors present. You determine it may be runite ore, a valuable material, but of no use to you now with no means of collecting it.
 
@@ -1414,7 +1420,7 @@ After a few brief moments, the wind and light dies down. You look out to the rob
 
 [[Ask About Him|Who are you?]]
 [[Ask What He&#39;s Doing Here|What are you doing here?]]
-[[Continue On Your Journey]]</tw-passagedata><tw-passagedata pid="87" name="Who are you?" tags="" position="981.6666666666666,5911" size="100,100">(set: $manInfo to 1)You ask the man, &quot;Who are you?&quot;
+[[Continue On Your Journey]]</tw-passagedata><tw-passagedata pid="87" name="Who are you?" tags="" position="981,5911" size="100,100">(set: $manInfo to 1)You ask the man, &quot;Who are you?&quot;
 
 &quot;I am Pyramus, a Wizard.&quot; He responds. &quot;I am the Court Wizard at Coreston. There, I assist the King in any sort of magical troubles he has. I have studied alchemy and spellcasting for centuries.&quot;
 
@@ -1689,9 +1695,9 @@ You exchange a quick look of concern with (if: $compan is 1)[Karos](else-if: $co
 (link: &quot;Ask Party For Advice&quot;) [(set: $previousPassage to &quot;Enter The City&quot;)(goto:&quot;Ask Party For Advice&quot;)]
 [[Let Rafferty Lead]]
 [[Choose To Lead Yourself]]
-(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Enter The City&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="105" name="Let Rafferty Lead" tags="" position="468,6830.333333333333" size="100,100">&quot;Okay, Rafferty, you can lead. Let&#39;s just get through here quickly and get you back to the monastery.&quot;
+(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Enter The City&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="105" name="Let Rafferty Lead" tags="" position="468,6830" size="100,100">&quot;Okay, Rafferty, you can lead. Let&#39;s just get through here quickly and get you back to the monastery.&quot;
 
-(set: $bishopApproval to $bishopApproval -1)&lt;i&gt;(Bishop Rafferty approves)&lt;/i&gt;
+(set: $bishopApproval to $bishopApproval +1)&lt;i&gt;(Bishop Rafferty approves)&lt;/i&gt;
 
 You light a torch and hand it to the bishop. &quot;Thank you. We should get back to the monastery soon enough,&quot; he says. You and (if: $compan is 1)[Karos](else-if: $compan is 2)[Loren] make your way behind Rafferty as he begins down the path. Your companion looks to you with some concern.
 
@@ -1710,7 +1716,7 @@ You must get through this crowd.
 (link: &quot;Ask Party For Advice&quot;) [(set: $previousPassage to &quot;Let Rafferty Lead&quot;)(goto:&quot;Ask Party For Advice&quot;)]
 [[Defend The Bishop And Passively Move Through]]
 (if: $compan is 1)[(link: &quot;Tell Karos To Fight Them Off&quot;) [(goto:&quot;Tell Karos To Fight Them Off&quot;)]](else-if: $compan is 2)[(link: &quot;Tell Loren To Persuade Them&quot;) [(goto:&quot;Tell Loren To Persuade Them&quot;)]](else:)[Error, no companion set]
-(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Let Rafferty Lead&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="106" name="Choose To Lead Yourself" tags="" position="618,6833.666666666667" size="100,100">&quot;I don&#39;t believe it is safe for you to lead. Please, just instruct me where to go and I will take point.&quot;
+(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Let Rafferty Lead&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="106" name="Choose To Lead Yourself" tags="" position="618,6833" size="100,100">&quot;I don&#39;t believe it is safe for you to lead. Please, just instruct me where to go and I will take point.&quot;
 
 (set: $bishopApproval to $bishopApproval -1)&lt;i&gt;(Bishop Rafferty disapproves)&lt;/i&gt;
 
@@ -1731,7 +1737,7 @@ You must get through this crowd.
 (link: &quot;Ask Party For Advice&quot;) [(set: $previousPassage to &quot;Choose To Lead Yourself&quot;)(goto:&quot;Ask Party For Advice&quot;)]
 [[Defend The Bishop And Passively Move Through]]
 (if: $compan is 1)[(link: &quot;Tell Karos To Fight Them Off&quot;) [(goto:&quot;Tell Karos To Fight Them Off&quot;)]](else-if: $compan is 2)[(link: &quot;Tell Loren To Persuade Them&quot;) [(goto:&quot;Tell Loren To Persuade Them&quot;)]](else:)[Error, no companion set]
-(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Choose To Lead Yourself&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="107" name="Tell Karos To Fight Them Off" tags="" position="419.66666666666663,6988.666666666666" size="100,100">&quot;Karos, these people should be no match for you. Carve a path for us. I&#39;m counting on you.&quot;
+(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Choose To Lead Yourself&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="107" name="Tell Karos To Fight Them Off" tags="" position="419,6984.666666666667" size="100,100">&quot;Karos, these people should be no match for you. Carve a path for us. I&#39;m counting on you.&quot;
 
 Karos looks down and contemplates for a few moments. He finally shakes his head, then looks up to you. &quot;I do not see this as a wise course, Captain,&quot; he says. &quot;There are so many of them. You put much stock into my strength.&quot; He unsheathes his spear and steps forward. He looks over his shoulder and says, &quot;I will try not to disappoint.&quot;
 
@@ -1749,7 +1755,7 @@ The crowd begins to cower at the sight of him. As Karos strides forward, their f
 
 You start approaching the other end of the bazaar, where the road narrows again. Rafferty says, &quot;The religious distrcit is just a little futher this way, let&#39;s keep going.&quot;
 
-[[Continue On|Religious Distrcit]]</tw-passagedata><tw-passagedata pid="108" name="Tell Loren To Persuade Them" tags="" position="671.3333333333334,6985.333333333333" size="100,100">&quot;Loren, use that silver tongue and try to convince them to let us through. I&#39;m counting on you.&quot;
+[[Continue On|Religious District]]</tw-passagedata><tw-passagedata pid="108" name="Tell Loren To Persuade Them" tags="" position="671,6976.666666666667" size="100,100">&quot;Loren, use that silver tongue and try to convince them to let us through. I&#39;m counting on you.&quot;
 
 Loren looks exasperated. &quot;This . . . doesn&#39;t seem feasible. Not something I&#39;m used to, to be honest. I mean, this is drastically different than trying to convice a group of drunkards to move from one pub to the next.&quot; She sighs. &quot;But if you think, it&#39;s best, I&#39;m willing to give it a shot.&quot;
 
@@ -1771,7 +1777,7 @@ The crowd murmurs angrily but, after much consideration, finally let you all thr
 
 You start approaching the other end of the bazaar, where the road narrows again. Rafferty says, &quot;The religious distrcit is just a little futher this way, let&#39;s keep going.&quot;
 
-[[Continue On|Religious Distrcit]]</tw-passagedata><tw-passagedata pid="109" name="Defend The Bishop And Passively Move Through" tags="" position="548,6985.333333333333" size="100,100">&quot;Let&#39;s not hurt anyone if we don&#39;t need to. There&#39;s many villains here and we&#39;ll be risking more than we can handle.&quot;
+[[Continue On|Religious District]]</tw-passagedata><tw-passagedata pid="109" name="Defend The Bishop And Passively Move Through" tags="" position="548,6985" size="100,100">&quot;Let&#39;s not hurt anyone if we don&#39;t need to. There&#39;s many villains here and we&#39;ll be risking more than we can handle.&quot;
 
 (set: $bishopApproval to $bishopApproval -1)&lt;i&gt;(Bishop Rafferty disapproves)&lt;/i&gt;
 
@@ -1787,9 +1793,30 @@ Their attempts to reach Rafferty unsuccesful, they go back to looting the stalls
 
 &quot;The religious distrcit is just a little futher this way, let&#39;s keep going.&quot;
 
-[[Continue On|Religious Distrcit]]
+[[Continue On|Religious District]]
 
-(if: $compan is 1)[](else-if: $compan is 2)[](else:)[Error, no companion set]</tw-passagedata><tw-passagedata pid="110" name="Religious Distrcit" tags="" position="546.3333333333334,7173.666666666667" size="100,100">You contine down more winding corridiors. The roads finally starts to open up some. As you enter the Religious District, you see in the dim light ornate articheture and stained glass throughout, a stark contrast to what you&#39;ve been used to within Coreston.</tw-passagedata></tw-storydata>
+(if: $compan is 1)[](else-if: $compan is 2)[](else:)[Error, no companion set]</tw-passagedata><tw-passagedata pid="110" name="Religious District" tags="" position="541.0000000000001,7194.666666666666" size="100,100">You continue down more winding corridiors. The road finally starts to open up some. As you enter the Religious District, you see in the dim light ornate articheture and stained glass throughout. This district is a stark contrast to what you&#39;ve been used to within Coreston.
+
+&quot;I would not be seen with you in this district,&quot; says Rafferty abruptly. &quot;The monastery is but a few paces away. I&#39;ll be able to get there fine.&quot;
+
+You ponder his desire.
+
+(link: &quot;Ask Party For Advice&quot;) [(set: $previousPassage to &quot;Religious District&quot;)(goto:&quot;Ask Party For Advice&quot;)]
+[[Escort The Bishop]]
+[[Leave The Bishop]]
+(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Religious District&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="111" name="Escort The Bishop" tags="" position="469.33333333333337,7346.333333333333" size="100,100">&quot;Please, I must insist. After all we&#39;ve been through I wouldn&#39;t have killed right at the end&quot;, you command.
+
+&quot;You&#39;ve got to be . . .&quot;, Rafferty sighs loudly.
+
+(set: $bishopApproval to $bishopApproval -1)&lt;i&gt;(Bishop Rafferty disapproves)&lt;/i&gt;
+
+(set: $karma to $karma +1)&lt;i&gt; (Your karma increases) &lt;/i&gt;
+
+&quot;Lead the way then. . .&quot;
+
+As you begin to walk through the district, Rafferty looks straight down, avoiding the look of his colleagues. You hear several whispers from the surrounding clergymen and many seem actively afraid of your party.</tw-passagedata><tw-passagedata pid="112" name="Leave The Bishop" tags="" position="619.3333333333334,7346.333333333333" size="100,100">Double-click this passage to edit it.
+
+(set: $bishopApproval to $bishopApproval +1)&lt;i&gt;(Bishop Rafferty approves)&lt;/i&gt;</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
