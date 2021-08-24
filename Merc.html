@@ -644,8 +644,8 @@ Loren looks uncomfortable. &quot;Loren Feth, your bishophood.&quot; She curtseys
 
 [[Backtrack To Forest Entrance]] </tw-passagedata><tw-passagedata pid="43" name="Backtrack To Forest Entrance" tags="Ch4" position="503,4248" size="100,100">(if: $isChased is 1)[(set: $isChased to 0)You see your companion come running back just as you prepare to leave with Rafferty. &quot;I think I managed to lose their trail.&quot; (if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[Error, No companion set] says with some exhaustation. (if: $compan is 1)[&quot;That was almost fun.&quot; Karos stretches his neck from one side to the other and cracks his knuckles.](else-if: $compan is 2)[&quot;I&#39;m not sure if that was the most elegant solution, Captain. It would&#39;ve been nice if we could have stuck together.&quot; Loren brushes some sticks and leaves out of her hair and rubs her shoulder.]
 (if: $compan is 1)[
-(set: $companApproval to $companApproval+1)&lt;i&gt;(Karos approves)&lt;/i&gt;](else-if: $compan is 2)[
-(set: $companApproval to $companApproval-1)&lt;i&gt;(Loren disapproves)&lt;/i&gt;](else:)[
+(set: $compApproval to $compApproval+1)&lt;i&gt;(Karos approves)&lt;/i&gt;](else-if: $compan is 2)[
+(set: $compApproval to $compApproval-1)&lt;i&gt;(Loren disapproves)&lt;/i&gt;](else:)[
 Error, No companion set]
 ]
 You lead your companion and Rafferty through the thick woods, back toward the forest entrance. You notice the sun starting to lower in the sky and that it must be early afternoon.
@@ -655,7 +655,7 @@ You realize, after about an hour of silent trudging, that nobody has spoken a wo
 [[Check On Bishop Rafferty]]
 [[Check On Your Companion]]
 [[Continue Silently]]
-(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Backtrack To Forest Entrance&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="44" name="Instruct Companion To Use Mushroom On Guard Ogre" tags="" position="129,3773" size="100,100">&lt;i&gt;(The mysterious mushroom is removed from your inventory)&lt;/i&gt;
+(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Backtrack To Forest Entrance&quot;)(goto:&quot;Check Status&quot;)]x</tw-passagedata><tw-passagedata pid="44" name="Instruct Companion To Use Mushroom On Guard Ogre" tags="" position="129,3773" size="100,100">&lt;i&gt;(The mysterious mushroom is removed from your inventory)&lt;/i&gt;
 
 (if: $compan is 1)[&quot;Rub the mushroom upon your axe and prick the ogre.&quot;
 
@@ -760,7 +760,7 @@ You search the ogre.
 
 After observing the scene, the two of you continue deeper into the woods, more wary and ready for what may lie ahead.
 
-[[Continue Deeper Into the Woods|Front Entrance]]</tw-passagedata><tw-passagedata pid="50" name="Interrogate Ogre" tags="" position="826,2598" size="100,100">The ogre is knelt, slumped and bleeding. It seems to have recognized its defeat and has submitted to the whim of you and (if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[Error, no companion set.].
+[[Continue Deeper Into the Woods|Front Entrance]]</tw-passagedata><tw-passagedata pid="50" name="Interrogate Ogre" tags="" position="849.3333333333334,2521.3333333333335" size="100,100">The ogre is knelt, slumped and bleeding. It seems to have recognized its defeat and has submitted to the whim of you and (if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[Error, no companion set.].
 
 What do you do?
 
@@ -1001,7 +1001,7 @@ The ogres drop to their knees and roar in unison, loud enough that you think the
 
 You hear them stampeding and roaring away for quite some time. You and (if: $compan is 1)[Karos](else:)[Loren] share a look of desperate, exasperated gratitude.
 
-(set: $companApproval to $companApproval +1)&lt;i&gt;((if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[Error, No companion set] approves)&lt;/i&gt;
+(set: $compApproval to $compApproval +1)&lt;i&gt;((if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[Error, No companion set] approves)&lt;/i&gt;
 
 [[Investigate Hut|Investigate Hut Two]]</tw-passagedata><tw-passagedata pid="63" name="Sneak Around Wall To Side Entrance" tags="" position="749,3735" size="100,100">(if: $compan is 1)[You signal to your companion to stay low and move toward the side entrance. You both lower your heads and walk slowly and lightly along the crude wall.
 
@@ -1027,7 +1027,7 @@ It releases Karos, grasping the back of its head as it falls to the side. Karos 
 
 &quot;No, it is okay.&quot; He says with his voice and head low. &quot;Just . . . perhaps it would&#39;ve been better to engage them head on.&quot;
 
-(set: $companApproval to $companApproval-1)&lt;i&gt;(Karos disapproves)&lt;/i&gt;
+(set: $compApproval to $compApproval-1)&lt;i&gt;(Karos disapproves)&lt;/i&gt;
 ](else-if: $compan is 2)[You signal to your companion to stay low and move toward the side entrance. You both lower your heads and walk slowly and lightly along the crude wall.
 
 &quot;Follow my lead&quot;, whispers Loren. She walks up ahead of you, dipping low to ground, moving ever subtley.
@@ -1044,7 +1044,7 @@ You both drop down, on the opposite side of the wall, near the side entrance and
 
 You look back at her with true wonder and gratitude. &quot;Deftly done, Loren.&quot; You say, still keeping your voice low.
 
-(set: $companApproval to $companApproval+1)&lt;i&gt;(Loren approves)&lt;/i&gt;
+(set: $compApproval to $compApproval+1)&lt;i&gt;(Loren approves)&lt;/i&gt;
 ](else:)[Error, no companion set.]
 [[Investigate Hut|Investigate Hut Two]]
 [[Back|Inv Ogres]]</tw-passagedata><tw-passagedata pid="64" name="Investigate Hut Two" tags="" position="748,3877" size="100,100">You sneak up to the entrance of the hut and peer in.
@@ -1193,7 +1193,7 @@ You reassure your party of the path ahead of you. &quot;We have a fair bit left 
 
 &lt;i&gt;Loren approves&lt;/i&gt;
 ](else:)[Error, No companion set]
-You continue leading your party back to your carriage.(set: $companApproval to $companApproval +1)
+You continue leading your party back to your carriage.(set: $compApproval to $compApproval +1)
 
 [[Continue On|Back To Carriage]]</tw-passagedata><tw-passagedata pid="69" name="Continue Silently" tags="" position="663,4407" size="100,100">You and your party spend your time taking in the sights of the woods. It is a nice relief from all of the chaos and effort of the previous few days. 
 
@@ -1572,11 +1572,11 @@ Your party continues along the dirt path, making your way toward Coreston.
 
 Two uneasy nights and long days pass before you approach the city gates. You pass a few caravans and weary travellers at the tail end of your journey.
 
-[[Arrive At Coreston]]</tw-passagedata><tw-passagedata pid="98" name="Make Companion Carry It" tags="" position="202,6127" size="100,100">&quot;(if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[Error, no companion set]! You&#39;ll have to carry that thing for us.&quot;
+[[Arrive At Coreston]]</tw-passagedata><tw-passagedata pid="98" name="Make Companion Carry It" tags="" position="202,6125.333333333333" size="100,100">&quot;(if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[Error, no companion set]! You&#39;ll have to carry that thing for us.&quot;
 
 (if: $compan is 1)[He](else-if: $compan is 2)[She](else:)[Error, no companion set] looks down, grimaces, then hesitantly picks up the heavy, oblong egg.
 
-(set: $companApproval to $companApproval -1)(if: $compan is 1)[&lt;i&gt;(Karos disapproves)&lt;/i&gt;](else-if: $compan is 2)[&lt;i&gt;(Loren disapproves)&lt;/i&gt;](else:)[Error, no companion set]
+(set: $compApproval to $compApproval -1)(if: $compan is 1)[&lt;i&gt;(Karos disapproves)&lt;/i&gt;](else-if: $compan is 2)[&lt;i&gt;(Loren disapproves)&lt;/i&gt;](else:)[Error, no companion set]
 
 Your party continues along the dirt path, making your way toward Coreston. Two nights and days must pass until you approach the city gates. By the end of the first night, the egg&#39;s color has changed dramatically to a fiery red. It&#39;s veins are now inches high and thick. It has begun wriggling intermittently, but with some fierceness.
 
@@ -1750,7 +1750,7 @@ You must get through this crowd.
 
 Karos looks down and contemplates for a few moments. He finally shakes his head, then looks up to you. &quot;I do not see this as a wise course, Captain,&quot; he says. &quot;There are so many of them. You put much stock into my strength.&quot; He unsheathes his spear and steps forward. He looks over his shoulder and says, &quot;I will try not to disappoint.&quot;
 
-(set: $companApproval to $companApproval -1)&lt;i&gt;(Karos disapproves)&lt;/i&gt;
+(set: $compApproval to $compApproval -1)&lt;i&gt;(Karos disapproves)&lt;/i&gt;
 
 Suddenly, Karos lets out a harsh yowl. &quot;Stand back or be forced!&quot; A man with a thin blade seperates him self from the crowd and rushes for your barbarian companion. He manages to manuveur around Karos&#39;s spear, but just before he strikes him, Karos quickly unsheathes one of his hidden knives and throws it straight at the man&#39;s eye. He falls down backwards.
 
@@ -1768,7 +1768,7 @@ You start approaching the other end of the bazaar, where the road narrows again.
 
 Loren looks exasperated. &quot;This . . . doesn&#39;t seem feasible. Not something I&#39;m used to, to be honest. I mean, this is drastically different than trying to convice a group of drunkards to move from one pub to the next.&quot; She sighs. &quot;But if you think, it&#39;s best, I&#39;m willing to give it a shot.&quot;
 
-(set: $companApproval to $companApproval -1)&lt;i&gt;(Loren disapproves)&lt;/i&gt;
+(set: $compApproval to $compApproval -1)&lt;i&gt;(Loren disapproves)&lt;/i&gt;
 
 Loren steps forward and tells them, &quot;Please, if you would settle down and listen I&#39;m sure we can arrange something.&quot; They begin to crowd around her and she looks somewhat disconcerted. &quot;What is it you want from us?&quot;
 
@@ -1833,9 +1833,11 @@ At this, it seems you&#39;ve completed your task. You look to (if: $compan is 1)
 
 (if: $compan is 1)[Karos flashes a light smile. &quot;A worthy task, that was. I am thankful I don&#39;t have to listen to that man&#39;s whimpering anymore. We best get back to collect our reward and get some rest.&quot; You sense his posture relaxes a bit and his eyes lose their sense of perpetual vigilence.](else-if: $compan is 2)[She returns by giving you a large smile and says, &quot;You mean we&#39;ve finally done it? We don&#39;t have to serve that pompous fool anymore?&quot; She leaps into the air and does a quick little jig. &quot;Ahaha! Let&#39;s go collect our reward, then, shall we?](else:)[error, No companion set]
 
-[[Journey Back To Collect Your Reward]]</tw-passagedata><tw-passagedata pid="112" name="Leave The Bishop" tags="" position="619,7346" size="100,100">&quot;Okay, Rafferty. We will leave you be. Please be safe on the last leg of your journey.&quot;
+[[Journey Back To Collect Your Reward]]</tw-passagedata><tw-passagedata pid="112" name="Leave The Bishop" tags="" position="619,7346" size="100,100">&quot;Okay, Rafferty. We will leave you be. I hope you stay safe on the last leg of your journey.&quot;
 
 (set: $bishopApproval to $bishopApproval +1)&lt;i&gt;(Bishop Rafferty approves)&lt;/i&gt;
+
+(set: $karma to $karma -1)&lt;i&gt; (Your karma decreases) &lt;/i&gt;
 
 &quot;Thank you.&quot; With a dispassionate handshake and a nod of approval, the Bishop quickly makes his way up a steep pathway of fine cobblestone. It isn&#39;t long before he dissapears into the crowd of finely dressed clergymen.
 
@@ -1843,7 +1845,17 @@ At this, it seems you&#39;ve completed your task. You look to (if: $compan is 1)
 
 (if: $compan is 1)[Karos flashes a light smile. &quot;A worthy task, that was. I am thankful I don&#39;t have to listen to that man&#39;s whimpering anymore. We best get back to collect our reward and get some rest.&quot; You sense his posture relaxes a bit and his eyes lose their sense of perpetual vigilence.](else-if: $compan is 2)[She returns by giving you a large smile and says, &quot;You mean we&#39;ve finally done it? We don&#39;t have to serve that pompous fool anymore?&quot; She leaps into the air and does a quick little jig. &quot;Ahaha! Let&#39;s go collect our reward, then, shall we?](else:)[error, No companion set]
 
-[[Journey Back To Collect Your Reward]]</tw-passagedata><tw-passagedata pid="113" name="Journey Back To Collect Your Reward" tags="" position="534,7489" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+[[Journey Back To Collect Your Reward]]</tw-passagedata><tw-passagedata pid="113" name="Journey Back To Collect Your Reward" tags="" position="534,7489" size="100,100">After a several days journey back, you and your companion arrive at your headquarters. Upon a desk in the center of the room are two sacks of coins. You both grab one of the sacks and exchange a few words before heading your own ways.
+
+Congratulations on a successful mission.
+
+[[Epilogue]]</tw-passagedata><tw-passagedata pid="114" name="Epilogue" tags="" position="534,7639" size="100,100">Months have passed since your previous mission in the Ashenbark Woods. You have some time off for next few days and are enjoying your spoils at a tavern. This tavern is called &quot;The Leaky Barrel&quot; and is located in a town just by Coreston.
+
+You are sipping on a tale ale. You begin pondering your last mission and your line of work in general.(if: $karma is &lt; 0)[](else-if: $kamra is &lt; 0)[Several lives were needly lost and just for a simple escort mission. There is a hope, though, that this was all worth it and you perhaps even helped a few people along the way.](else:)[]
+
+(if: $compApproval is &lt; 0)[](else-if: $compApproval is &lt; 0)[](else:)[]
+
+(if: $bishopApproval is &lt; 0)[](else-if: $bishopApproval is &lt; 0)[](else:)[]</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
