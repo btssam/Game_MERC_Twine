@@ -1855,24 +1855,44 @@ You are sipping on a tall ale. You begin pondering your last mission and your li
 
 [[Wander The Tavern]]</tw-passagedata><tw-passagedata pid="115" name="Wander The Tavern" tags="" position="534,7789" size="100,100">You push back your chair and stand up. Stretching your legs, you begin to wander the the tavern. Paint is peeling from the walls and the humidity is relentless. A few scant torches leave the tavern relatively dim. The windows are dreary and foggy, disallowing your from looking out. The bar itself is well stocked, with several shelves of glasses and bottles lining the back wall. The barkeep is a rotund man with a filthy apron. He is cleaning a mug with a even filthier rag. He is repeatedly holding the mug up to torchlight, assessing that it is still too dirty, and wiping it again with his rag. You flick a him a coin to pay for your ale and he gives you a nod, then goes back to his fruitless task.
 
-The tavern itself is relatively crowded. Nearly every seat is filled, from the bar to the tables.
+The tavern itself is relatively crowded. Nearly every seat is filled, from the bar to the tables. There is quite a clamor and you find it hard to even manuvear around. You decide to make your way back to your seat, but find that it has been taken by another patron. Upon further examination, you realize that you recognize 
 (if: $compApproval is &lt; -1)[
-(if: $compan is 1)[]
-(else-if: $compan is 2)[]
+(if: $compan is 1)[him as your previous companion Karos!]
+(else-if: $compan is 2)[her as your previous companion Loren!]
 (else:)[Error, no companion set]
 ]
 (else-if: $compApproval is &gt; 1)[
-(if: $compan is 1)[]
-(else-if: $compan is 2)[]
+(if: $compan is 1)[him as your previous companion Karos!]
+(else-if: $compan is 2)[her as your previous companion Loren!
+
+&quot;Well, well back to our old thieving ways, I see.&quot; You place a light hand on her shoulder and she looks back toward you. &quot;That was my seat, you know.&quot;
+
+She recognizes you and lets and her eyes shoot up. She flashes you her famous smile. &quot;Fancy seeing you here, &#39;Cap!&quot; She mentions something to the man sitting next to her and he shoots up and briskly heads right out of the tavern. She taps upon the empty stool. &quot;Got a seat for you right here, if you&#39;ll take it. You must let me buy a drink!&quot;
+
+You smile and shrug then sit down next to your old companion. &quot;You know that man?&quot;
+
+&quot;Oh heavens no. I just told him that there was a strict two drink limit here and that the tavern down the road has cheaper drinks.&quot;
+
+&quot;There is? What&#39;re we doing here then?&quot;, you begin to stand up out of your chair.
+
+&quot;&#39;Course not!&quot; She sets a hand on you to stop. &quot;You still haven&#39;t learned my ways yet, &#39;Cap, have ya&#39;? Anyway, what brings you out to this neck of the woods?&quot;
+
+&quot;I just had some rare time off and thought I&#39;d try to relax a bit. I could ask you the same question, couldn&#39;t I?&quot;
+
+&quot;What else do you think I do with my days? You expect to see me in a church or a library? No, this is where I do my research.&quot;
+
+You both laugh heartily.
+
+You and Loren exchange pleasant words for well over an hour as well as a few cups of ale. By the end of the exchange you propse that she join the &quot;Rags of the Lotus&quot; as a regular mercenary. She says that she&#39;d be willing to consider it and you leave her with your information.]
 (else:)[Error, no companion set]
 ](else:)[
-(if: $compan is 1)[]
-(else-if: $compan is 2)[]
+(if: $compan is 1)[him as your previous companion Karos!]
+(else-if: $compan is 2)[her as your previous companion Loren!]
 (else:)[Error, no companion set]
 ]
 
 [[Prepare To Leave]]</tw-passagedata><tw-passagedata pid="116" name="Prepare To Leave" tags="" position="534,7939" size="100,100">
-You see the Bishop outside. Though clergy are typically not allowed to drink, he seems already drunk and is in common clothes.(if: $bishopApproval is &lt; -2)[](else-if: $bishopApproval is &gt; 2)[He convinces you to come back in with him for a drink.](else:)[]
+You see the Bishop outside. Though clergy are typically not allowed to drink, he seems already drunk and is in common clothes.(if: $bishopApproval is &lt; -2)[You see a look of rancor upon his face.](else-if: $bishopApproval is &gt; 2)[He convinces you to come back in with him for a drink.](else:)[You attempt to wave him down, but he completely ignores you.]
 
 
 [[The End]]</tw-passagedata><tw-passagedata pid="117" name="The End" tags="" position="534,8089" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
