@@ -1930,16 +1930,60 @@ You both laugh heartily.
 You and Loren exchange pleasant words for well over an hour as well as a few cups of ale. By the end of the exchange you propse that she join the &quot;Rags of the Lotus&quot; as a regular mercenary. She says that she&#39;d be willing to consider it, finding that her current line of work has been, as she says, &quot;inconsistent&quot;, and you leave her with your information.]
 (else:)[Error, no companion set]
 ](else:)[
-(if: $compan is 1)[him as your previous companion Karos!]
-(else-if: $compan is 2)[her as your previous companion Loren!]
+(if: $compan is 1)[him as your previous companion Karos!
+
+&quot;Hello there, Karos. How are you doing?&quot;
+
+&quot;Hmm. . .?&quot; He turns around and notices you. &quot;Oh it&#39;s you. I&#39;m doing alright.&quot; He returns to his drink, turning back around.
+
+&quot;Would you mind if I sat with you?&quot;
+
+He takes a moment, seeming uncertain if he&#39;d really like to or not. &quot;Go ahead then.&quot; He gestures to the seat next to you. He seems quite inebriated.
+
+&quot;What are you doing in these parts? I didn&#39;t think you drank,&quot; you say, as you sit down next time.
+
+&quot;Aye, it&#39;s true.&quot; He barely makes eye contact with you, seeming disinterested. &quot;It&#39;s a special occasion. A tribal ritual, if you will.&quot;
+
+&quot;Always a man of tradition, Karos. Well it&#39;s pleasant to see you here regardless.&quot;
+
+He nods stoically and you both go back to drinking.
+
+You both share a few sullen words over the next couple of minutes. It&#39;s nice to have found a recognizable soul in here. It&#39;s better than having to drink on your own.]
+(else-if: $compan is 2)[her as your previous companion Loren!
+
+&quot;Hello there, Loren. How are you doing?&quot;
+
+She turns around. &quot;Well, well. Hello. I&#39;m doing well, yourself?&quot;
+
+&quot;Not too bad then. Would you mind if I sat with you?&quot;
+
+She shrugs and then gestures to the seat next to her.
+
+You settle down. It takes you a few moments to think of anything to say. &quot;This tavern&#39;s pretty packed. Do you frequent this tavern often?&quot;, you ask her.
+
+&quot;It&#39;s alright, yeah. It serves its purpose. Plenty of patrons to glean information from.&quot; She takes a sip and holds up her cup. &quot;Ale&#39;s only slightly watered down, too.&quot;
+
+You laugh politely and smile at her. &quot;Either way, I&#39;m glad I came in and stumbled upon you.&quot; She smiles politely at you and nods.
+
+You exchange some pleasanties over the next couple of minutes. It&#39;s nice to have found a recognizable soul in here. It&#39;s better than having to drink on your own.]
 (else:)[Error, no companion set]
 ]
 
 You make your way to the exit of the tavern.
 
-[[Prepare To Leave]]</tw-passagedata><tw-passagedata pid="116" name="Prepare To Leave" tags="" position="534,7939" size="100,100">
-You see the Bishop outside. Though clergy are typically not allowed to drink, he seems already drunk and is in common clothes.(if: $bishopApproval is &lt; -2)[You see a look of rancor upon his face.](else-if: $bishopApproval is &gt; 2)[He convinces you to come back in with him for a drink.](else:)[You attempt to wave him down, but he completely ignores you.]
+[[Prepare To Leave]]</tw-passagedata><tw-passagedata pid="116" name="Prepare To Leave" tags="" position="534,7937.333333333333" size="100,100">You open the heavy front door to the bar and reveal the exterior. The night is relatively brisk. Quite a few people are hanging around the outside of the tavern, lit up by a couple torches. Some are leaning against the stone building and others are sat cross-legged upon the ground, unable maintain their balance any longer. A few are retching out what they just paid to enjoy.
 
+You are preparing to make your way to the stables, find your steed and head home. As you look around, you notice none other than the Bishop Rafferty outside! Though clergy are typically not allowed to drink, he seems already drunk and is in common clothes. He is talking to a woman dressed in very little clothing who seems to be getting progressively angry with him.
+
+(if: $bishopApproval is &lt; -2)[&quot;Bishop! It&#39;s me!&quot; You attempt to wave him down. When the woman he is speaking with hears you, she slaps him across the face
+
+&quot;Don&#39;t call me that here!&quot; You see a look of rancor upon his face as he watches her stomp away. He turns back to you and points a finger in your face, furiously declaring, &quot;I was so close! And your ruined my chances. God forsake you. Why in God&#39;s name would you think I&#39;d like to speak with you? Be off!&quot;](else-if: $bishopApproval is &gt; 2)[&quot;Rafferty!&quot;
+
+&quot;Come here, lady.&quot; He attempts to grab her around the waist to which the woman responds by punching him in the gut and stomping away. &quot;Oh, she was wretched to begin with.&quot;
+
+He convinces you to come back in with him for a drink.](else:)[You attempt to wave him down, but he completely ignores you.]
+
+You find the stables. You find your steed and provide him a carrot and pets its large mane. He neighs loudly. Your bring its face up to yours and rest your forehead on his for a brief moment. Then, you mount the steed and make your way off into the deep, cold night.
 
 [[The End]]</tw-passagedata><tw-passagedata pid="117" name="The End" tags="" position="534,8089" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 
