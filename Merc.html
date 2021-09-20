@@ -207,7 +207,7 @@ You feel a sense of relaxation and sleepiness as your conversation comes to a cl
 
 (set: $compApproval to $compApproval+1)&lt;i&gt;((if: $compan is 2)[Loren](else-if: $compan is 1)[Karos](else:)[Error, No companion set.] approves)&lt;/i&gt;
 
-[[Wake Up In Ashenbark Forest]]</tw-passagedata><tw-passagedata pid="24" name="Our Mission" tags="" position="360,1899.3333333333333" size="100,100">(if: $compan is 1)[You speak of your mission with Karos.
+[[Wake Up In Ashenbark Forest]]</tw-passagedata><tw-passagedata pid="24" name="Our Mission" tags="" position="360,1899" size="100,100">(if: $compan is 1)[You speak of your mission with Karos.
 
 &quot;What excites you about this mission?&quot;, you ask.
 
@@ -1849,16 +1849,37 @@ At this, it seems you&#39;ve completed your task. You look to (if: $compan is 1)
 
 Congratulations on a successful mission.
 
-[[Epilogue]]</tw-passagedata><tw-passagedata pid="114" name="Epilogue" tags="" position="535.6666666666666,7639" size="100,100">Weeks have passed since your previous mission in the Ashenbark Woods. You have some time off today and find yourself at a tavern. This tavern is called &quot;The Leaky Barrel&quot; and is located in a town just by Coreston.
+[[Epilogue]]</tw-passagedata><tw-passagedata pid="114" name="Epilogue" tags="" position="535,7639" size="100,100">Weeks have passed since your previous mission in the Ashenbark Woods. You have some time off today and find yourself at a tavern. This tavern is called &quot;The Leaky Barrel&quot; and is located in a town just by Coreston.
 
 You are sipping on a tall ale. You begin pondering your last mission and your line of work in general. (if: $karma is &lt; -1)[Such a pittance given for such a perilous journey; easily tenfold was deserved. And you never seem to get enough coin to relax for any real stretch of time. Retirement is out of the picture. Will you always be stuck beneath this endless spiked wheel? You begin to feel resentment and rage build up inside. You look around at the others in the bar and think only of your pain and resent the looks of joy and laughter upon their faces. You think about all the people you hurt along the way to achieve your recent mission. Your guilt is nonexistent, and you actually feel some of your anger subside as your reminense about the pain you&#39;ve dealt to others. You push away your ale, now discontent with even this simple pleasure.](else-if: $kamra is &gt; 1)[Several lives were needlessly lost and just for a simple escort. There is a hope, though, that this was all worth it. You did manage to help a few people along the way. Though the bishop himself was perhaps not the most moral, his teachings certainly are. Maybe the clergy and commonfolk of Coreston will one day find some common ground. They are both striving to better themselves, are they not? At least you are able to help out in some sense, one client at a time, and make rigtheous choices along the way. Plus, the pay isn&#39;t so bad either. You enjoy a long sip of ale and end it with a smile.](else:)[An odd business this is. You have no control of who comes through the door and what task they present you with. And the infrequency of such means you often have to take them regardless of how you feel about it just to make ends meet. Your choices along the way are all in an attempt to please the client. It oftentimes feels like you have no control along the way; like a raft going through a downward stream, there is only so much influence you can have. Glassy-eyed, you stare at your ale for a moment, then drink the whole mug in a few quick gulps.]
 
-[[Wander The Tavern]]</tw-passagedata><tw-passagedata pid="115" name="Wander The Tavern" tags="" position="534,7789" size="100,100">You push back your chair and stand up. Stretching your legs, you begin to wander the the tavern. Paint is peeling from the walls and the humidity is relentless. A few scant torches leave the tavern relatively dim. The windows are dreary and foggy, disallowing you from looking out. The bar itself is well stocked, with several shelves of glasses and bottles lining the back wall. The barkeep is a rotund man with a filthy apron. He is cleaning a mug with a even filthier rag. Repeatedly, he holds the mug up to torchlight, assesses that it is still too dirty, and wipes it again with his rag. You flick a him a coin to pay for your ale and he gives you a nod, then goes back to his fruitless task.
+[[Wander The Tavern]]</tw-passagedata><tw-passagedata pid="115" name="Wander The Tavern" tags="" position="534,7789" size="100,100">You push back your chair and stand up. Stretching your legs, you begin to wander the the tavern. Paint is peeling from the walls and the humidity is relentless. A few scant torches leave the tavern relatively dim. The windows are dreary and foggy, disallowing you from looking out. The bar itself is well stocked, with several shelves of glasses and bottles lining the back wall. The barkeep is a rotund man with a filthy apron. He is cleaning a mug with an even filthier rag. Repeatedly, he holds the mug up to torchlight, assesses that it is still too dirty, and wipes it again with his rag. You flick a him a coin to pay for your ale and he gives you a nod, then goes back to his fruitless task.
 
 The tavern itself is relatively crowded. Nearly every seat is filled, from the bar to the tables. There is quite a clamor and you find it hard to even manuvear around. You decide to make your way back to your seat, but find that it has been taken by another patron. Upon further examination, you realize that you recognize 
 (if: $compApproval is &lt; -1)[
-(if: $compan is 1)[him as your previous companion Karos!]
-(else-if: $compan is 2)[her as your previous companion Loren!]
+(if: $compan is 1)[him as your previous companion Karos!
+
+&quot;Well, look who it is. Excuse me, but it seems you&#39;ve taken my seat there, Karos.&quot; You place a hand on his shoulder.
+
+He grabs your arm hard and quickly flips you onto your back, the wind being knocked out of your lungs. He then cowers right over you and brings his face right up to yours. You smell hard alcohol on his breath. He looks enraged, as if he was about to scream.
+
+His brow furrows and he titls his head. &quot;It&#39;s you . . .&quot;, he says confusedly. He reluctantly presents a hand to help you back to your feet, though you deny it and scramble up of your own accord.
+
+&quot;What makes you think you can approach me like that after all we went through?&quot; Karos is swaying slightly and is avoiding locking eyes with you. &quot;Your risk your life by encountering me as such.&quot;
+
+&quot;What do you mean, Karos?&quot;
+
+&quot;You treated me poorly on our last mission; as if all that mattered was your objective and your compatriot was naught but a beast of burden. Despite my appearances and words of strength, I am but a man, you know, with all the vulnerabilities that come with it.&quot; You see his visage turn as tears start to well up. He hiccups.
+
+&quot;I . . . I&#39;m sorry -&quot;
+
+Karos&#39;s slight tears boil into a firm anger. &quot;You best find some other seat. And fast.&quot; He turns around and sits back down.]
+(else-if: $compan is 2)[her as your previous companion Loren!
+
+&quot;Fancy seeing you here, Loren.&quot;, you say. &quot;Though, it seems you&#39;ve ended up in my seat there.&quot;
+
+She turns around to respond with a smile, likely with some clever retort. When she recognizes you, her face sullies and she turns back around toward the bar, ignoring you.
+...]
 (else:)[Error, no companion set]
 ]
 (else-if: $compApproval is &gt; 1)[
@@ -1868,22 +1889,22 @@ The tavern itself is relatively crowded. Nearly every seat is filled, from the b
 
 &quot;Captain!&quot; You grab Karos&#39;s forearm and squeeze, as he does the same, and then bring yourself in for a hug. He grabs you with such strength that the air shoots out of your lungs. You smell hard alcohol on his breath.
 
-After taking a moment to catch your breath, you say, &quot;What in the world are you doing here, Karos.&quot; You look around. &quot;This doesn&#39;t seem like your scene.&quot;
+After taking a moment to catch your breath, you say, &quot;What in the world are you doing here, Karos?&quot; You look around. &quot;This doesn&#39;t seem like your scene.&quot;
 
-He lets out an echoing laugh that nearly silences the whole tavern. &quot;Your right there. I wouldn&#39;t normally be consuming toxins of any ilk. But, this is a special occasion . . . hic!&quot; He slaps a man equally massive who is sat next to him hard on the back. The man laughs a bit and goes back to drinking his ale. Karos tells you, quite enthusiastically, &quot;Once every hundred moons, we revere the gods of the north by seeking them from within. We spend the day getting as inebriated as we can. Then, we spend the twilight hours wandering and attempt to commune with them . . . hic!&quot;
+He lets out an echoing laugh that nearly silences the whole tavern. &quot;You&#39;re right there. I wouldn&#39;t normally be consuming toxins of any ilk. But, this is a special occasion . . . hic!&quot; He slaps a man equally massive who is sat next to him hard on the back. The man laughs a bit and goes back to drinking his ale. Karos tells you, quite enthusiastically, &quot;Once every hundred moons, we revere the gods of the north by seeking them from within. We spend the day getting as inebriated as we can. Then, we spend the twilight hours wandering and attempt to commune with them . . . hic!&quot;
 
 &quot;Wow, how about that&quot;, you respond. &quot;For most people here, this is just a regular night. They don&#39;t need such an excuse to cloud their judgement.&quot;
 
 Karos laughs loudly again and leans upon you, while he slurredly says, &quot;You&#39;ve always been a funny man, Captain. I miss our time wandering those woods. What I&#39;d give to see one of those ogres again . . .&quot;
 
-You and Karos exchange many jovial words with one another. This is a side of Karos you hadn&#39;t seen before. Within an hour he&#39;s drank eight more brews and you&#39;ve narrowly managed to drink the few that he&#39;s been forcing upon. You mention to him how well that last mission of yours went and propose he joins the &quot;Rags of the Lotus&quot; as a regular mercenary. Excited to see more of what fearsome creatures may be out there, he takes your information and plans to meet with you some time soon.]
+You and Karos exchange many jovial words with one another. This is a side of Karos you hadn&#39;t seen before. Within an hour he&#39;s drank eight more brews and you&#39;ve narrowly managed to drink the few that he&#39;s been forcing upon you. You mention to him how well that last mission of yours went and propose he joins the &quot;Rags of the Lotus&quot; as a regular mercenary. Excited to see more of what fearsome creatures may be out there, he takes your information and plans to meet with you some time soon.]
 (else-if: $compan is 2)[her as your previous companion Loren!
 
 &quot;Well, well back to our old thieving ways, I see.&quot; You place a light hand on her shoulder and she looks back toward you. &quot;That was my seat, you know.&quot;
 
-She recognizes you and lets and her eyes shoot up. She flashes you her famous smile. &quot;Fancy seeing you here, &#39;Cap!&quot; She mentions something to the man sitting next to her and he shoots up and briskly heads right out of the tavern. She taps upon the empty stool. &quot;Got a seat for you right here, if you&#39;ll take it. You must let me buy a drink!&quot;
+She recognizes you and her eyes shoot up. She flashes you her famous smile. &quot;Fancy seeing you here, &#39;Cap!&quot; She mentions something to the man sitting next to her and he shoots up and briskly heads right out of the tavern. She taps upon the empty stool. &quot;Got a seat for you right here, if you&#39;ll take it. You must let me buy a drink!&quot;
 
-You smile and shrug then sit down next to your old companion. &quot;You know that man?&quot;
+You smile and shrug, then sit down next to your old companion. &quot;You know that man?&quot;
 
 &quot;Oh heavens no. I just told him that there was a strict two drink limit here and that the tavern down the road has cheaper drinks.&quot;
 
@@ -1893,17 +1914,19 @@ You smile and shrug then sit down next to your old companion. &quot;You know tha
 
 &quot;I just had some rare time off and thought I&#39;d try to relax a bit. I could ask you the same question, couldn&#39;t I?&quot;
 
-&quot;What else do you think I do with my days? You expect to see me in a church or a library? No, this is where I do my research. I observe the clinetale, learn about rumors of what&#39;s happening in the surrounding areas, and listen to any valuable gossip that could be used to my advantage. Sometimes I even leave with a heavier coinpurse than when I&#39;ve come in with.&quot; She winks.
+&quot;What else do you think I do with my days? You expect to see me in a church or a library? No, this is where I do my research. I observe the clinetale, learn about rumors of what&#39;s happening in the surrounding areas, and listen to any valuable gossip that could be used to my advantage. Sometimes, I even leave with a heavier coinpurse than when I&#39;ve come in with.&quot; She winks.
 
 You both laugh heartily.
 
-You and Loren exchange pleasant words for well over an hour as well as a few cups of ale. By the end of the exchange you propse that she join the &quot;Rags of the Lotus&quot; as a regular mercenary. She says that she&#39;d be willing to consider it, finding that her current line of work has been, as she said, &quot;inconsistent&quot;, and you leave her with your information.]
+You and Loren exchange pleasant words for well over an hour as well as a few cups of ale. By the end of the exchange you propse that she join the &quot;Rags of the Lotus&quot; as a regular mercenary. She says that she&#39;d be willing to consider it, finding that her current line of work has been, as she says, &quot;inconsistent&quot;, and you leave her with your information.]
 (else:)[Error, no companion set]
 ](else:)[
 (if: $compan is 1)[him as your previous companion Karos!]
 (else-if: $compan is 2)[her as your previous companion Loren!]
 (else:)[Error, no companion set]
 ]
+
+You make your way to the exit of the tavern.
 
 [[Prepare To Leave]]</tw-passagedata><tw-passagedata pid="116" name="Prepare To Leave" tags="" position="534,7939" size="100,100">
 You see the Bishop outside. Though clergy are typically not allowed to drink, he seems already drunk and is in common clothes.(if: $bishopApproval is &lt; -2)[You see a look of rancor upon his face.](else-if: $bishopApproval is &gt; 2)[He convinces you to come back in with him for a drink.](else:)[You attempt to wave him down, but he completely ignores you.]
