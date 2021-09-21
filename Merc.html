@@ -1975,17 +1975,43 @@ You make your way to the exit of the tavern.
 
 You are preparing to make your way to the stables, find your steed and head home. As you look around, you notice none other than the Bishop Rafferty outside! Though clergy are typically not allowed to drink, he seems already drunk and is in common clothes. He is talking to a woman dressed in very little clothing who seems to be getting progressively angry with him.
 
-(if: $bishopApproval is &lt; -2)[&quot;Bishop! It&#39;s me!&quot; You attempt to wave him down. When the woman he is speaking with hears you, she slaps him across the face
+(if: $bishopApproval is &lt; -2)[&quot;Bishop! It&#39;s me!&quot; You attempt to wave him down. When the woman he is speaking with hears you, she slaps him across the face.
 
-&quot;Don&#39;t call me that here!&quot; You see a look of rancor upon his face as he watches her stomp away. He turns back to you and points a finger in your face, furiously declaring, &quot;I was so close! And your ruined my chances. God forsake you. Why in God&#39;s name would you think I&#39;d like to speak with you? Be off!&quot;](else-if: $bishopApproval is &gt; 2)[&quot;Rafferty!&quot;
+&quot;Don&#39;t call me that here!&quot; You see a look of rancor upon his face as he watches her stomp away. He turns back to you and points a finger in your face, furiously declaring, &quot;I was so close! And your ruined my chances. God forsake you. Why in God&#39;s name would you think I&#39;d like to speak with you? Be off!&quot;
 
-&quot;Come here, lady.&quot; He attempts to grab her around the waist to which the woman responds by punching him in the gut and stomping away. &quot;Oh, she was wretched to begin with.&quot;
+&quot;I&#39;m sorry, Rafferty.&quot;
 
-He convinces you to come back in with him for a drink.](else:)[You attempt to wave him down, but he completely ignores you.]
+He scoffs. &quot;Yes well you best be. I&#39;m surprised you even received your payment after how little credence you gave me on that last mission. I certainly didn&#39;t speak very highly of your little troupe to my superiors.&quot;
 
-You find the stables. You find your steed and provide him a carrot and pets its large mane. He neighs loudly. Your bring its face up to yours and rest your forehead on his for a brief moment. Then, you mount the steed and make your way off into the deep, cold night.
+Bishop Rafferty walks away from you. You shake your head, then make your way back down the nearby road.](else-if: $bishopApproval is &gt; 2)[&quot;Rafferty!&quot; You attempt to wave him down. He is distracted with the woman he is speaking with.
 
-[[The End]]</tw-passagedata><tw-passagedata pid="117" name="The End" tags="" position="534,8089" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+&quot;Come here, little lady.&quot; He attempts to grab her around the waist to which the woman responds by punching him in the gut and stomping away. He then notces you and smiles and slurridly says, &quot;What a surprise to see you here.&quot; She watches the woman stomp way. &quot;She was wretched to begin with. Not worth my time.&quot;
+
+&quot;I&#39;m just as surprised to see you here. I thought the clergy weren&#39;t allowed to partake in such.&quot;
+
+&quot;Aye, the clergy sure aren&#39;t. Luckily, there&#39;s no reason anyone would think I am part of them.&quot; He laughs lightly. You hadn&#39;t seen this sort of joy out of the bishop for the duration of your previous mission.
+
+He convinces you to come back inside with him for a drink. After a few more, it seems his tongue is completely loose. He tells you several stories of corruption within the clergy. He speaks of using his status to attain power and lord it over others. After some interesting exchanges, you finally start to make your way out of the tavern and head back down the nearby road.](else:)[You attempt to wave him down. &quot;Rafferty!,&quot; you exclaim.
+
+He drags the woman further away from you and continues talking with her, not responding at all to your call. You approach and tap his shoulder. &quot;Hey, Rafferty. It&#39;s me!&quot; At this point, the woman walks away from him.
+
+He turns back to you, frustrated. &quot;Do I know you? And even if I did, what makes you want to interrupt me so?&quot;
+
+&quot;I&#39;m sorry, I just recognized you from our previous mission in the Ashenbark Woods.&quot;
+
+&quot;What now?&quot;, he responds, seeming genuinely confused and increasingly angry.
+
+&quot;The escort mission. You were tied up by ogres and the clergy hired us to. . .&quot;
+
+&quot;I&#39;ll stop you there. I have no ties the clergy and certainly don&#39;t have the faintest idea of what you mean. Now, please, leave me be!&quot; He quickly walks back toward the woman and makes advances toward her.
+
+You look around, feeling isolated and a tad confused. You suppose this is what you&#39;ve come to expect from the Bishop and shouldn&#39;t have expected any different. You kick up some dirt and finally make your way back down the nearby road.]
+
+You find the stables. You find your steed and provide him a carrot and pet its large mane. It neighs loudly. Your bring its face up to yours and rest your forehead on his for a brief moment. Then, you mount the steed and make your way off into the deep, cold night.
+
+[[The End]]</tw-passagedata><tw-passagedata pid="117" name="The End" tags="" position="534,8089" size="100,100">Congratulations!
+
+(link: &quot;Play Again?&quot;)[(goto: &quot;Intro&quot;)]</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
