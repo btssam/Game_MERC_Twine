@@ -501,7 +501,7 @@ Wooden walls and spikes surround the encampment. There is a larger entrance on t
 (link: &quot;Ask Party For Advice&quot;) [(set: $previousPassage to &quot;Continue Along The River&quot;)(goto:&quot;Ask Party For Advice&quot;)]
 [[Investigate Hut]]
 [[Investigate Fire]]
-(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Continue Along The River&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="37" name="Investigate Hut" tags="" position="122,3412" size="100,100">You sneak up to the entrance of the hut and peer in.
+(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Continue Along The River&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="37" name="Investigate Hut" tags="" position="123.66666666666667,3413.6666666666665" size="100,100">You sneak up to the entrance of the hut and peer in.
 
 In the farmost corner, you see a man in white tattered robes with a bishop&#39;s pointed mitre hat on his head. He has a dirty cloth wrapped around his mouth and another around his eyes. He has shackles on his wrists and is chained to the wall. It must be Bishop Rafferty!
 
@@ -655,7 +655,7 @@ You realize, after about an hour of silent trudging, that nobody has spoken a wo
 [[Check On Bishop Rafferty]]
 [[Check On Your Companion]]
 [[Continue Silently]]
-(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Backtrack To Forest Entrance&quot;)(goto:&quot;Check Status&quot;)]x</tw-passagedata><tw-passagedata pid="44" name="Instruct Companion To Use Mushroom On Guard Ogre" tags="" position="129,3773" size="100,100">&lt;i&gt;(The mysterious mushroom is removed from your inventory)&lt;/i&gt;
+(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Backtrack To Forest Entrance&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="44" name="Instruct Companion To Use Mushroom On Guard Ogre" tags="" position="129,3773" size="100,100">&lt;i&gt;(The mysterious mushroom is removed from your inventory)&lt;/i&gt;
 
 (if: $compan is 1)[&quot;Rub the mushroom upon your axe and prick the ogre.&quot;
 
@@ -1203,7 +1203,7 @@ Rafferty is holding up his robe, so at to not drag it along the ground. Even he 
 
 You continue leading your party back to your carriage.
 
-[[COntinue On|Back To Carriage]]</tw-passagedata><tw-passagedata pid="70" name="Back To Carriage" tags="" position="502,4586" size="100,100">After some time, your party arrives back to the carriage.
+[[Continue On|Back To Carriage]]</tw-passagedata><tw-passagedata pid="70" name="Back To Carriage" tags="" position="502,4586" size="100,100">After some time, your party arrives back to the carriage.
 
 Or rather, where the carriage was. Now, there is naught but smithereens. The wood is smashed and the canvas top is lolling about in the wind. One wheel is lying horizontally on the ground whereas the others are completely missing. You see a small path has been trampled down through the woods.
 
@@ -1889,9 +1889,7 @@ She stands up and starts pointing a finger at you. The surrounding patrons quiet
 &quot;I . . . I&#39;m sorry - &quot;
 
 With her back turned she says, &quot;That&#39;s enough then. Our mission is done and we both received our pay. That means we have no more obligation to see each other. Now, go away.&quot; She flicks her hand back at you and returns to her drink.]
-(else:)[Error, no companion set]
-]
-(else-if: $compApproval is &gt; 1)[
+(else:)[Error, no companion set]](else-if: $compApproval is &gt; 1)[
 (if: $compan is 1)[him as your previous companion Karos!
 
 &quot;Well, look what we&#39;ve got here.&quot; You smile widely as Karos turns around. He notices you and shoots right up, banging against the table and shaking the glasses upon it.
@@ -1928,8 +1926,7 @@ You smile and shrug, then sit down next to your old companion. &quot;You know th
 You both laugh heartily.
 
 You and Loren exchange pleasant words for well over an hour as well as a few cups of ale. By the end of the exchange you propse that she join the &quot;Rags of the Lotus&quot; as a regular mercenary. She says that she&#39;d be willing to consider it, finding that her current line of work has been, as she says, &quot;inconsistent&quot;, and you leave her with your information.]
-(else:)[Error, no companion set]
-](else:)[
+(else:)[Error, no companion set]](else:)[
 (if: $compan is 1)[him as your previous companion Karos!
 
 &quot;Hello there, Karos. How are you doing?&quot;
