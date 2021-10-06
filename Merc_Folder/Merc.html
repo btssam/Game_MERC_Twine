@@ -52,7 +52,7 @@
 	
 But be wary, Captain! We have received word that Rafferty is being held captive by a large encampment of ogres within these woods. You must save Bishop Rafferty and escort him safely back to the Monastery, deep within the bustling city.
 	
-This mission is best completed with a small party of two, meaning you may only choose one companion to join you. We do not want the citizens of Coreston to catch wind of what’s transpired, nor do we want the ogres to see us from a mile away. Now, this is your opportunity to ask any questions and gather as much information as you can, before you venture out.&quot;
+This mission is best completed with a small party of two, meaning you may only choose one companion to join you. We do not want the citizens of Coreston to catch wind of what’s transpired, nor do we want the ogres to see us from a mile away. Now, this is your opportunity to ask any questions and gather as much information as you can before you venture out.&quot;
 
 &quot;Questions?&quot;
 
@@ -116,7 +116,7 @@ That’s right. What else could this mission be about?&quot;
 [[Pick Loren Feth For Your Mission]]
 [[Back|Greet Them]]</tw-passagedata><tw-passagedata pid="12" name="EQ1" tags="" position="120,1090" size="100,100">&quot;Primarily, my hardened mind and body. Secondarily, two broad axes, a long spear, four knives strapped to my legs, and a set of bolas, though I prefer to be up close. I don’t care much for burdensome heavy armor, but I have a set ready if needed.&quot;
 
-[[Back|Address Left-Most Person]]</tw-passagedata><tw-passagedata pid="13" name="MC1" tags="" position="110,917" size="100,100">&quot;Life is a battle. I am built to fight it. It is all I know. When I left our tribe, there seemed to be no other work for me. I won&#39;t be a soldier and fight some pompous arse’s battles for him. I won&#39;t be a knight and uphold some arbitrary code. I fight to live - I always have. I need gold to live. So, I choose to fight for gold.&quot;
+[[Back|Address Left-Most Person]]</tw-passagedata><tw-passagedata pid="13" name="MC1" tags="" position="110,917" size="100,100">&quot;Life is a battle. I am built to fight it. It is all I know. When I left our tribe, there seemed to be no other work for me. I won&#39;t be a soldier and fight some pompous fool’s battles for him. I won&#39;t be a knight and uphold some arbitrary code. I fight to live - I always have. I need gold to live. So, I choose to fight for gold.&quot;
 
 [[Back|Address Left-Most Person]]</tw-passagedata><tw-passagedata pid="14" name="Pick Karos For Your Mission" tags="" position="253,1217" size="100,100">You sense Karos&#39;s strength, ferocity, and determination based on your conversation with him.
 
@@ -134,7 +134,7 @@ She smiles.
 Are you sure you&#39;d like to choose her to take along with you?
 
 [[Decide On The Rogue, Loren Feth]]
-[[Back|Address Right-Most Person]]</tw-passagedata><tw-passagedata pid="18" name="Decide On The Rogue, Loren Feth" tags="" position="579,1353" size="100,100">(set: $compan to 2)
+[[Back|Address Right-Most Person]]</tw-passagedata><tw-passagedata pid="18" name="Decide On The Rogue, Loren Feth" tags="" position="557.3333333333334,1348" size="100,100">(set: $compan to 2)
 &quot;Ha! Wait, what? Really? Not that I&#39;m not well qualified. It&#39;s just . . .&quot;
 
 She glances over, or perhaps more accurately, glances up, at Karos.
@@ -152,7 +152,7 @@ She puts her dagger away, pushes her chair back, and stands up swiftly.
 You wake up in the middle of the night, realizing you should arrive by the morning.
 
 (link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Set Off To Ashenbark Forest&quot;)(goto:&quot;Check Status&quot;)]
-(if: $compan is 1) [[[Wake up Karos]]] (else-if: $compan is 2) [[[Wake up Loren]]]
+(if: $compan is 1) [[[Wake up Karos]]] (else-if: $compan is 2) [[[Wake up Loren]]](else:)[Error, no companion set]
 [[Go Back To Sleep]]</tw-passagedata><tw-passagedata pid="20" name="Wake up Karos" tags="" position="139,1700" size="100,100">Karos lets out a long yawn. &quot;Hmm? Need something?&quot;
 
 &quot;I just woke up suddenly and can&#39;t fall back asleep&quot;, you say.
@@ -175,7 +175,7 @@ She sits back up.
 [[My Past]]
 [[Their Past]]
 [[Our Mission]]
-[[Life]]</tw-passagedata><tw-passagedata pid="22" name="Go Back To Sleep" tags="" position="809,1714" size="100,100">All around, even below and above, you see eyes the size of your head. Instead of white, the irises are surrounded by a dark red. They are looking right at you, tracking you as you move. You can hear cries coming from behind them, or perhaps coming from the eyes themselves. The pupils of each seem to have depth. Rather than just appearing as flat black cirlces, you can see down them like a tunnel.
+[[Life]]</tw-passagedata><tw-passagedata pid="22" name="Go Back To Sleep" tags="" position="809,1710.6666666666667" size="100,100">All around, even below and above, you see eyes the size of your head. Instead of white, the irises are surrounded by a dark red. They are looking right at you, tracking you as you move. You can hear cries coming from behind them, or perhaps coming from the eyes themselves. The pupils of each seem to have depth. Rather than just appearing as flat black cirlces, you can see down them like a tunnel.
 
 You try to push your way through the hundreds of red eyes, but they only move slightly, less than an inch, then rigidly move back into place. You can&#39;t get a solid grip on them. You try to work your way through them for what feels like forever. You go to scream out, but your voice is painfully trapped in your throat. In anger, you begin wildly flailing at the eyes, punching and kicking them. They are as hard as adult dragonscale and bloody your hands and feet. They come closer and closer until they claustrophobically constrict all movement. You attempt to scream again, instead feeling such intense pain in your throat that it wakes you.
 	
@@ -191,7 +191,7 @@ You feel a sense of relaxation and sleepiness as your conversation comes to a cl
 
 &quot;What&#39;s there to tell?
 
-Grew up on a farm. My father treated me like, well, like manure, so I got out of there fast. Went to the local city, where I knew they couldn&#39;t find me and layed low while I did what I needed to survive.&quot;
+Grew up on a farm. My father treated me like, well, like manure, so I got out of there fast. Went to the local city, where I knew they couldn&#39;t find me and laid low while I did what I needed to survive.&quot;
 
 You see a crack in Loren&#39;s almost eternal smile.
 
@@ -201,7 +201,7 @@ You feel a sense of relaxation and sleepiness as your conversation comes to a cl
 
 (set: $compApproval to $compApproval+1)&lt;i&gt;((if: $compan is 2)[Loren](else-if: $compan is 1)[Karos](else:)[Error, No companion set.] approves)&lt;/i&gt;
 
-[[Wake Up In Ashenbark Forest]]</tw-passagedata><tw-passagedata pid="24" name="Our Mission" tags="" position="360,1899" size="100,100">(if: $compan is 1)[You speak of your mission with Karos.
+[[Wake Up In Ashenbark Forest]]</tw-passagedata><tw-passagedata pid="24" name="Our Mission" tags="" position="360,1900.6666666666667" size="100,100">(if: $compan is 1)[You speak of your mission with Karos.
 
 &quot;What excites you about this mission?&quot;, you ask.
 
@@ -241,8 +241,7 @@ You begin by saying, &quot;Life&#39;s a fickle thing, eh?&quot;
 
 &quot;Of course. I&#39;ve ended more lives than I could count. And for what reason? Survival, first and foremost. I must hunt to live. I must defend myself, as to not become prey. So, yes, life certainly is fickle. At every step, I cannot fail or I may lose mine.&quot;
 
-You feel a sense of relaxation and sleepiness as your conversation comes to a close. Your eyelids grow heavy.
-](else-if: $compan is 2)[You speak of life with Loren.
+You feel a sense of relaxation and sleepiness as your conversation comes to a close. Your eyelids grow heavy.](else-if: $compan is 2)[You speak of life with Loren.
 
 You begin by saying, &quot;Life&#39;s a fickle thing, eh?&quot;
 
@@ -440,9 +439,9 @@ You bring the mushroom along with you.
 [[Continue Along The River]]
 [[Test Mushroom On Companion]]</tw-passagedata><tw-passagedata pid="34" name="Investigate Banners" tags="" position="430,2551" size="100,100">You and your companion approach the hanging banners.
 
-You look up in the branches and examine them. They are three brown wolf skins. Each skin has large dark red symbols painted on them in clay-like dye.
+You look up in the branches and examine them. They are three brown wolf skins. Each skin has large, dark red symbols painted on them in clay-like dye.
 
-The first depicts two crossed lines, possibly representing spears.The second fur is depicting what seem to be waves. The final fur has a rudementary depiction of a dragon&#39;s face, horns, snout, and all.
+The first depicts two crossed lines, possibly representing spears. The second fur is depicting what seem to be waves. The final fur has a rudementary depiction of a dragon&#39;s face, horns, snout, and all.
 
 You determine you are heading in the right direction.
 
@@ -505,8 +504,7 @@ An ogre stands in there as well, facing away, looking out the window at his fell
 [[Instruct Companion To Sneak By Guard Ogre And Free Bishop]]
 [[Instruct Companion To Fight Guard Ogre]](if: $hasMush is 1)[
 [[Instruct Companion To Use Mushroom On Guard Ogre]]]
-[[Back|Continue Along The River]]
-</tw-passagedata><tw-passagedata pid="38" name="Investigate Fire" tags="" position="371,3413" size="100,100">You peer inside the encampment to more closely observe the ogre.
+[[Back|Continue Along The River]]</tw-passagedata><tw-passagedata pid="38" name="Investigate Fire" tags="" position="371,3413" size="100,100">You peer inside the encampment to more closely observe the ogre.
 
 The ogre is surrounded by thick, dark smoke. Though you see some movement, the beast is too far away to make out exactly what it&#39;s doing. The rest of the encampment is relatively barren.
 
@@ -531,7 +529,7 @@ Karos approaches and thrusts his long spear into the back of the ogre&#39;s shou
 
 Both you and your companion tense up and exchange a look, knowing that he may alert his allies.
 
-Instead, only blood comes out of the ogre&#39;s mouth. He drops dead.
+Instead, no sound comes out. Only a dribble of blood. He drops dead.
 
 Karos then uses his dual axes to swing at the much tougher chain attaching the Bishop to the wall. After several whacks at the chain, it breaks.
 
@@ -545,10 +543,7 @@ Karos looks to you, then back at the Bishop, &quot;I am sorry.&quot;
 
 &quot;You should be. Now, can we get moving? I&#39;ve been stuck here for days!&quot;
 
-[[Backtrack To Forest Entrance]]
-]
-
-(else-if: $compan is 2)[(set: $compApproval to $compApproval+1)&lt;i&gt;(Loren approves)&lt;/i&gt;
+[[Backtrack To Forest Entrance]]](else-if: $compan is 2)[(set: $compApproval to $compApproval+1)&lt;i&gt;(Loren approves)&lt;/i&gt;
 
 &quot;Go sneak by the ogre and free the Bishop.&quot;
 
@@ -556,7 +551,7 @@ Karos looks to you, then back at the Bishop, &quot;I am sorry.&quot;
 
 She slowly takes out her dagger and lockpick. Then, Loren begins to make her way to the Bishop. She moves as slow as possible. The ogre seems totally unaware.
 
-She approaches the Bishop and puts her finger to her lips, indicating to him that he shouldn&#39;t speak. He nods. She promptly dispatches with the locks and removes the cloths around his eyes and mouth. She quickly escorts him back to you and you all quietly leave the hut.
+She approaches the Bishop and puts her finger to her lips, indicating to him that he shouldn&#39;t speak. He nods. She promptly dispatches with the locks and removes the cloths around his eyes and mouth. She quickly escorts him back. You all quietly leave the hut.
 
 You and your party make your way out of the encampment. As soon as they are out of earshot of the ogres, you begin to tell Rafferty about your mission. Rafferty, instead, begins speaking to Loren.
 
@@ -566,9 +561,7 @@ Loren looks uncomfortable. &quot;Loren Feth, your bishophood.&quot; She curtseys
 
 &quot;Maybe we can spend some time together when we get back to Coreston, eh? For now, let&#39;s get out of these hellish woods.&quot;
 
-[[Backtrack To Forest Entrance]]
-]
-(else:)[Error, no companion set.]</tw-passagedata><tw-passagedata pid="40" name="Instruct Companion To Fight Guard Ogre" tags="" position="275,3778" size="100,100">(if: $compan is 1)[(set: $compApproval to $compApproval+1)&lt;i&gt;(Karos approves)&lt;/i&gt;
+[[Backtrack To Forest Entrance]]](else:)[Error, no companion set.]</tw-passagedata><tw-passagedata pid="40" name="Instruct Companion To Fight Guard Ogre" tags="" position="275,3778" size="100,100">(if: $compan is 1)[(set: $compApproval to $compApproval+1)&lt;i&gt;(Karos approves)&lt;/i&gt;
 
 &quot;We must dispatch with him. Do not waste time and do not alert the other guards.&quot;
 
@@ -586,10 +579,7 @@ You and your companion detense a moment. Karos has a determined, focused look on
 
 Your party looks to the struggling Bishop.
 
-[[Tell Karos To Break The Chains]]
-]
-
-(else-if: $compan is 2)[(set: $compApproval to $compApproval-1)&lt;i&gt;(Loren disapproves)&lt;/i&gt;
+[[Tell Karos To Break The Chains]]](else-if: $compan is 2)[(set: $compApproval to $compApproval-1)&lt;i&gt;(Loren disapproves)&lt;/i&gt;
 
 &quot;We must dispatch with him. Do not waste time and do not alert the other guards.&quot;
 
@@ -599,15 +589,13 @@ You take out your shield and sword and point to the guard with your blade. &quot
 
 Loren pulls out her knife and approaches the guard slowly. She gets as close as possible, to the point that you think the ogre must surely have detected her, but she remains unseen. She readies herself, then in one swift motion, jumps high enough to reach the ogres neck and slices its throat from behind.
 
-The ogre clutches its throat, eyes wide, and grabs at Loren&#39;s arm. She tries to dodge out of the way, but fails. Loren tries to stab at the ogre&#39;s arm while trying to wriggle out of it, but the ogre&#39;s hold remains tight. You quickly jump into action slicing the ogre&#39;s arm deep with your blade, releasing its grip in the process. The ogre turns it attention toward you. Loren jumps on its back and stabs it once more in the head, dropping to the floor, dead.
+The ogre clutches its throat, eyes wide, and grabs at Loren&#39;s arm. She tries to dodge out of the way, but fails and is lifted off the ground. Loren tries to stab at the ogre&#39;s arm while trying to wriggle out of it, but the ogre&#39;s hold remains tight. You quickly jump into action slicing the ogre&#39;s arm deep with your blade, releasing its grip in the process. The ogre turns it attention toward you. Loren jumps on its back and stabs it once more in the back of the neck. The ogre drops to the floor, dead.
 
 You and your companion detense a moment. Loren rubs her arm. You turn to her with a look of concern, but she smiles assuringly.
 
 Your party looks to the struggling Bishop.
-[[Tell Loren To Use Her Lockpick]]
-]
-(else:)[Error, no companion set.]</tw-passagedata><tw-passagedata pid="41" name="Tell Karos To Break The Chains" tags="" position="376,4036" size="100,100">(set: $hasBishop to 1)(set: $bishopApproval to 0)
-&quot;I will try&quot;, Karos says.
+
+[[Tell Loren To Use Her Lockpick]]](else:)[Error, no companion set.]</tw-passagedata><tw-passagedata pid="41" name="Tell Karos To Break The Chains" tags="" position="376,4036" size="100,100">(set: $hasBishop to 1)(set: $bishopApproval to 0)&quot;I will try&quot;, Karos says.
 
 He grabs at the chains around the Bishop&#39;s hands and pulls them apart with relative ease. He then uses his dual axes to swing at the much tougher chain attaching him to the wall. After a minute or so of swinging, the chains break.
 
@@ -621,8 +609,7 @@ Karos looks to you, then back at the Bishop, &quot;I am sorry.&quot;
 
 &quot;Bah. At least this is over. Now, can we get moving? I&#39;ve been stuck here for days!&quot;
 
-[[Backtrack To Forest Entrance]]</tw-passagedata><tw-passagedata pid="42" name="Tell Loren To Use Her Lockpick" tags="" position="601,4038" size="100,100">(set: $hasBishop to 1)(set: $bishopApproval to 0)
-&quot;Of course, dear.&quot;
+[[Backtrack To Forest Entrance]]</tw-passagedata><tw-passagedata pid="42" name="Tell Loren To Use Her Lockpick" tags="" position="601,4038" size="100,100">(set: $hasBishop to 1)(set: $bishopApproval to 0)&quot;Of course, dear.&quot;
 
 Loren takes out a lockpick. After a few moments of moving the pick around, she releases the Bishop from his chains.
 
@@ -663,9 +650,7 @@ The ogre&#39;s grip loosens as he lets go of Karos. The ogre falls to its side a
 
 Karos smiles at you. &quot;Well, then. That was fun.&quot;
 
-[[Tell Karos To Break The Chains]]
-]
-(else-if: $compan is 2)[&quot;Rub the mushroom upon your blade and prick the ogre.&quot;
+[[Tell Karos To Break The Chains]]](else-if: $compan is 2)[&quot;Rub the mushroom upon your blade and prick the ogre.&quot;
 
 &quot;Alright then. Good plan&quot;, Loren says.
 
@@ -677,9 +662,8 @@ The ogre&#39;s grip loosens as he lets go of Loren. The ogre falls to its side a
 
 Loren rubs her neck smiles at you, eyes wide. &quot;You certainly keep things interesting, Captain.&quot;
 
-[[Tell Loren To Use Her Lockpick]]
-]
-(else:)[Error, no companion set.]
+[[Tell Loren To Use Her Lockpick]]](else:)[Error, no companion set.]
+
 (set: $compApproval to $compApproval+1)(set: $hasMush to 0)&lt;i&gt;((if: $compan is 2)[Loren](else-if: $compan is 1)[Karos](else:)[Error, No companion set.] approves)&lt;/i&gt;</tw-passagedata><tw-passagedata pid="45" name="Let The Fight Play Out" tags="" position="675,2391" size="100,100">(set: $karma to $karma+1)&lt;i&gt;(Your karma increases.)&lt;/i&gt;
 
 You and your companion watch the fight play out from a safe distance.
@@ -1077,17 +1061,17 @@ You open your mouth to speak but are interuppted. &quot;All the king&#39;s horse
 
 Karos says to you, &quot;Life is a battle for all. What&#39;ve your battles been?&quot;
 
-&quot;. . .I don&#39;t know if I want to talk about it.&quot;
+&quot;. . . I don&#39;t know if I want to talk about it.&quot;
 
-&quot;Oh. . .Well, If you&#39;d like, I&#39;m happy to listen to-&quot;
+&quot;Oh . . . Well, If you&#39;d like, I&#39;m happy to listen to-&quot;
 
-&quot;. . .No. Sorry. I won&#39;t. I&#39;ve tried. People don&#39;t want to hear it. It upsets them. They don&#39;t know what to say. I don&#39;t know why I brought it up.&quot;
+&quot;. . . No. Sorry. I won&#39;t. I&#39;ve tried. People don&#39;t want to hear it. It upsets them. They don&#39;t know what to say . . . I don&#39;t know why I brought it up.&quot;
 
 &quot;I&#39;m sorry, Captain. If you do not wish to speak of it, I won&#39;t push the issue.&quot;
 
 &quot;I . . . I appreciate that. Thanks.&quot;
 
-Ther is a small lull in conversation.
+There is a small lull in conversation.
 
 Karos looks up at you and puts out his arm, &quot;To a good journey.&quot;
 
@@ -1105,7 +1089,7 @@ Loren cocks her head to the side, &quot;Hmm? How so?&quot;
 
 &quot;You sure? Tell me about it.&quot;
 
-&quot;. . . No. Sorry. I won&#39;t. I&#39;ve tried. People don&#39;t want to hear it. It upsets them. They don&#39;t know what to say. They look at me befuddled and then stumble over some inadequate response. I don&#39;t know why I brought it up.&quot;
+&quot;. . . No. Sorry. I won&#39;t. I&#39;ve tried. People don&#39;t want to hear it. It upsets them. They look at me befuddled and then stumble over some inadequate response . . . I don&#39;t know why I brought it up.&quot;
 
 &quot;I&#39;m sorry, Captain.&quot; She looks into the distance as if thinking about what to say, then looks right into your eyes. &quot;The past is the past.&quot;
 
@@ -1121,7 +1105,7 @@ You feel a sense of relaxation and sleepiness as your conversation comes to a cl
 
 [[Wake Up In Ashenbark Forest]]</tw-passagedata><tw-passagedata pid="67" name="Check On Bishop Rafferty" tags="" position="358,4405" size="100,100">You shout out behind you to your party. &quot;How are you holding up back there Bishop?&quot;
 
-&quot;Huh?&quot; Rafferty has been looking downward and very deliberately plodding along, carefully deciding each footstep. He&#39;s holding up his robe, so at to not drag it along. He looks up. &quot;Oh. I&#39;m doing fine thank you.&quot;
+&quot;Huh?&quot; Rafferty has been looking downward and very deliberately plodding along, carefully deciding each footstep. He&#39;s holding up his robe, so as to not drag it along. He looks up. &quot;Oh. I&#39;m doing fine thank you.&quot;
 
 &quot;I imagine this perhaps isn&#39;t the environment you&#39;re used to, but it shouldn&#39;t be long until we&#39;re back to our carriage and on our way to the monastery in Coreston,&quot; you add, apologetically.
 
@@ -1191,7 +1175,7 @@ You continue leading your party back to your carriage.(set: $compApproval to $co
 
 [[Continue On|Back To Carriage]]</tw-passagedata><tw-passagedata pid="69" name="Continue Silently" tags="" position="663,4407" size="100,100">You and your party spend your time taking in the sights of the woods. It is a nice relief from all of the chaos and effort of the previous few days. 
 
-Rafferty is holding up his robe, so at to not drag it along the ground. Even he is appreciative of this moment of silent peace, after his burdonsome experience lodging with ogres.
+Rafferty is holding up his robe, so as to not drag it along the ground. Even he is appreciative of this moment of silent peace, after his burdonsome experience lodging with ogres.
 
 (if: $compan is 1)[Karos marches along stoically, heavily crunching braches and leaves underfoot.](else-if: $compan is 2)[Loren lightly maneuvers through the brambles and branches of these thick woods.](else:)[Error, No companion set]
 
