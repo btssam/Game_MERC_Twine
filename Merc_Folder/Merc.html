@@ -624,12 +624,10 @@ Loren looks uncomfortable. &quot;Loren Feth, your bishophood.&quot; She curtseys
 &quot;Maybe we can spend some time together when we get back to Coreston, eh? For now, let&#39;s get out of these hellish woods.&quot;
 
 [[Backtrack To Forest Entrance]] </tw-passagedata><tw-passagedata pid="43" name="Backtrack To Forest Entrance" tags="Ch4" position="503,4248" size="100,100">(if: $isChased is 1)[(set: $isChased to 0)You see your companion come running back just as you prepare to leave with Rafferty. &quot;I think I managed to lose their trail.&quot; (if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[Error, No companion set] says with some exhaustation. (if: $compan is 1)[&quot;That was almost fun.&quot; Karos stretches his neck from one side to the other and cracks his knuckles.](else-if: $compan is 2)[&quot;I&#39;m not sure if that was the most elegant solution, Captain. It would&#39;ve been nice if we could have stuck together.&quot; Loren brushes some sticks and leaves out of her hair and rubs her shoulder.]
-(if: $compan is 1)[
-(set: $compApproval to $compApproval+1)&lt;i&gt;(Karos approves)&lt;/i&gt;](else-if: $compan is 2)[
-(set: $compApproval to $compApproval-1)&lt;i&gt;(Loren disapproves)&lt;/i&gt;](else:)[
-Error, No companion set]
-]
-You lead your companion and Rafferty through the thick woods, back toward the forest entrance. You notice the sun starting to lower in the sky and that it must be early afternoon.
+
+(if: $compan is 1)[(set: $compApproval to $compApproval+1)&lt;i&gt;(Karos approves)&lt;/i&gt;](else-if: $compan is 2)[(set: $compApproval to $compApproval-1)&lt;i&gt;(Loren disapproves)&lt;/i&gt;](else:)[Error, No companion set]
+
+]You lead your companion and Rafferty through the thick woods, back toward the forest entrance. You notice the sun starting to lower in the sky and that it must be early afternoon.
 
 You realize, after about an hour of silent trudging, that nobody has spoken a word since you left the ogre encampment.
 
@@ -948,7 +946,7 @@ Far out in the horizon, you see Loren stop, turn off the path and look behind he
 
 You both spend a few moments creating your disguise from the environment around you.
 
-Your companion runs in, donned in leaves, sticks, and an ashen face. (if: $compan is 1)[Karos](else:)[Loren] jumps up and down, waves their arms, and starts yelling &quot;Fi&#39;ju teach you! Fi&#39;ju teach you.&quot;
+Your companion runs in, donned in leaves, sticks, and an ashen face. (if: $compan is 1)[Karos](else:)[Loren] jumps up and down, waves (if: $compan is 1)[his](else:)[her] arms, and starts yelling &quot;Fi&#39;ju teach you! Fi&#39;ju teach you.&quot;
 
 The ogres shoot up. They stare for a couple moments at (if: $compan is 1)[Karos&#39;s](else:)[Loren&#39;s] rhythmic movements.
 
@@ -964,19 +962,19 @@ One ogre steps forward and kneels. &quot;What you have us do, Fi&#39;ju spirit?&
 
 (if: $compan is 1)[Karos](else:)[Loren] tilts their heads up, licks (if: $compan is 1)[his](else:)[her] thumb, dips it into the sack of ashes and paints a curved mark from one side of their face to another.
 
-&quot;Fi&#39;ju teach you. Fi&#39;ju see you. Weak, scared. Fi&#39;ju commands such: leave Ashenbark forest. Go as far as the skyheat touches. Wander. Find your stength again. The wilderness is now yours.&quot;
+&quot;Fi&#39;ju teach you. Fi&#39;ju see you. Weak. Scared. Fi&#39;ju commands such: leave Ashenbark forest. Go as far as the skyheat touches. Wander. Find your stength again. The wilderness is now yours.&quot;
 
-They look to their chest of jewelry, to their camps&#39; walls, and to the campfire beneath them. The ogres seem to ponder the perceived Fi&#39;ju spirit&#39;s words. They look shaken.
+They look to their chest of jewelry, to their camps&#39; walls, and to the campfire beside them. The ogres seem to ponder the perceived Fi&#39;ju spirit&#39;s words. They look shaken.
 
-&quot;Trinkets, buildings, tools, all things you reaped from these woods. You weaken by thinking you can&#39;t find, take, or create it elsewhere.&quot;
+&quot;Trinkets, buildings, tools - all things you reaped from these woods. You weaken by thinking you can&#39;t find, take, or create it elsewhere.&quot;
 
 One ogre slowly stands up, brings its&#39; mug right up to (if: $compan is 1)[Karos](else:)[Loren] and lets loose a bestial, dripping roar.
 
-&quot;RAAAAAOOOOOH!&quot; The trees shake and birds scatter. He towers over the presumed mystic.
+&quot;RAAAAAOOOOOH!&quot; The trees shake and birds scatter. It towers over the presumed mystic.
 
-&quot;You call us weak? We return to land of dragon. Land of men and fire and ash and you call us WEAK?&quot; It grabs your companion by the garb and holds them in the air.
+&quot;You call us weak? We return to land of dragon. Land of men and fire and ash and you call us WEAK?&quot; The ogre grabs your companion by the garb and holds (if: $compan is 1)[him](else:)[her] in the air.
 
-(if: $compan is 1)[Karos&#39;](else:)[Loren&#39;s] legs dangle loosely. &quot;I call you strong. Stronger than you can be here. Stronger than these woods, this prison, can contain.&quot; The ogre&#39;s grip slowly loosens. &quot;Fi&#39;ju teach you.&quot;
+(if: $compan is 1)[Karos&#39;s](else:)[Loren&#39;s] legs dangle loosely. &quot;I call you strong. Stronger than you can be here. Stronger than these woods, this prison, can contain.&quot; The ogre&#39;s grip slowly loosens. &quot;Fi&#39;ju teach you.&quot;
 
 The ogres drop to their knees and roar in unison, loud enough that you think the trees might shake loose from the ground. They gather their clubs and charge out the front entrance of the camp.
 
@@ -998,7 +996,7 @@ Karos reaches to his back, grabbing his longspear. The ogre is smacking Karos wi
 
 The shocked ogre slumps over and starts falling in your direction. You deftly roll to your side as the ogre lands narrowly beside you, bouncing you lightly off the ground.
 
-You stand up and draw your blade as you notice Karos being held by his throat by the other ogre. He draws a blade from his leg holster and lands it deep in the ogre&#39;s torso. Then, he draws and inserts another. And another. The ogre winces at each, but does not let go of the mountainous Karos. Karos locks eyes with you as you see his fierceness matched with desperation.
+You stand up and draw your blade as you notice Karos being held by his throat by the other ogre. He draws a short blade from his leg holster and lands it deep in the ogre&#39;s torso. Then, he draws and inserts another. And another. The ogre winces at each, but does not let go of the mountainous Karos. Karos locks eyes with you as you see his fierceness matched with desperation.
 
 You leap into action. Taking three long strides, you swiftly find yourself a step away from the ogre. In one motion, you step forward and firmly thrust your blade upward into the back of the ogre&#39;s skull.
 
@@ -1008,10 +1006,9 @@ It releases Karos, grasping the back of its head as it falls to the side. Karos 
 
 &quot;No, it is okay.&quot; He says with his voice and head low. &quot;Just . . . perhaps it would&#39;ve been better to engage them head on.&quot;
 
-(set: $compApproval to $compApproval-1)&lt;i&gt;(Karos disapproves)&lt;/i&gt;
-](else-if: $compan is 2)[You signal to your companion to stay low and move toward the side entrance. You both lower your heads and walk slowly and lightly along the crude wall.
+(set: $compApproval to $compApproval-1)&lt;i&gt;(Karos disapproves)&lt;/i&gt;](else-if: $compan is 2)[You signal to your companion to stay low and move toward the side entrance. You both lower your heads and walk slowly and lightly along the crude wall.
 
-&quot;Follow my lead&quot;, whispers Loren. She walks up ahead of you, dipping low to ground, moving ever subtley.
+&quot;Follow my lead&quot;, whispers Loren. She walks up ahead of you, dipping low to the ground, moving ever subtley.
 
 Looking toward the ogres, they seem preoccupied and to not be looking in your direction, despite the fact that you are getting to be quite close. The smoke seems to help cloud their vision a little as your party moves slowly closer to the hut.
 
@@ -1019,26 +1016,25 @@ Loren signals for you to stop. She looks around, seemingly concerned about the o
 
 You take a moment to process her silent communications. Then you step silently onto the dagger and reach up to the branch. You pull yourself up, unto the branch, and move toward the trunk of the tree. Looking back, you see Loren make her way up too. She steps on the dagger, pulls herself up the branch and pulls the dagger back out with her feet in the same motion.
 
-You both drop down, on the opposite side of the wall, near the side entrance and the hut, completely obscured from the ogres&#39; eyes.
+You both drop down, on the opposite side of the wall, near the side entrance of the encampment and the stone hut, completely obscured from the ogres&#39; eyes.
 
 &quot;Not sure how much closer we could have got to the ogres without them catching on, Captain.&quot; She says as she brushes some dirt off her garments.
 
 You look back at her with true wonder and gratitude. &quot;Deftly done, Loren.&quot; You say, still keeping your voice low.
 
-(set: $compApproval to $compApproval+1)&lt;i&gt;(Loren approves)&lt;/i&gt;
-](else:)[Error, no companion set.]
+(set: $compApproval to $compApproval+1)&lt;i&gt;(Loren approves)&lt;/i&gt;](else:)[Error, no companion set.]
+
 [[Investigate Hut|Investigate Hut Two]]
 [[Back|Inv Ogres]]</tw-passagedata><tw-passagedata pid="64" name="Investigate Hut Two" tags="" position="748,3877" size="100,100">You sneak up to the entrance of the hut and peer in.
 
 In the farmost corner, you see a man in white tattered robes with a bishop&#39;s pointed mitre hat on his head. He has a dirty cloth wrapped around his mouth and another around his eyes. He has shackles on his wrists and is chained to the wall. It must be Bishop Rafferty!
-(if: $isChased is 0)[(if: $compan is 1)[ [[Tell Karos To Break The Chains]]](else-if: $compan is 2)[ [[Tell Loren To Use Her Lockpick]]]](else-if: $isChased is 1)[ [[Attemt To Break The Chains]] ]</tw-passagedata><tw-passagedata pid="65" name="Attemt To Break The Chains" tags="" position="749,4038" size="100,100">(set: $hasBishop to 1)(set: $bishopApproval to 0)
-&quot;I&#39;m here to help. Hold your arms apart so I can free you from these shackles.&quot;
+(if: $isChased is 0)[(if: $compan is 1)[ [[Tell Karos To Break The Chains]]](else-if: $compan is 2)[ [[Tell Loren To Use Her Lockpick]]]](else-if: $isChased is 1)[ [[Attemt To Break The Chains]] ]</tw-passagedata><tw-passagedata pid="65" name="Attemt To Break The Chains" tags="" position="749,4038" size="100,100">(set: $hasBishop to 1)(set: $bishopApproval to 0)&quot;I&#39;m here to help. Hold your arms apart so I can free you from these shackles.&quot;
 
 You begin swinging hard at the chains with your blade. It seems to have little effect as the chain absorbs most of the energy of your blow and bounces back.
 
 &quot;Damn. Let&#39;s try this. I&#39;ll get you out of these. Don&#39;t worry.&quot;
 
-You pull the chain, bending Rafferty down along with it, and holding the chain against the ground. You put both feet on the chain and swing at it hard with your blade, leaving little room for personal space betwen you and Bishop. You see annoyance and anger in the Bishop. His muffled cries in protest go unanswered as he rears away from the blade. Part of you is grateful you didn&#39;t remove his gag first.
+You pull the chain, bending Rafferty down along with it, and hold the chain against the ground. You put both feet on the chain and swing at it hard with your blade, leaving little room for personal space betwen you and Bishop. You see annoyance and anger in the Bishop. His muffled cries in protest go unanswered as he rears away from the blade. Part of you is grateful you didn&#39;t remove his gag first.
 
 Your swinging finally starts to loosen the chain and it breaks. Now you look toward the chain attaching him to the wall. You sheathe your blade, take off your shield and hold it by its&#39; sides. You bash down hard onto the chain repeatedly. It starts to loosen and eventually breaks off from the wall.
 
@@ -1052,7 +1048,7 @@ You remove the cloth from around the Bishop&#39;s mouth and eyes.
 
 Rafferty peers over, looking behind. &quot;And you&#39;re here alone. All they send is one fool to rescue me?&quot;
 
-You open your mouth to speak but are interuppted. &quot;All the king&#39;s horses and all the king&#39;s men, eh? Well, get me out of this damned woods and back to civility. I&#39;ve been here for ages.&quot;
+You open your mouth to speak but are interuppted. &quot;All the king&#39;s horses and all the king&#39;s men, eh? Well, get me out of these damned woods and back to civility. I&#39;ve been here for ages.&quot;
 
 &quot;Yes sir. That is what I&#39;m here for.&quot;
 
@@ -1131,8 +1127,9 @@ Rafferty looks confused and almost angered by the question. &quot;What&#39;s the
 
 Raffery cuts her off. &quot;Oh not to worry. There&#39;s plenty of entertainment for a ruffian like you.&quot; He sighs again. &quot;It is true. Once I get back to my monastery, I&#39;ll feel more accommodated than I did in these woods.&quot;
 
-Loren&#39;s face becomes flush and she looks down. &quot;Well let&#39;s not waste any time then.&quot;
-](else:)[Error, No companion set.]You continue leading your party back to your carriage.
+Loren&#39;s face becomes flush and she looks down. &quot;Well let&#39;s not waste any time then.&quot;](else:)[Error, No companion set.]
+
+You continue leading your party back to your carriage.
 
 (set: $bishopApproval to $bishopApproval+1)&lt;i&gt;(Bishop Rafferty approves)&lt;/i&gt;
 
@@ -1158,7 +1155,7 @@ To this, Rafferty doesn&#39;t reply and just makes some disgruntled noises. You 
 
 &lt;i&gt;(Karos approves)&lt;/i&gt;](else-if: $compan is 2)[Loren?&quot;
 
-&quot;I&#39;m doing quiet alright, Captain&quot;, she says with some levity. &quot;It seems we&#39;ve dealt with what ought to be our &lt;i&gt;largest&lt;/i&gt; threat back there in that encampment. Now, a little forest stroll seems like it could be good for the soul.&quot; She&#39;s looking around, taking in the sights and smells of the various flora and fauna native to Ashenbark.
+&quot;I&#39;m doing quite alright, Captain&quot;, she says with some levity. &quot;It seems we&#39;ve dealt with what ought to be our &lt;i&gt;largest&lt;/i&gt; threat back there in that encampment. Now, a little forest stroll seems like it could be good for the soul.&quot; She&#39;s looking around, taking in the sights and smells of the various flora and fauna native to Ashenbark.
 
 &quot;Aha! It&#39;s nice to have such a positve outlook in our party.&quot; You add with a smile. &quot;I appreciate having you on our team. Well, you should know, we aren&#39;t but halfway done with our task. You do not tire yet?&quot;
 
@@ -1172,8 +1169,8 @@ Rafferty is holding up his robe, so at to not drag it along the ground. &quot;Su
 
 You reassure your party of the path ahead of you. &quot;We have a fair bit left to go, but it shouldn&#39;t be too long. Now let&#39;s just try to enjoy this little stretch of peace.&quot;
 
-&lt;i&gt;Loren approves&lt;/i&gt;
-](else:)[Error, No companion set]
+&lt;i&gt;Loren approves&lt;/i&gt;](else:)[Error, No companion set]
+
 You continue leading your party back to your carriage.(set: $compApproval to $compApproval +1)
 
 [[Continue On|Back To Carriage]]</tw-passagedata><tw-passagedata pid="69" name="Continue Silently" tags="" position="663,4407" size="100,100">You and your party spend your time taking in the sights of the woods. It is a nice relief from all of the chaos and effort of the previous few days. 
@@ -1192,19 +1189,19 @@ Your party concludes that it may have been ogres who smashed your carriage. Bish
 
 [[Begin The Walk To Coreston]]</tw-passagedata><tw-passagedata pid="71" name="Begin The Walk To Coreston" tags="" position="504,4746" size="100,100">Your party is walking along a dirt path within a gully, flanked on both sides by woods.
 
-&quot;I can&#39;t believe this.&quot; Rafferty has been muttering to himself and fretting about the situation for some time. &quot;Absolutely preposterous. A bishop alongside two fools that can&#39;t even keep their vehicle safe. For godsake, I&#39;m a clergy member!&quot;
+&quot;I can&#39;t believe this.&quot; Rafferty has been muttering to himself and fretting about the situation for some time. &quot;Absolutely preposterous. A bishop alongside two fools that can&#39;t even keep their caravan. For godsake, I&#39;m a clergy member!&quot;
 
 (if: $compan is 1)[Karos hasn&#39;t let these criticisms affect his stalwart attitude and is continuing on without hesitation.](else-if: $compan is 2)[Loren is mantaining a positve demeanor, though you notice part of her seems a bit perturbed by the bishop&#39;s complaining.](else:)[Error, no companion set]
 
 &quot;Come on now. If we keep up our pace, we&#39;ll be back in . . .&quot; You are interupted by a disturbing sound and quiet down to observe it more closely.
 
-You hear something plodding along off to your left side in the wood. The flora is shaking lightly alongside this disturbance. Then, a similar activity begins on your right side too. They seem to be getting closer and as they do, you begin to hear sniffling and panting.
+You hear something plodding along off to your left side in the woods. The flora is shaking lightly alongside this disturbance. Then, a similar activity begins on your right side too. They seem to be getting closer and, as they do, you begin to hear sniffling and panting.
 
 (link: &quot;Ask Party For Advice&quot;) [(set: $previousPassage to &quot;Begin The Walk To Coreston&quot;)(goto:&quot;Ask Party For Advice&quot;)]
 [[Enter The Woods Together]]
 [[Continue Along The Path]]
 [[Send Companion To Check It Out]]
-(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Begin The Walk To Coreston&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="72" name="Continue Along The Path" tags="" position="504,4899" size="100,100">(set: $compan to 2)You continue trekking toward your goal, despite the disconcerting sounds flanking you.
+(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Begin The Walk To Coreston&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="72" name="Continue Along The Path" tags="" position="502.3333333333333,4899" size="100,100">(set: $compan to 2)You continue trekking toward your goal, despite the disconcerting sounds flanking you.
 
 &quot;So, you&#39;re just going to ignore them huh? All that  heavy weaponry is just for show, eh?&quot; Rafferty seems upset and somewhat fearful. &quot;Alrighty then. Well, let&#39;s just whistle along and hope nothing tears our throats out.&quot;
 
@@ -1236,7 +1233,7 @@ The wolves are snarling as they circle around your party. You and (if: $compan i
 
 You and (if: $compan is 1)[Karos](else-if: $compan is 2)[Loren] line up next each other, Rafferty close behind, and enter the woods on your right with weapons drawn. Rafferty&#39;s heart is beating rapidly and he&#39;s sweating profusely, but he is smiling. &quot;This should be quite the show.&quot;
 
-You move straight toward where the sounds were coming from. After but a few yards, you come across a snarling pair of wolves. Your party slowly approaches them. They both let out a curt howl.
+You move straight toward the origin of the sound. After but a few yards, you come across a snarling pair of wolves. Your party slowly approaches them. They both let out a curt howl.
 
 Shortly after, you hear loud growling from behind. You whip around to see that two more wolves are prowling toward you across the path. The four wolves begin circling around your party. Despite the threat, you hear Rafferty blurt out a chuckle.
 
@@ -1252,32 +1249,28 @@ What do you do?
 
 You look back toward Bishop Rafferty and see that he is unscathed, even bearing a twitching smile.
 
-[[Prepare to Fight]] 
-](else-if: $wolfhp is 2)[(set: $wolfhp to 1)You lift your shield and stand firm, directly in front of Rafferty, positioning yourself between the two flanking wolves and him. One growls at you, menacingly, and you turn toward it, expecting it to pounce. However, when you glance behind, you see that the other has been prowling, slowly, toward the frightened bishop. He tugs lightly at at your arm, stunned in fear, as if he had stared into a gorgon&#39;s eye.
+[[Prepare to Fight]] ](else-if: $wolfhp is 2)[(set: $wolfhp to 1)You lift your shield and stand firm, directly in front of Rafferty, positioning yourself between the two flanking wolves and him. One growls at you, menacingly, and you turn toward it, expecting it to pounce. However, when you glance behind, you see that the other has been prowling, slowly, toward the frightened bishop. He tugs lightly at your arm, stunned in fear, as if he had stared into a gorgon&#39;s eye.
 
 You pivot around toward his right side to intercept the approaching wolf, as your companion fights off the other. It has already gotten very close. You bash it harshly with you shield, stunning the beast for a moment. You take this opportunity to swing your body around and above the wolf. It, now in between your two legs, is just starting to come to. You grab it harshly by the scruff and reach around to insert your blade into its chest.
+
 Its deathrattle is a disheartening, howling, whimper.
 
-[[Prepare to Fight]] 
-](else-if: $wolfhp is 1)[You step infront of Rafferty, becoming his shield from the remaining wolf. It seems hesistant about approaching head on and is trying to find an opening, but you rotate along with it, intercepting its angle of attack.
+[[Prepare to Fight]] ](else-if: $wolfhp is 1)[You step infront of Rafferty, becoming his shield from the remaining wolf. It seems hesistant about approaching head on and is trying to find an opening, but you rotate along with it, intercepting its angle of attack.
 
-It stops and looks up at you, standing in the way of the defenseless meal that is Rafferty, and then looks toward the (if: $compan is 1)[intimidating Karos](else-if: $compan is 2)[deadly Loren](else:)[error, no companion set]. It steps back once with its hindpaw. Sensing its fear, you take this opportunity to clang the broadside of your blade against you shield several times, creating an echoing din. It steps back again. You then take one stride forward, still staying close to Rafferty, and the wolf turns tail and runs off.
-
-Thus, your party has succesfully avoided becoming a quick meal to a pack of hungry wolves.
-
-[[Continue On]]
-](else:)[Error, no wolfhp set]</tw-passagedata><tw-passagedata pid="77" name="Attack A Wolf" tags="" position="504,5195" size="100,100">(if: $wolfhp is 4)[(set: $wolfhp to 2)You instruct your companion to hold close to Rafferty and (if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[Error, no companion set] positions (if: $compan is 1)[himself](else-if: $compan is 2)[herself](else:)[Error, no companion set] infront of him. You walk boldly toward the pack. One leaps at you right away, but you block it with your shield and it push it to the ground. Then, you slice at it repeatedly, blood splatering on your armor. You continue marching on your onslaught. Another wolf strikes at you, leaping into the air. You narrowly sidestep the attack, and as you do, you strike it down from the air. It thumps heavily to the ground. The other two wolves growl angrily and regroup.
-
-[[Prepare to Fight]]
-](else-if: $wolfhp is 2)[(set: $wolfhp to 1)You charge boldly toward the wolves, as (if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[Error, no companion set] keeps (if: $compan is 1)[his](else-if: $compan is 2)[her](else:)[Error, no companion set] eye on Rafferty. You aim your sights toward one of them, but as you approach, the other swings around and is now bounding toward you from behind. You act quickly. You slice the back of the wolf&#39;s neck and shove the bottom point of your shield downward into the wound with both hands. With enough force, you manage to impale this wolf deeply. Then, you swiftly twirl around to the other side of the shield and duck down low, just as the other wolf leaps toward you. It bangs off your mounted shield and is stunned. You take this time to regroup with your party and mount your final attack.
-
-[[Prepare to Fight]]
-](else-if: $wolfhp is 1)[The lone wolf views your party with a snarl and ferociousness that you would not expect after it lost its pack. It rushes toward you, in its final effort to finish this battle. You match its attack by charging forward yourself, your blade leading your way. It leaps right at your neck, but as it does, you manage to manuvear your blade up and around, so that it is pointed toward the wolf&#39;s angle of attack. You thrust your blade outward. The wolf is impaled deeply on your blade. As you lower the wolf to the ground and remove your blade, it lets out a horrible final snarl.
+It stops and looks up at you, standing in the way of the defenseless meal that is Rafferty, and then looks toward the (if: $compan is 1)[intimidating Karos](else-if: $compan is 2)[deadly Loren](else:)[error, no companion set]. It steps back once with its hindpaw. Sensing its fear, you take this opportunity to clang the broadside of your blade against your shield several times, creating an echoing din. It steps back again. You then take one stride forward, still staying close to Rafferty, and the wolf turns tail and runs off.
 
 Thus, your party has succesfully avoided becoming a quick meal to a pack of hungry wolves.
 
 [[Continue On]]
-](else:)[Error, no wolfhp set]</tw-passagedata><tw-passagedata pid="78" name="Send Your Companion To Attack" tags="" position="654,5199" size="100,100">(if: $wolfhp is 4)[(set: $wolfhp to 2)(if: $compan is 1)[&quot;I&#39;ll hold back with Rafferty. You, Karos, attack with all your ferocity!&quot;
+](else:)[Error, no wolfhp set]</tw-passagedata><tw-passagedata pid="77" name="Attack A Wolf" tags="" position="504,5195" size="100,100">(if: $wolfhp is 4)[(set: $wolfhp to 2)You instruct your companion to hold close to Rafferty and (if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[Error, no companion set] positions (if: $compan is 1)[himself](else-if: $compan is 2)[herself](else:)[Error, no companion set] infront of him. You walk boldly toward the pack. One leaps at you right away, but you block it with your shield and it push it to the ground. Then, you slice at it repeatedly, blood splatering on your armor. You continue your onslaught, marching onward. Another wolf strikes at you, leaping into the air. You narrowly sidestep the attack, and as you do, you strike it down from the air. It thumps heavily to the ground. The other two wolves growl angrily and regroup.
+
+[[Prepare to Fight]]](else-if: $wolfhp is 2)[(set: $wolfhp to 1)You charge boldly toward the wolves, as (if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[Error, no companion set] keeps (if: $compan is 1)[his](else-if: $compan is 2)[her](else:)[Error, no companion set] eye on Rafferty. You aim your sights toward one of them, but as you approach, the other swings around and is now bounding toward you from behind. You act quickly. You slice the back of the wolf&#39;s neck and shove the bottom point of your shield downward into the wound with both hands. With enough force, you manage to impale this wolf deeply. Then, you swiftly twirl around to the other side of the shield and duck down low, just as the other wolf leaps toward you. It bangs off your mounted shield and is stunned. You take this time to regroup with your party and mount your final attack.
+
+[[Prepare to Fight]]](else-if: $wolfhp is 1)[The lone wolf views your party with a snarl and ferociousness that you would not expect after it lost its pack. It rushes toward you, in its final effort to finish this battle. You match its attack by charging forward yourself, your blade leading your way. It leaps right at your neck, but as it does, you manage to manuvear your blade up and around, so that it is pointed toward the wolf&#39;s angle of attack. You thrust your blade outward. The wolf is impaled deeply on your blade. As you lower the wolf to the ground and remove your blade, it lets out a horrible final snarl.
+
+Thus, your party has succesfully avoided becoming a quick meal to a pack of hungry wolves.
+
+[[Continue On]]](else:)[Error, no wolfhp set]</tw-passagedata><tw-passagedata pid="78" name="Send Your Companion To Attack" tags="" position="654,5199" size="100,100">(if: $wolfhp is 4)[(set: $wolfhp to 2)(if: $compan is 1)[&quot;I&#39;ll hold back with Rafferty. You, Karos, attack with all your ferocity!&quot;
 
 Karos plunges into the battle without question. He is completely surrounded on all sides by wolves. It isn&#39;t long before he is tumbling with them in a discordant mess of fur and steel. Two of them pounce on him, biting onto his metal gauntlets. He tries to shake them off, but to no avail.
 
@@ -1289,22 +1282,20 @@ Just as she is landing, another wolf leaps and bites at her breeches and latches
 
 &quot;Not my cleanest work, but it&#39;ll get the job done.&quot;](else:)[Error, no companion set]
 
-[[Prepare to Fight]] 
-](else-if: $wolfhp is 2)[(set: $wolfhp to 1)(if: $compan is 1)[&quot;Go Karos! Don&#39;t worry about the two of us!&quot;
+[[Prepare to Fight]] ](else-if: $wolfhp is 2)[(set: $wolfhp to 1)(if: $compan is 1)[&quot;Go Karos! Don&#39;t worry about the two of us!&quot;
 
 Karos unsheates his spear and lets loose a powerful barbaric yawp, causing the two wolves to cower as he charges forth. One holds its ground, whereas the other takes a few steps back. Karos, now in range of the closer wolf, takes a firm stand. He repeatedly thrusts his spear forward, yet the beast manages to manuveur around. The other wolf cotinues to slowly back away from Karos. Seeing this weakness as an opportunity, Karos withdraws his attack and recenters himself. Then he pulls his arm back and tosses his spear, as swift as a loaded trebuchet let loose, at the timid wolf. It lands square in its backside and through the ground. The other wolf looks back to its dead kin, and then back to Karos, to which he responds with a spittle and rage filled roar. The remaining wolf stands firm and growls.
 ](else-if: $compan is 2)[&quot;Go Loren! Don&#39;t worry about the two of us!
 
 Loren knocks an arrow and immediately shoots at the remaining two wolves. Though she manages to hit one, it is no lethal blow only slightly piercing its shoulder. This wolf, now enraged, bounds straight for Loren and leaps on top of her. The wolf&#39;s claws are on her chest and its snarling fangs are but a few inches from her face. Loren drops her bow and in a single swift motion, unsheathes her long knife and stabs firmly into the injured wolf&#39;s chest with both hands. The both exchange deadly, teeth baring, grimaces as the wolf finally relents and slips off her long knife.](else:)[Error, no companion set]
 
-[[Prepare to Fight]] 
-](else-if: $wolfhp is 1)[(if: $compan is 1)[&quot;There&#39;s just one left, Karos!&quot;, you shout. &quot;It&#39;s all yours.&quot;
+[[Prepare to Fight]] ](else-if: $wolfhp is 1)[(if: $compan is 1)[&quot;There&#39;s just one left, Karos!&quot;, you shout. &quot;It&#39;s all yours.&quot;
 
 Karos looks back at you and Rafferty with a quick smile and advances. He strides forward, heavily stomping the ground with each step. He steps over the remaining wolf&#39;s kin. As he unsheathes both axes, the wolf starts to cower and twitch in fear. It starts to back away, but then stops as Karos gets close, seeming stunned in fear. Karos looks back and exchanges a quick glance with you. Karos kneels down to the wolf, drops both his axes, looks at it eye to eye, and then release a booming yell inches from its face. The wolf whimpers and scampers off.
 
 Thus, your party has succesfully avoided becoming a quick meal to a pack of hungry wolves.](else-if: $compan is 2)[&quot;There&#39;s just one left, Loren!&quot;, you shout. &quot;It&#39;s all yours.&quot;
 
-Loren unsheathes her long knife and approaches the nearby wolf. The wolf ferociously snarls at her as she approaches. When she is but a few feet away, the wolf leaps right at her. She deftly sidesteps the wolf and, while its still in the air, she comes down hard with her knife into the small of its back. It falls heavily to the ground and Loren quickly removes her blade and reaches around to give a final cut to its neck.
+Loren unsheathes her long knife and approaches the nearby wolf. The wolf ferociously snarls at her as she approaches. When she is but a few feet away, the wolf leaps right at her. She deftly sidesteps the wolf and, while its still in the air, she comes down hard with her knife into the small of its back. It falls heavily to the ground and Loren quickly removes her blade and reaches around to give a final cut to its throat.
 
 Thus, your party has succesfully avoided becoming a quick meal to a pack of hungry wolves.](else:)[Error, no companion set]
 
