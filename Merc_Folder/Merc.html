@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Merc.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Merc" startnode="1" creator="Twine" creator-version="2.3.14" ifid="214A01F5-A9D6-4B1E-B58B-BC2D2486FEDB" zoom="0.6" format="Harlowe" format-version="3.2.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar {
+<tw-storydata name="Merc" startnode="1" creator="Twine" creator-version="2.3.14" ifid="214A01F5-A9D6-4B1E-B58B-BC2D2486FEDB" zoom="0.6" format="Harlowe" format-version="3.2.2" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar {
   display: none;
 }
 
@@ -275,7 +275,7 @@ For the first time, Karos reveals a slight smile and then dons his heavy metal a
 
 &quot;Let&#39;s move. My hands are starting to get twitchy.&quot;
 
-[[Set Off To Ashenbark Forest]]</tw-passagedata><tw-passagedata pid="28" name="Check Status" tags="Core" position="1200,1593" size="100,100">(text-style: &quot;blink&quot;)[&lt;b&gt;Status:&lt;/b&gt;]
+[[Set Off To Ashenbark Forest]]</tw-passagedata><tw-passagedata pid="28" name="Check Status" tags="Core" position="1200,1599.6666666666667" size="100,100">(text-style: &quot;blink&quot;)[&lt;b&gt;Status:&lt;/b&gt;]
 
 (if: $hasBishop is 0)[You&#39;ve yet to find the Bishop. Keep looking. He is captured by ogres in the Ashenbark Forest.](else:)[You&#39;ve found the Bishop and now must make your way back to Monastery in Coreston.
 
@@ -387,7 +387,7 @@ Along the river, you see a bronze colored rock, a mushroom with a faint green gl
 	(else-if: $compan is 2)[&quot;Quite the man, this is,&quot; Loren crosses her arms and looks the wizard up and down. &quot;No common peddler of prestidigitation, that&#39;s for sure. I think he&#39;s quite capable of what he says he can do. And I think we could use any help we can get on this task.
 	](else:)[Error, no companion set.]&quot;I appreciate your input here, (if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[Error, no companion set].&quot; You look to Rafferty, &quot;And you, your bishophood?&quot;
 	
-	Bishop Rafferty looks at the curious man and then looks down to his dishevelled robes. &quot;I think I&#39;ve been in these woods too damn long already. A little expediency couldn&#39;t hurt at this point, assuming all goes well.&quot;
+	Bishop Rafferty looks down to his own dishevelled robes and then looks at the curious man. &quot;I think I&#39;ve been in these woods too damn long already. A little expediency couldn&#39;t hurt at this point, assuming all goes well.&quot;
 ]
 (if: $previousPassage is &quot;Rest By The Fire&quot;)[
 	(if: $compan is 1)[Karos furrows his brow and says to your party, &quot;A strange sound. Seems unnatural. No common wildlife that&#39;s for sure.&quot;](else-if: $compan is 2)[Loren looks bewildered and says, &quot;Now, that just doesn&#39;t sound natural, does it? I wonder what it could be. Only one way to find out, I suppose.&quot;](else:)[Error, no companion set]
@@ -397,7 +397,7 @@ Along the river, you see a bronze colored rock, a mushroom with a faint green gl
 (if: $previousPassage is &quot;Follow The Strange Noise&quot;)[
 	(if: $compan is 1)[&quot;I do not like the look of this, Captain,&quot; Karos says, with his eyes revealing the slightest hint of fear. &quot;Disturbing life&#39;s cycles often has dire consequences. Angry, sharp, and deadly ones in this case.&quot;](else-if: $compan is 2)[&quot;This seems . . .&quot; Loren shudders. &quot;This seems wrong. I can&#39;t say I&#39;d recommend risking a dragonmother&#39;s wrath over our bishop&#39;s simple desire. I know he&#39;s our client, but . . .&quot; She glances over at Rafferty then quietly adds, &quot;We have to draw the line somewhere.&quot;](else:)[Error, no companion set]
 	
-	Rafferty injercts, heatedly. &quot;Do not listen to this fool. I simply must have this. I&#39;m sure we&#39;ll be fine. We haven&#39;t too long left to go anyway. Now, who hired you in the first place anyway? I&#39;d suggest you listen to the ones who pay your salary.&quot;
+	Rafferty interjects, heatedly. &quot;Do not listen to this fool. I simply must have this. I&#39;m sure we&#39;ll be fine. We haven&#39;t too long left to go anyway. Now, who hired you in the first place anyway? I&#39;d suggest you listen to the ones who pay you.&quot;
 ]
 (if: $previousPassage is &quot;Arrive At Coreston&quot;)[
 	(if: $compan is 1)[&quot;I see no strength in these men.&quot; Karos eyes the guards ferociously. &quot;They prey upon the weak and hold their blades with tender hands. Wonder how they&#39;d act around a true warrior.&quot; He grips his axe tightly.](else-if: $compan is 2)[Loren looks suspiciously at the guards. &quot;These don&#39;t seem like genuine Kingsguard. Some common thugs, perhaps. I don&#39;t think they hold as much authority as they&#39;d like to make us believe.&quot;](else:)[Error, no companion set] You look over to the bishop and he is so scared, he can barely form a whisper, &quot;Just . . . get us in.&quot;
@@ -1201,7 +1201,7 @@ You hear something plodding along off to your left side in the woods. The flora 
 [[Enter The Woods Together]]
 [[Continue Along The Path]]
 [[Send Companion To Check It Out]]
-(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Begin The Walk To Coreston&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="72" name="Continue Along The Path" tags="" position="502.3333333333333,4899" size="100,100">(set: $compan to 2)You continue trekking toward your goal, despite the disconcerting sounds flanking you.
+(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Begin The Walk To Coreston&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="72" name="Continue Along The Path" tags="" position="502,4899" size="100,100">(set: $compan to 2)You continue trekking toward your goal, despite the disconcerting sounds flanking you.
 
 &quot;So, you&#39;re just going to ignore them huh? All that  heavy weaponry is just for show, eh?&quot; Rafferty seems upset and somewhat fearful. &quot;Alrighty then. Well, let&#39;s just whistle along and hope nothing tears our throats out.&quot;
 
@@ -1304,9 +1304,9 @@ Thus, your party has succesfully avoided becoming a quick meal to a pack of hung
 
 (if: $compan is 1)[&quot;Battle is no sport to be enjoyed by onlookers&quot;, Karos responds solemnly. &quot;It is the delicate balance of life and death.&quot;](else-if: $compan is 2)[&quot;Well now&quot;, Loren responds as she rubs one of her wounds. &quot;That&#39;s certainly one way of putting it.&quot;](else:)[Error, no companion set] The bishop scoffs and recenters his cap.
 
-You try to stir up your party with some quick words. &quot;Now, that was a tough battle and we all did well to avoid any serious injury. However, there&#39;s no time to rest. It seems best if we don&#39;t linger any longer and risk any more action.&quot; With that you lead your party further down the flora flanked path.
+You try to stir up your party with some quick words. &quot;Now, that was a tough battle and we all did well to avoid any serious injury. There&#39;s no time to rest, however. It seems best if we don&#39;t linger any longer and risk any more action.&quot; With that you lead your party further down the flora flanked path.
 
-At length, you all start to see the path open up just ahead. Just before the end of the woods, you hear a faint cry come out from your left. You halt your party with a hand signal and try to hear more closely. You hear a weak yell and a whimper of a human far off in the woods.
+At length, you all start to see the path open up just ahead. Just before the end of the woods, you hear a faint cry come out from your left. You halt your party with a hand signal and try to listen more closely. You hear a weak yell and a whimper of a human far off in the woods.
 
 You look back to your companions and ponder, &quot;You all hear that? I wonder what that could be.&quot;
 
@@ -1321,9 +1321,9 @@ You look back to your companions and ponder, &quot;You all hear that? I wonder w
 
 (set: $bishopApproval to $bishopApproval +1)&lt;i&gt;(Bishop Rafferty approves)&lt;/i&gt;
 
-The woods open up into a wide field as the path continues. There are still some trees and bushes flanking your path, but much less than the tangled mess you last had to pass through. After a few hours of plodding along this path, with dusk rapidly approaching, you all set up a quick camp right in the center of the road. Stones are gathered and set in a circle, as well as firewood, and a flame is drawn. Your party shares some of your food reserves. Tough dried meat and fruit is pased around the campfire, as well as some curt final words to end the day. Rafferty partakes the least in both, seeming discontent in his company and their rations. Before long, you all setup what little comfort you can to prepare for a rest.
+The woods open up into a wide field as the path continues. There are still some trees and bushes flanking your path, but much less than the tangled mess you last had to pass through. After a few hours of plodding along this path, with dusk rapidly approaching, you all set up a quick camp right in the center of the road. Stones are gathered and set in a circle, firewood is placed inside of the stone circle, and a flame is drawn. Your party shares some of your food reserves. Tough dried meat and fruit is pased around the campfire, as well as some curt final words to end the day. Rafferty partakes the least in both, seeming discontent in his company and their rations. Before long, you all setup what little comfort you can to prepare for a rest.
 
-[[Rest By The Fire]]</tw-passagedata><tw-passagedata pid="81" name="Heed The Call and Investigate" tags="" position="664,5483" size="100,100">&quot;Something is going on off in those woods there.&quot; You point off in the direction of the cries you just heard. &quot;I think we may be able to help. Let&#39;s go check it out.&quot; Rafferty seems frustrated, but reluctantly follows along.
+[[Rest By The Fire]]</tw-passagedata><tw-passagedata pid="81" name="Heed The Call and Investigate" tags="" position="664,5483" size="100,100">&quot;Something is going on in those woods there.&quot; You point off in the direction of the cries you just heard. &quot;I think we may be able to help. Let&#39;s go check it out.&quot; Rafferty seems frustrated, but reluctantly follows along.
 
 (set: $karma to $karma+1)&lt;i&gt;(Your karma increases)&lt;/i&gt;
 
@@ -1345,57 +1345,58 @@ Your party looks to you expectingly.
 
 [[Charge In]]
 [[Dispatch Companion]]
-[[Turn Around]]</tw-passagedata><tw-passagedata pid="82" name="Rest By The Fire" tags="" position="337,5706" size="100,100">You are waken with a start from what was a deep slumber. It is predawn and you can barely make out your surroundings.
+[[Turn Around]]</tw-passagedata><tw-passagedata pid="82" name="Rest By The Fire" tags="" position="337,5692.666666666667" size="100,100">You are waken with a start from what was a deep slumber. It is predawn and you can barely make out your surroundings.
 
 In the bushes, but a few yards away, you hear a rustling of leaves. Then, a high pritched shriek followed by heavy stamping going off away from you.
 
 You give a concerned look to your companions and then contemplate your next move.
+
 (link: &quot;Ask Party For Advice&quot;) [(set: $previousPassage to &quot;Rest By The Fire&quot;)(goto:&quot;Ask Party For Advice&quot;)]
 [[Ignore The Noise And Continue On The Path]]
 [[Follow The Strange Noise]]
-(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Rest By The Fire&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="83" name="Charge In" tags="" position="715,5619" size="100,100">(set: $karma to $karma+1)&lt;i&gt;(Your karma increases)&lt;/i&gt;
+(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Rest By The Fire&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="83" name="Charge In" tags="" position="715,5622.333333333333" size="100,100">(set: $karma to $karma+1)&lt;i&gt;(Your karma increases)&lt;/i&gt;
 
 You charge forward and plant yourself firmly between the goblin and the caged man. The goblin tilts its head and then barks at you, &quot;Get away! This my prize!&quot; He thrusts his spear in your direction.
 
 You lift your shield up and prepare for the attack. Rafferty stays hidden behind the bushes, though (if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[Error, no companion set] prepares to back you up. The goblin&#39;s thin spear cracks upon your firm shieldarm. The pointed end lands a few feet away from you.
 
-To this, the goblin&#39;s eyes shoot up and grow wide. He turns away and immediately starts flailing and running away, screaming along the way. You quickly kneel down, grab the pointed half of the spear, and throw it straight at the fleeing goblin just before it enters the woods. It lands deep in the center of its back. He turns around with a look of anguish in its face and then falls backward, pushing the spear end further through his chest as he hits the ground.
+To this, the goblin&#39;s eyes shoot up and grow wide. It turns away and immediately starts flailing and running away, screaming along the way. You quickly kneel down, grab the pointed half of the spear, and throw it straight at the fleeing goblin just before it enters the woods. It lands deep in the center of its back. The goblin turns around with a look of anguish in its face and then falls backward, pushing the spear end further through his chest as it hits the ground.
 
 (if: $compan is 1)[&quot;You did well&quot;, Karos says as he comes out from behind the tree. Rafferty follows along, staying close behind him. Karos sets a hand on your shoulder and nods approvingly.](else-if: $compan is 2)[&quot;Quite the handiwork there, Captain!&quot; Loren steps into the glade with a smile. Rafferty follows along, staying close behind her.](else:)[Error, no companion set] You all look up to the robed man in the cage. He still looks quite run-down, trembling in the corner of the cage.
 
 As you look toward the dead goblin, you see it has a rusty iron key hanging from a leather cord on its waist. You rip it off. (set: $manInfo to 0)
 
-[[Release The Man]]</tw-passagedata><tw-passagedata pid="84" name="Dispatch Companion" tags="" position="870,5620" size="100,100">(set: $karma to $karma+1)&lt;i&gt;(Your karma increases)&lt;/i&gt;
+[[Release The Man]]</tw-passagedata><tw-passagedata pid="84" name="Dispatch Companion" tags="" position="868.3333333333334,5623.333333333333" size="100,100">(set: $karma to $karma+1)&lt;i&gt;(Your karma increases)&lt;/i&gt;
 
 (if: $compan is 1)[&quot;Go Karos! There&#39;s no time to waste!&quot;
 
 Karos leaps into the glade. He lands directly in the way of the goblin&#39;s attack. Just as the goblin thrusts forward with his spear, Karos unsheathes his axe and cuts the spear down clean through the middle.
 
-To this, the goblin&#39;s eyes shoot up and grow wide. He turns away and immediately starts flailing and running away, screaming along the way. Karos throws out his bolas and they wrap around the fleeing goblin&#39;s waist and arms. He falls forward. The goblin, in its constrained state, still tries to inch away with what little movement he can manage. Karos stamps forward and glowers over him. He cuts him down, still.](else-if: $compan is 2)[&quot;Loren! Attack! Protect this man!&quot;
+To this, the goblin&#39;s eyes shoot up and grow wide. It turns away and immediately starts flailing and running away, screaming along the way. Karos throws out his bolas and they wrap around the fleeing goblin&#39;s waist and arms. It falls forward. The goblin, in its constrained state, still tries to inch away with what little movement he can manage. Karos stamps forward and glowers over him. He cuts the goblin down, still.](else-if: $compan is 2)[&quot;Loren! Attack! Protect this man!&quot;
 
 Loren unsheathes her bow and knocks an arrow. Just as the goblin thrusts its spear forward, she releases her arrow. The arrow pierces straight through the goblin&#39;s forearm. The spear flies out of its hand and slides underneath the hanging cage.
 
-The goblin&#39;s eyes shoot up and grow wide. It looks down toward his pierced arm and yells. He turns away and immediately starts flailing and running away, screaming along the way. Loren quickly lets loose three more arrows into its back and the creature falls flat on its face. Loren enters the glade and retrieves her arrows from the corpse, wiping off the dark goblin blood.](else:)[Error, no companion set]
+The goblin&#39;s eyes shoot up and grow wide. It looks down toward its pierced arm and yells. It turns away and immediately starts flailing and running away, screaming along the way. Loren quickly lets loose three more arrows into its back and the creature falls flat on its face. Loren enters the glade and retrieves her arrows from the corpse, wiping off the dark goblin blood.](else:)[Error, no companion set]
 
 &quot;Nicely done!&quot; you exclaim as you come out from behind the tree. Rafferty follows along, staying close behind. You all look up to the robed man in the cage. He still looks quite run-down, trembling in the corner of the cage.
 
-As you look toward the dead goblin, you set it has a rusty iron key hanging from its waist from a leather cord. You rip it off. (set: $manInfo to 0)
+As you look toward the dead goblin, you see it has a rusty iron key hanging from its waist from a leather cord. You rip it off. (set: $manInfo to 0)
 
 [[Release The Man]]</tw-passagedata><tw-passagedata pid="85" name="Turn Around" tags="" position="545,5621" size="100,100">After having investigated, you deem this to be too risky of a conflict and turn around back toward the path. Rafferty and (if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[Error, no companion set] follow suit. Behind you, you hear the man cry out in pain.
 
 (set: $karma to $karma-1)&lt;i&gt;(Your karma decreases)&lt;/i&gt;
 
-It isn&#39;t long before you find your way back from where you came. The woods open up into a wide field as the path continues. There are still some trees and bushes flanking your path, but much less than the tangled mess you last had to pass through. After a few hours of plodding along this path, with dusk rapidly approaching, you all set up a quick camp right in the center of the road. Stones are gathered and set in a circle, as well as firewood, and a flame is drawn. Your party shares some of your food reserves. Tough dried meat and fruit is pased around the campfire, as well as some curt final words to end the day. Rafferty partakes the least in both, seeming discontent in his company and their rations. Before long, you all setup what little comfort you can to prepare for a rest.
+It isn&#39;t long before you find your way back from where you came. The woods open up into a wide field as the path continues. There are still some trees and bushes flanking your path, but much less than the tangled mess you last had to pass through. After a few hours of plodding along this path, with dusk rapidly approaching, you all set up a quick camp right in the center of the road. Stones are gathered and set in a circle, firewood is placed inside of the stone circle, and a flame is drawn. Your party shares some of your food reserves. Tough dried meat and dried fruit is pased around the campfire, as well as some curt final words to end the day. Rafferty partakes the least in both, seeming discontent in his company and their rations. Before long, you all setup what little comfort you can to prepare for a rest.
 
-[[Rest By The Fire]]</tw-passagedata><tw-passagedata pid="86" name="Release The Man" tags="" position="803,5779" size="100,100">(if: $manInfo is 0)[You take the rusty key and insert it into the padlock on the cage. You and (if: $compan is 1)[Kaors](else-if: $compan is 2)[Loren](else:)[Error, no companion set] help the injured man get out of the cage. He mutters a weak, &quot;Thank you.&quot;
+[[Rest By The Fire]]</tw-passagedata><tw-passagedata pid="86" name="Release The Man" tags="" position="804.6666666666666,5774" size="100,100">(if: $manInfo is 0)[You take the rusty key and insert it into the padlock on the cage. You and (if: $compan is 1)[Kaors](else-if: $compan is 2)[Loren](else:)[Error, no companion set] help the injured man get out of the cage. He mutters a weak, &quot;Thank you.&quot;
 
 The robed man looks toward the the librams and sacks strewn about the camp and slowly stumbles toward the wooden, gnarled staff. You provide a shoulder for him to lean on. His robe is bloody and his face is strained with each step.
 
-The man leans down to grab his staff. As soon as his hands rest on the staff, a wild wind stirs up from beneath him. His robe is blown upward as the wind pushes up and out from his center. He stamps the staff into the ground. A bright flash, centered on the tip of his staff, blinds you and your companions. You each hold an arm up to shield your eyes and brace yourself against the harsh gale. Rafferty blurts out, &quot;What in the . . . ?&quot;
+The man leans down to grab his staff. As soon as his hands rest on the staff, a wild wind stirs up from beneath him. His robe is blown upward as the wind pushes up and out through his center. He stamps the staff into the ground. A bright flash, centered on the tip of his staff, blinds you and your companions. You each hold an arm up to shield your eyes and brace yourself against the harsh gale. Rafferty blurts out, &quot;What in the . . . ?&quot;
 
 After a few brief moments, the wind and light dies down. You look out to the robed man and see that he is transformed. His robe is changed to a clean light blue with a gold trim. His hair is long, straight, and silvery white. His wounds seem completely healed and he stands upright.
 
-(if: $compan is 1)[Karos says under his breath, &quot;Magnificent.&quot;](else-if: $compan is 2)[Loren&#39;s eyes shoot up and she drops her weapon.](else:)[Error, no companion set]
+(if: $compan is 1)[Karos says under his breath, &quot;Magnificent.&quot;](else-if: $compan is 2)[Loren&#39;s eyes widen and she drops her weapon.](else:)[Error, no companion set]
 
 &quot;Thank you for your assistance.&quot; The man bows. ]&quot;I am in your debt,&quot; says the strange man in a bold voice.&quot; What would you ask of me?
 
@@ -1413,7 +1414,7 @@ After a few brief moments, the wind and light dies down. You look out to the rob
 
 &quot;Tremendous!&quot; The wizard claps and smiles. &quot;We will be out of these woods in no time. Just give me a moment for the preparations.&quot;
 
-He takes his staff and slowly draws a deep square in the dirt. He takes one of his sacks of powders and lines these deep channels with this powder and packs it down. He opens up his bag and places two runes into the center of this square; a blue one and a white one with a strange icon upon it.
+He takes his staff and slowly draws a deep square in the dirt. He takes one of his sacks of powders and lines these deep channels with the powder and packs it down. He opens up his bag and places two runes into the center of this square; a blue one and a white one with strange icons upon them.
 
 &quot;Now if you wouldn&#39;t mind, please stand at each corner of the square.&quot; He gestures, toward the square.
 
@@ -1421,19 +1422,19 @@ Your party exchanges concerned glances, but do as he says and all align yourselv
 
 The wizard commands, &quot;Take a deep breath everyone and hold it in until we start moving.&quot;
 
-He stamps the middle of the square hard with his staff and shouts, &quot;Iya toray go ferandu!&quot; The square briefly bursts into flame.
+He stamps the middle of the square hard with his staff and shouts, &quot;Eya toray go ferandu!&quot; The square briefly bursts into flame.
 
 Your surroundings begin to swirl together. Everything starts to go dim. Your mind gives out like a knee buckling. Your thoughts are filled with distant, intermingling colors. You feel a wind like force that seems to be origingating from inside of you, pushing you backwards. You feel almost as if you were falling, but laterally and up.
 
-After some time, you and your party find yourselves falling forward onto a stone road. You look behind yourself and see a white stone gateway filled with circular, purple swirling light. The wizard steps out of this light and it dies out behind him, leaving just the gateway behind. The gatway seems to frame him perfectly as the dipping sun is directly behind him, casting rays out of each side. He reaches out a hand to you and provides a smile.
+After some time, you and your party find yourselves falling forward onto a stone road. You look behind yourself and see a white stone gateway filled with circular, purple swirling light. The wizard steps out of this light and it dies out behind him, leaving just the gateway behind. The gatway seems to frame him perfectly as the dipping sun hangs directly behind him, casting rays out of each side. He reaches out a hand to you and provides a smile.
 
 &quot;Not for the feint of heart, and evidently, you are not of such demeanor. You did well.&quot; With his help, you stand up. You look around at Rafferty and (if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[Error, no companion set] as they regain their bearings.
 
-(if: $compan is 1)[&quot;Incredible,&quot; Karos shakes his head and looks around, then down to his hands. I didn&#39;t know where I was. I thought perhaps I was finally going to see my ancestors.&quot; He stretches his shoulders and cracks his neck. &quot;Luckily, I did not. My task isn&#39;t over yet.&quot;](else-if: $compan is 2)[Loren looks at the wizard wide-eyed, looking almost fearful at his presence. After a moment, she lets out a hearty laugh. &quot;What fun! That was like nothing I&#39;ve done before, and I&#39;ve certainly had my fair share of, let&#39;s say, &lt;i&gt;experiences&lt;/i&gt;. You&#39;d make a killing down at the pub, I&#39;d say.](else:)[Error, no companion set]
+(if: $compan is 1)[&quot;Incredible,&quot; Karos shakes his head and looks around, then down to his hands. &quot;I didn&#39;t know where I was. I thought perhaps I was finally going to see my ancestors.&quot; He stretches his shoulders and cracks his neck. &quot;Luckily, I did not. My task isn&#39;t over yet.&quot;](else-if: $compan is 2)[Loren looks at the wizard wide-eyed, looking almost fearful at his presence. After a moment, she lets out a hearty laugh. &quot;What fun! That was like nothing I&#39;ve done before, and I&#39;ve certainly had my fair share of, let&#39;s say, &lt;i&gt;experiences&lt;/i&gt;. You&#39;d make a killing down at the pub, I&#39;d say.](else:)[Error, no companion set]
 
 You look over to the bishop. Rafferty puts his hands on his knees and retches vigorously. He then brings his head back up and stands as upright as he can, still clearly having trouble with his balance. He wipes his mouth. He seems bewildered as he looks over to the wizard.
 
-The wizard tries lays a hand gently on Rafferty to reassure him, but Rafferty shakes it off and looks at him angrily. &quot;This feeling will pass soon, once you start moving on your own two legs again.&quot; The wizard bows deeply. &quot;Thank you all again for your assistance. That goblin may have had its way with me if it weren&#39;t for your kind interference.&quot; And with that, the wizard turns away down the path toward Coreston and waves his hand while walking away. &quot;I must be off now. Much to do. A wizard&#39;s duty never ends.&quot;
+The wizard tries to lay a hand gently on Rafferty to reassure him, but Rafferty shakes it off and looks at him angrily. &quot;This feeling will pass soon, once you start moving on your own two legs again.&quot; The wizard bows deeply. &quot;Thank you all again for your assistance. That goblin may have had its way with me if it weren&#39;t for your kind interference.&quot; And with that, the wizard turns away down the path toward Coreston and waves his hand while walking away. &quot;I must be off now. Much to do. A wizard&#39;s duty never ends.&quot;
 
 [[Arrive At Coreston]]</tw-passagedata><tw-passagedata pid="90" name="Ignore and Continue On The Path" tags="" position="635,5971" size="100,100">You think about this man&#39;s strange proposition and opt for the conservative, yet safer, route. &quot;Though we appreciate your offer, I believe we best decline.&quot;
 
@@ -1441,7 +1442,7 @@ The wizard tries lays a hand gently on Rafferty to reassure him, but Rafferty sh
 
 Your party waves to the kind, yet curious, man and backtrack to the path toward Coreston.
 
-It isn&#39;t long before you find your way back from where you came. The woods open up into a wide field as the path continues. There are still some trees and bushes flanking your path, but much less than the tangled mess you last had to pass through. After a few hours of plodding along this path, with dusk rapidly approaching, you all set up a quick camp right in the center of the road. Stones are gathered and set in a circle, as well as firewood, and a flame is drawn. Your party shares some of your food reserves. Tough dried meat and fruit is pased around the campfire, as well as some curt final words to end the day. Rafferty partakes the least in both, seeming discontent in his company and their rations. Before long, you all setup what little comfort you can to prepare for a rest.
+It isn&#39;t long before you find your way back from where you came. The woods open up into a wide field as the path continues. There are still some trees and bushes flanking your path, but much less than the tangled mess you last had to pass through. After a few hours of plodding along this path, with dusk rapidly approaching, you all set up a quick camp right in the center of the road. Stones are gathered and set in a circle, firewood is placed inside of the stone circle, and a flame is drawn. Your party shares some of your food reserves. Tough dried meat and fruit is pased around the campfire, as well as some curt final words to end the day. Rafferty partakes the least in both, seeming discontent in his company and their rations. Before long, you all setup what little comfort you can to prepare for a rest.
 
 [[Rest By The Fire]]</tw-passagedata><tw-passagedata pid="91" name="Continue On Your Journey" tags="" position="798,5940" size="100,100">&quot;Well, I hope you are feeling well after all you&#39;ve been through. But, we must be off. We have at least a few days journey left on our mission.&quot; You and your party turn around and begin walking out of the glade.
 
@@ -1496,13 +1497,13 @@ Your party continues along the dirt path, making your way toward Coreston.
 
 Two uneasy nights and long days pass before you approach the city gates. You pass a few caravans and weary travellers at the tail end of your journey.
 
-[[Arrive At Coreston]] </tw-passagedata><tw-passagedata pid="95" name="Follow The Strange Noise" tags="" position="338,5840" size="100,100">&quot;Better to look at your threats head on than to have them bite you in the back. Let&#39;s investigate.&quot; Your party agrees and follows you into the bushes, though they appear somewhat tense and apprehensive.
+[[Arrive At Coreston]]</tw-passagedata><tw-passagedata pid="95" name="Follow The Strange Noise" tags="" position="338,5840" size="100,100">&quot;Better to look at your threats head on than to have them bite you in the back. Let&#39;s investigate.&quot; Your party agrees and follows you into the bushes, though they appear somewhat tense and apprehensive.
 
 You see a patch of shrubbery with a portion of it a few yards wide patted down flat. Out in the direction of the loud stamping, you see that a path of cleared foilage and broken twigs branches out deep into the woods from this flattened plot.
 
 Just as you begin to walk down this path, you hear Rafferty exclaim &quot;Now, &lt;i&gt;this&lt;/i&gt; is curious.&quot; You all swing around to see the cause of this. He&#39;s looking down at a large pile of leaves, twigs, and other plant refuse, eyes squinted in inquisition. Yet, he is smiling.
 
-Reaching down he lifts a large object, about 2 feet tall, that looks like a cream colored, oblong stone. It appears to be oddly smooth aside from a patchwork of incredibly thin, red, elevated veins upon its surface.
+Reaching down he lifts a large object, about 2 feet tall, that looks like a cream colored, oblong stone. It appears to be oddly smooth aside from a patchwork of incredibly thin, red, elevated lines upon its surface.
 
 &quot;Look at this! Now, if this isn&#39;t a dragonling egg, then I don&#39;t know what is. This would be a wonderful addition to my collection.&quot;
 
@@ -1521,7 +1522,7 @@ Rafferty and (if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[Erro
 
 (set: $bishopApproval to $bishopApproval +1)&lt;i&gt;(Bishop Rafferty approves)&lt;/i&gt;
 
-(set: $karma to $karma -1)&lt;i&gt; (Your karma decreases) &lt;/i&gt;
+(set: $karma to $karma -1)&lt;i&gt;(Your karma decreases)&lt;/i&gt;
 
 You make your way back to the path and begin trodding along it. After some time, your heart jumps as you hear a terrible, loud shriek from far behind. Your party swings around to see what caused it, but see nothing. (if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[Error, no companion set] shakes (if: $compan is 1)[his](else-if: $compan is 2)[her](else:)[Error, no companion set] head and gathers closer to your party in a defensive posture.
 
@@ -1536,9 +1537,9 @@ Rafferty has been carrying the egg. However, you notice he is struggling to hold
 
 (set: $karma to $karma +1)&lt;i&gt; (Your karma increases) &lt;/i&gt;
 
-You determine to not interfere with nature and leave the egg where you find, despite Rafferty&#39;s behest.
+You determine to not interfere with nature and leave the egg where you find it, despite Rafferty&#39;s behest.
 
-The bishop moans loudy and then shuffles behind the rest of your party as you make your way back to the path. &quot;This would have been the glory of my collection. . .&quot;
+The bishop moans loudy and then shuffles behind the rest of your party as you make your way back to the path. &quot;This would have been the glory of my collection . . .&quot;
 
 Your party continues along the dirt path, making your way toward Coreston.
 
@@ -1564,7 +1565,7 @@ The dragonling swipes back, its tiny yet sharp talons piercing (if: $compan is 1
 
 &quot;It&#39;s too far ahead Rafferty, there&#39;s no point now!&quot; You catch up to the bishop and pull him back in the direction of Coreston. &quot;We best just continue on our journey.&quot;
 
-&quot;My glorious dragon. . .&quot; He sulkingly agrees to take your lead and head toward the city of Coreston.
+&quot;My glorious dragon . . .&quot; He sulkingly agrees to take your lead and head toward the city of Coreston.
 
 (if: $compan is 1)[Your companion, Karos, looks to his newfound wound. He puts on a stoic face and soliders on.](else-if: $compan is 2)[Loren nurses her newly acquired gash, but still manages to flash you a brief smile as she follows along.](else:)[Error, no companion set]
 
@@ -1572,10 +1573,9 @@ After one more uneasy, restless night and a day long trek, your party finally ar
 
 [[Arrive At Coreston]] </tw-passagedata><tw-passagedata pid="99" name="Carry It Yourself" tags="" position="383,6124" size="100,100">&quot;I can carry that for you, Rafferty. Not a problem&quot;
 
-You looks down, grimaces, then hesitantly pick up the heavy, oblong egg.
+You look down, grimace, then hesitantly pick up the heavy, oblong egg.
 
 Your party continues along the dirt path, making your way toward Coreston. Two nights and days must pass until you approach the city gates. By the end of the first night, the egg&#39;s color has changed dramatically to a fiery red. It&#39;s veins are now inches high and thick. It has begun wriggling intermittently, but with some fierceness.
-
 
 After sitting down for your midday meal, you pick back up the strange egg. Rafferty is admiring his prized pocession when suddenly, it starts cracking and breaking. Then, bursting out of your hands, a dragonling emerges from the egg!
 
@@ -1585,7 +1585,7 @@ The dragonling swipes back, its tiny yet sharp talons piercing your skin and lea
 
 &quot;It&#39;s getting away!&quot; The bishop runs after the dragonling. It&#39;s quite a ways ahead of him and much quicker, even in its nascent and fearful state.
 
-(if: $compan is 1)[&quot;There&#39;s no point now!&quot; Karos leaps ahead of the bishop and stops him firmly. He pulls him back in the direction of Coreston.](else-if: $compan is 2)[Loren shouts out to him, &quot;No! You&#39;ll never catch up to it. It&#39;s lost now. . .&quot; She gestures back in the direction of Coreston.](else:)[Error, no companion set] 
+(if: $compan is 1)[&quot;There&#39;s no point now!&quot; Karos leaps ahead of the bishop and stops him firmly. He pulls him back in the direction of Coreston.](else-if: $compan is 2)[Loren shouts out to him, &quot;No! You&#39;ll never catch up to it. It&#39;s lost now . . .&quot; She gestures back in the direction of Coreston.](else:)[Error, no companion set] 
 
 You look down to your newly acquired wound. There&#39;s little that can be done about it now; just to let it scar. Rafferty&#39;s desire to add to his collection has resulted instead in you adding to yours. &quot;We best just continue on our journey.&quot;
 
