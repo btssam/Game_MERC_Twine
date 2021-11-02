@@ -275,7 +275,7 @@ For the first time, Karos reveals a slight smile and then dons his heavy metal a
 
 &quot;Let&#39;s move. My hands are starting to get twitchy.&quot;
 
-[[Set Off To Ashenbark Forest]]</tw-passagedata><tw-passagedata pid="28" name="Check Status" tags="Core" position="1200,1599.6666666666667" size="100,100">(text-style: &quot;blink&quot;)[&lt;b&gt;Status:&lt;/b&gt;]
+[[Set Off To Ashenbark Forest]]</tw-passagedata><tw-passagedata pid="28" name="Check Status" tags="Core" position="1200,1599" size="100,100">(text-style: &quot;blink&quot;)[&lt;b&gt;Status:&lt;/b&gt;]
 
 (if: $hasBishop is 0)[You&#39;ve yet to find the Bishop. Keep looking. He is captured by ogres in the Ashenbark Forest.](else:)[You&#39;ve found the Bishop and now must make your way back to Monastery in Coreston.
 
@@ -1345,7 +1345,7 @@ Your party looks to you expectingly.
 
 [[Charge In]]
 [[Dispatch Companion]]
-[[Turn Around]]</tw-passagedata><tw-passagedata pid="82" name="Rest By The Fire" tags="" position="337,5692.666666666667" size="100,100">You are waken with a start from what was a deep slumber. It is predawn and you can barely make out your surroundings.
+[[Turn Around]]</tw-passagedata><tw-passagedata pid="82" name="Rest By The Fire" tags="" position="337,5692" size="100,100">You are waken with a start from what was a deep slumber. It is predawn and you can barely make out your surroundings.
 
 In the bushes, but a few yards away, you hear a rustling of leaves. Then, a high pritched shriek followed by heavy stamping going off away from you.
 
@@ -1354,7 +1354,7 @@ You give a concerned look to your companions and then contemplate your next move
 (link: &quot;Ask Party For Advice&quot;) [(set: $previousPassage to &quot;Rest By The Fire&quot;)(goto:&quot;Ask Party For Advice&quot;)]
 [[Ignore The Noise And Continue On The Path]]
 [[Follow The Strange Noise]]
-(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Rest By The Fire&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="83" name="Charge In" tags="" position="715,5622.333333333333" size="100,100">(set: $karma to $karma+1)&lt;i&gt;(Your karma increases)&lt;/i&gt;
+(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Rest By The Fire&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="83" name="Charge In" tags="" position="715,5622" size="100,100">(set: $karma to $karma+1)&lt;i&gt;(Your karma increases)&lt;/i&gt;
 
 You charge forward and plant yourself firmly between the goblin and the caged man. The goblin tilts its head and then barks at you, &quot;Get away! This my prize!&quot; He thrusts his spear in your direction.
 
@@ -1366,7 +1366,7 @@ To this, the goblin&#39;s eyes shoot up and grow wide. It turns away and immedia
 
 As you look toward the dead goblin, you see it has a rusty iron key hanging from a leather cord on its waist. You rip it off. (set: $manInfo to 0)
 
-[[Release The Man]]</tw-passagedata><tw-passagedata pid="84" name="Dispatch Companion" tags="" position="868.3333333333334,5623.333333333333" size="100,100">(set: $karma to $karma+1)&lt;i&gt;(Your karma increases)&lt;/i&gt;
+[[Release The Man]]</tw-passagedata><tw-passagedata pid="84" name="Dispatch Companion" tags="" position="868,5623" size="100,100">(set: $karma to $karma+1)&lt;i&gt;(Your karma increases)&lt;/i&gt;
 
 (if: $compan is 1)[&quot;Go Karos! There&#39;s no time to waste!&quot;
 
@@ -1388,7 +1388,7 @@ As you look toward the dead goblin, you see it has a rusty iron key hanging from
 
 It isn&#39;t long before you find your way back from where you came. The woods open up into a wide field as the path continues. There are still some trees and bushes flanking your path, but much less than the tangled mess you last had to pass through. After a few hours of plodding along this path, with dusk rapidly approaching, you all set up a quick camp right in the center of the road. Stones are gathered and set in a circle, firewood is placed inside of the stone circle, and a flame is drawn. Your party shares some of your food reserves. Tough dried meat and dried fruit is pased around the campfire, as well as some curt final words to end the day. Rafferty partakes the least in both, seeming discontent in his company and their rations. Before long, you all setup what little comfort you can to prepare for a rest.
 
-[[Rest By The Fire]]</tw-passagedata><tw-passagedata pid="86" name="Release The Man" tags="" position="804.6666666666666,5774" size="100,100">(if: $manInfo is 0)[You take the rusty key and insert it into the padlock on the cage. You and (if: $compan is 1)[Kaors](else-if: $compan is 2)[Loren](else:)[Error, no companion set] help the injured man get out of the cage. He mutters a weak, &quot;Thank you.&quot;
+[[Rest By The Fire]]</tw-passagedata><tw-passagedata pid="86" name="Release The Man" tags="" position="804,5774" size="100,100">(if: $manInfo is 0)[You take the rusty key and insert it into the padlock on the cage. You and (if: $compan is 1)[Kaors](else-if: $compan is 2)[Loren](else:)[Error, no companion set] help the injured man get out of the cage. He mutters a weak, &quot;Thank you.&quot;
 
 The robed man looks toward the the librams and sacks strewn about the camp and slowly stumbles toward the wooden, gnarled staff. You provide a shoulder for him to lean on. His robe is bloody and his face is strained with each step.
 
@@ -1483,8 +1483,7 @@ One of them spits off to his side. &quot;You an&#39; everybody else. Best pay up
 
 &quot;You daft? We&#39;re Kingsguard. Five silver pieces, it is, to get in the city. Them&#39;s the rules. Otherwise, best just turn around.&quot; He clangs his sword against his shield. The guard suspiciously eyes the bishop. He elbows one of his fellow guards and points. &quot;A clergy member, eh? You expect us to let him in too, huh?&quot;
 
-You hear the crowd murmuring at the sight of the bishop. He cowers behind your companion. Another guard cuts in. &quot;It ain&#39;t easy to bring one of his kind into these walls safely. That&#39;ll have to be fifteen silvers then. Pay up or get out.&quot;]
-(else-if: $displayCorestonText is 1)[&quot;That&#39;ll have to be fifteen silvers then. Pay up or get out.&quot;]
+You hear the crowd murmuring at the sight of the bishop. He cowers behind your companion. Another guard cuts in. &quot;It ain&#39;t easy to bring one of his kind into these walls safely. That&#39;ll have to be fifteen silvers then. Pay up or get out.&quot;](else-if: $displayCorestonText is 1)[&quot;That&#39;ll have to be fifteen silvers then. Pay up or get out.&quot;]
 
 (link: &quot;Ask Party For Advice&quot;) [(set: $previousPassage to &quot;Arrive At Coreston&quot;)(goto:&quot;Ask Party For Advice&quot;)]
 [[Ask About The City]]
@@ -1619,13 +1618,13 @@ The guards cower and fall to the floor. They drop their weapons and stick close 
 
 The guard in the middle steps forward and attempts to strike at Loren. You step infront and block the swipe with your shield. The sword bounces off and vibrates in his hand. Before you can even strike back, Loren steps around you, grabs the attacker&#39;s arm, and jumps over it to his other side. He screams as his arm is wrenched and he drops his blade. Then, Loren grabs his neck in the crook of her arm and points a knife to his throat. She smiles at the other guards and tilts her head to the side. &quot;Anyone else?&quot;
 
-&quot;Drop your weapons and let us through now. We&#39;ll let your friend go.&quot;, you demand.
+&quot;Drop your weapons and let us through now. We&#39;ll let your friend go,&quot; you demand.
 
 &quot;Ah &#39;Cap! Do we have to? I was looking forward to having a little fun with this one.&quot; Loren kisses the sweaty, fearful guard&#39;s hairy cheek and then digs her knife a bit into his neck.
 
 They acqueisce almost instantly, dropping their swords and shields. &quot;Thank you,&quot; you say as you make your way into the city. Loren shoves the guard to the ground and blows him a kiss as she struts through the gates.](else:)[Error, no companion set]
 
-Rafferty gathers his robe and quickly steps along behind you guys, happy to get out of this scene. He&#39;s looking down, but a slight smile is forming as he steps across. Some other folk follow your party before the guards are able to finally regain their bearings and stop the flow of people.
+Rafferty gathers his robe and quickly steps along behind you, happy to get out of this scene. He&#39;s looking down, but a slight smile is forming as he steps across. Some other folk follow your party before the guards are able to finally regain their bearings and stop the flow of people.
 
 [[Enter The City]]</tw-passagedata><tw-passagedata pid="103" name="Persuade The Guards" tags="" position="687,6525" size="100,100">(if: $compan is 1)[You and Karos approach the guards. They hold up their shields and pull back their blades.
 
@@ -1635,29 +1634,29 @@ Rafferty gathers his robe and quickly steps along behind you guys, happy to get 
 
 The guards shift around uncomfortably.  &quot;Y-yes we are. How would you know?&quot;
 
-&quot;Calm yourselves. I don&#39;t think we want to make a scene here,&quot; you say to them, reassuring them. You look back to the crowd surrounding you and to your companion, Karos, who is unsheathing his axes. &quot;You have none of the Kingsguard&#39;s equipment and certainly none of their training. I don&#39;t think one issued to guard its people would kick them aside.&quot; The guards look both angry and concerned.
+&quot;Calm yourselves. I don&#39;t think we want to make a scene here,&quot; you say to them reassuringly. You look back to the crowd surrounding you and to your companion, Karos, who is unsheathing his axes. &quot;You have none of the Kingsguard&#39;s equipment and certainly none of their training. I don&#39;t think one issued to guard its people would kick them aside.&quot; The guards look both angry and concerned.
 
-You get up close and whisper to them. &quot;If you were to let us through, there wouldn&#39;t be a word of this masquerading. Not to this upset crowd surrounding us, not to my burly friend back there,&quot; you point back to Karos and he smiles lightly, &quot;and certainly not a word to the true Kingsguard themselves. I can assure of that.&quot;
+You get up close and whisper to them. &quot;If you were to let us through, there wouldn&#39;t be a word of this masquerading. Not to this upset crowd surrounding us, not to my burly friend back there,&quot; you point back to Karos and he smiles lightly, &quot;and certainly not a word to the true Kingsguard themselves. I can assure you of that.&quot;
 
 &quot;What do you say?&quot; The guards mumble amongst themselves angrily, then  defeatedly acqueisce and move to their sides. You thank them as Karos follows behind.
 
-Rafferty gathers his robe and quickly steps along behind you guys, happy to get out of this scene. He&#39;s looking down, but a slight smile is forming as he steps across. Some other folk follow your party before the guards are able to finally regain their bearings and stop the flow of people.](else-if: $compan is 2)[You and Loren approach the guards. They hold up their shields and pull back their blades.
+Rafferty gathers his robe and quickly steps along behind you, happy to get out of this scene. He&#39;s looking down, but a slight smile is forming as he steps across. Some other folk follow your party before the guards are able to finally regain their bearings and stop the flow of people.](else-if: $compan is 2)[You and Loren approach the guards. They hold up their shields and pull back their blades.
 
 &quot;Now, now. That won&#39;t be neccessary. Let&#39;s just have a little chat.&quot; Loren bares her open palms to them. The guards respond by tightening their grip.
 
-&quot;What we seem to have here is a misunderstanding. Well, I should say, &lt;i&gt;you&lt;/i&gt; all seem to have is a misunderstanding. You believe you have the authority to man these gates. I do not see the King&#39;s sigil upon your shields. Hell, that isn&#39;t even standard issue shields. Doesn&#39;t seem right, huh &#39;Cap?&quot; She looks to you and you nod, hand resting on your hilt.
+&quot;What we seem to have here is a misunderstanding. Well, I should say, what &lt;i&gt;you&lt;/i&gt; all seem to have is a misunderstanding. You believe you have the authority to man these gates. I do not see the King&#39;s sigil upon your shields. Hell, that isn&#39;t even standard issue shields. Doesn&#39;t seem right, huh &#39;Cap?&quot; She looks to you and you nod, hand resting on your hilt.
 
 The guards shift around uncomfortably. &quot;We don&#39;t need no permission,&quot; the one in front says.
 
-Loren looks to her left and to her right. &quot;How do you think these people would react if they knew that you have no authority to demand they pay, to kick to them aside. Many of them have urgent duties to attend to.&quot; She helps up the man that was kicked aside. &quot;Families to feed.&quot; He looks at them with a true anger. &quot;They&#39;re more liable to starve out here than they are to fall to your blades.&quot;
+Loren looks to her left and to her right. &quot;How do you think these people would react if they knew that you have no authority to demand they pay, to kick them aside. Many of them have urgent duties to attend to.&quot; She helps up the man that was kicked aside. &quot;Families to feed.&quot; He looks at them with a true anger. &quot;They&#39;re more liable to starve out here than they are to fall to your blades.&quot;
 
 The guards prepare to unsheathe their blades.
 
-&quot;Hold on there, eager one. It appears we have an awful lot more people than you three.&quot; She looks to her side and shouts, &quot;What so you all to a mutiny?&#39; The crowd cheers and grabs whatever makeshift weapons they can find, many simply balling their fists in rage. There are well over a dozen highly motivated commoners ready to fight.
+&quot;Hold on there, eager one. It appears we have an awful lot more people than you three.&quot; She looks to her side and shouts, &quot;What say you all to a mutiny?&quot; The crowd cheers and grabs whatever makeshift weapons they can find, many simply balling their fists in rage. There are well over a dozen highly motivated commoners ready to fight.
 
 Loren says, &quot;Just let us through then and I promise not to tell the true authorities of what&#39;s going on here.&quot; The guards mumble amongst themselves angrily, eyes open wide to the deadly crowd clamoring to be let in. They quickly acqueisce and move to their sides. You and Loren walk right through and she winks toward the grimacing guards.
 
-Rafferty gathers his robe and quickly steps along behind you guys, happy to get out of this scene. He&#39;s looking down, but a slight smile is forming as he steps across. Many other folk follow your party before the guards are able to finally regain their bearings.](else:)[Error, no companion set]
+Rafferty gathers his robe and quickly steps along behind you, happy to get out of this scene. He&#39;s looking down, but a slight smile is forming as he steps across. Many other folk follow your party before the guards are able to finally regain their bearings.](else:)[Error, no companion set]
 
 [[Enter The City]]</tw-passagedata><tw-passagedata pid="104" name="Enter The City" tags="Ch6" position="543,6683" size="100,100">By the time the party enters the city gates, evening has begun. There is scant lighting provided by diffuse torches. You see a rundown stone courtyard, with a fountain in its center. There are buildings surrounding you, though many are rundown, missing some walls or even a roof. The fountain itself is cracking and filled with brown water and refuse. The stonework in the floor of the courtyard is broken and dirt is spread throughout. Several caravans are downturned and looted. Barrels are turned over and broken into, one being filled with skittering rats.
 
