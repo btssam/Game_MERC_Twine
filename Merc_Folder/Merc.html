@@ -323,7 +323,7 @@ Along the river, you see a bronze colored rock, a mushroom with a faint green gl
 [[Investigate Mushroom]]
 [[Investigate Banners]]
 [[Continue Along The River]]
-(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Choose Left Path&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="31" name="Ask Party For Advice" tags="Core" position="1199,1898" size="100,100">You ask your party, &quot;What do you think?&quot;
+(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Choose Left Path&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="31" name="Ask Party For Advice" tags="Core" position="1199,1893" size="100,100">You ask your party, &quot;What do you think?&quot;
 
 (if: $previousPassage is &quot;Wake Up In Ashenbark Forest&quot;)[
 	(if: $compan is 1)[Karos says, &quot;I like the idea of some commotion. Let&#39;s try the right path. It is up to you of course.&quot;]
@@ -403,7 +403,7 @@ Along the river, you see a bronze colored rock, a mushroom with a faint green gl
 	(if: $compan is 1)[&quot;I see no strength in these men.&quot; Karos eyes the guards ferociously. &quot;They prey upon the weak and hold their blades with tender hands. Wonder how they&#39;d act around a true warrior.&quot; He grips his axe tightly.](else-if: $compan is 2)[Loren looks suspiciously at the guards. &quot;These don&#39;t seem like genuine Kingsguard. Some common thugs, perhaps. I don&#39;t think they hold as much authority as they&#39;d like to make us believe.&quot;](else:)[Error, no companion set] You look over to the bishop and he is so scared, he can barely form a whisper, &quot;Just . . . get us in.&quot;
 ]
 (if: $previousPassage is &quot;Enter The City&quot;)[
-	You speak privately with your hired companion. (if: $compan is 1)[&quot;We&#39;ve seen much danger in the city already,&quot; Karos says with some concern. &quot;Our bishop here is not well equipped for combat, or for anything physical for that matter. I would feel most comfortable with you leading. He&#39;s liable to get hurt.&quot;](else-if: $compan is 2)[&quot;The people of this city despise the clergy. If he is to lead, he may encounter one of these unsavoury types head on. I wouldn&#39;t have the target of our mission serve as vanguard. Better the shielded one,&quot; Loren gestures toward you.](else:)[Error, no companion set]
+	Your hired companion speaks privately with you. (if: $compan is 1)[&quot;We&#39;ve seen much danger in the city already,&quot; Karos says with some concern. &quot;Our bishop here is not well equipped for combat, or for anything physical for that matter. I would feel most comfortable with you leading. He&#39;s liable to get hurt.&quot;](else-if: $compan is 2)[&quot;The people of this city despise the clergy. If he is to lead, he may encounter one of these unsavoury types head on. I wouldn&#39;t have the target of our mission serve as vanguard. Better the shielded one,&quot; Loren gestures toward you.](else:)[Error, no companion set]
 	
 	You then look toward Rafferty. &quot;Why do you think you should lead?&quot;
 	
@@ -892,7 +892,7 @@ The other ogre lets loose a piercing sound like a snarl and a growl.
 
 It tilts it head for a moment, then dumps the chest out. A smile wider than a dinnerplate grows across its face as it lifts up a large ruby pendant, encrusted in gold, laced in a thick silver chain.
 
-It drops to its knees, closes its eyes, raises the necklace high above his head, and begins mumbling. This lasts for a few moments. Then, the ogre gets up and drops the necklace into the firepit. It slowly starts to melt, producing a foul, odor.
+It drops to its knees, closes its eyes, raises the necklace high above its head, and begins mumbling. This lasts for a few moments. Then, the ogre gets up and drops the necklace into the firepit. It slowly starts to melt, producing a foul, odor.
 
 Both ogres move closer to the flame, standing directly above it. &quot;Praise Fi&#39;ju&quot;, they both exclaim and then close their eyes. They stand there for quite awhile, inhaling the toxic smoke.
 
@@ -958,9 +958,9 @@ One ogre reaches for a club, yet the other smacks him hard with the back of his 
 
 One ogre steps forward and kneels. &quot;What you have us do, Fi&#39;ju spirit?&quot; The other drops to a knee too.
 
-(if: $compan is 1)[Karos](else:)[Loren] stops (if: $compan is 1)[his](else:)[her] dancing and slowly approaches. The ogres exchange a look of fear then continue looking down. Even while kneeled, these ogres are still up to your companion&#39;s shoulders.
+(if: $compan is 1)[Karos](else:)[Loren] stops (if: $compan is 1)[his](else:)[her] dancing and slowly approaches. The ogres exchange a look of fear then continue looking down. Even while knelt, these ogres are still up to your companion&#39;s shoulders.
 
-(if: $compan is 1)[Karos](else:)[Loren] tilts their heads up, licks (if: $compan is 1)[his](else:)[her] thumb, dips it into the sack of ashes and paints a curved mark from one side of their face to another.
+(if: $compan is 1)[Karos](else:)[Loren] tilts their heads up, licks (if: $compan is 1)[his](else:)[her] thumb, dips it into the sack of ashes, and paints a curved mark from one side of their face to another.
 
 &quot;Fi&#39;ju teach you. Fi&#39;ju see you. Weak. Scared. Fi&#39;ju commands such: leave Ashenbark forest. Go as far as the skyheat touches. Wander. Find your stength again. The wilderness is now yours.&quot;
 
@@ -1189,7 +1189,7 @@ Your party concludes that it may have been ogres who smashed your carriage. Bish
 
 [[Begin The Walk To Coreston]]</tw-passagedata><tw-passagedata pid="71" name="Begin The Walk To Coreston" tags="" position="504,4746" size="100,100">Your party is walking along a dirt path within a gully, flanked on both sides by woods.
 
-&quot;I can&#39;t believe this.&quot; Rafferty has been muttering to himself and fretting about the situation for some time. &quot;Absolutely preposterous. A bishop alongside two fools that can&#39;t even keep their caravan. For godsake, I&#39;m a clergy member!&quot;
+&quot;I can&#39;t believe this.&quot; Rafferty has been muttering to himself and fretting about the situation for some time. &quot;Absolutely preposterous. A bishop alongside two fools that can&#39;t even keep their caravan safe. For God&#39;s sake, I&#39;m a clergy member!&quot;
 
 (if: $compan is 1)[Karos hasn&#39;t let these criticisms affect his stalwart attitude and is continuing on without hesitation.](else-if: $compan is 2)[Loren is mantaining a positve demeanor, though you notice part of her seems a bit perturbed by the bishop&#39;s complaining.](else:)[Error, no companion set]
 
@@ -1404,7 +1404,7 @@ After a few brief moments, the wind and light dies down. You look out to the rob
 [[Ask What He&#39;s Doing Here|What are you doing here?]]
 [[Continue On Your Journey]]</tw-passagedata><tw-passagedata pid="87" name="Who are you?" tags="" position="981,5911" size="100,100">(set: $manInfo to 1)You ask the man, &quot;Who are you?&quot;
 
-&quot;I am Pyramus, a Wizard.&quot; He responds. &quot;I am the Court Wizard at Coreston. There, I assist the King in any sort of magical troubles he has. I have studied alchemy and spellcasting for centuries.&quot;
+&quot;I am Pyramus, a wizard.&quot; He responds. &quot;I am the Court Wizard at Coreston. There, I assist the King in any sort of magical troubles he has. I have studied alchemy and spellcasting for centuries.&quot;
 
 [[Back|Release The Man]] </tw-passagedata><tw-passagedata pid="88" name="What are you doing here?" tags="" position="984,5795" size="100,100">(set: $manInfo to 1)You ask the man, &quot;What are you doing here?&quot;
 
@@ -1765,7 +1765,7 @@ The bishop is twitching with anger as you and (if: $compan is 1)[Karos](else-if:
 
 &quot;Let&#39;s move.&quot; Slowly, your party advances forward through the crowd. It is heated and chaotic. Many try to reach and grab at the defenseless Rafferty. You and (if: $compan is 1)[your barbarian companion](else-if: $compan is 2)[your rogue companion](else:)[Error, no companion set] do your best to intercept these attacks. 
 
-Rafferty spits at one of those who attempts to reach at him. To this, the ruffian voraciously attacks back, lunging at the bishop. Just in time, you push back the ruffian with the your shield and he falls to the ground. Another comes from the other side, wielding a long, thin blade. (if: $compan is 1)[Karos responds by knocking the blade out of his hand with one heavy swing.](else-if: $compan is 2)[Loren parries the attack and twists the opponent&#39;s hand, causing him to release his blade.](else:)[Error, no companion set] To this, some of the mob takes a step back.
+Rafferty spits at one of those who attempts to reach at him. To this, the ruffian voraciously attacks back, lunging at the bishop. Just in time, you push back the ruffian with your shield and he falls to the ground. Another comes from the other side, wielding a long, thin blade. (if: $compan is 1)[Karos responds by knocking the blade out of his hand with one heavy swing.](else-if: $compan is 2)[Loren parries the attack and twists the opponent&#39;s hand, causing him to release his blade.](else:)[Error, no companion set] To this, some of the mob takes a step back.
 
 You continue on, staying close to the bishop. You start approaching the other end of the bazaar, where the road narrows again. Your party turns around so that Rafferty is now within the path, with you and (if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[Error, no companion set] standing in the way of what remains of the crowd.
 
@@ -1822,7 +1822,7 @@ Congratulations on a successful mission.
 
 You are sipping on a tall ale. You begin pondering your last mission and your line of work in general. (if: $karma is &lt; -1)[Such a pittance given for such a perilous journey; easily tenfold was deserved. And you never seem to get enough coin to relax for any real stretch of time. Retirement is out of the picture. Will you always be stuck beneath this endless spiked wheel? You begin to feel resentment and rage build up inside. You look around at the others in the bar and think only of your pain and resent the looks of joy and laughter upon their faces. You think about all the people you hurt along the way to achieve success on your recent mission. Your guilt is nonexistent, and you actually feel some of your anger subside as your reminense about the pain you&#39;ve dealt to others. You push away your ale, now discontent with even this simple pleasure.](else-if: $kamra is &gt; 1)[Several lives were needlessly lost and just for a simple escort. There is a hope, though, that this was all worth it. You did manage to help a few people along the way. Though the bishop himself was perhaps not the most moral, his teachings certainly are. Maybe the clergy and commonfolk of Coreston will one day find some common ground. They are both striving to better themselves, are they not? At least you are able to help out in some sense, one client at a time, and make rigtheous choices along the way. Plus, the pay isn&#39;t so bad either. You enjoy a long sip of ale and end it with a smile.](else:)[An odd business this is. You have no control of who comes through the door and what task they present you with. And the infrequency of such means you often have to take them regardless of how you feel about it just to make ends meet. Your choices along the way are all in an attempt to please the client. It oftentimes feels like you have no control along the way; like a raft going through a downward stream, there is only so much influence you can have. Glassy-eyed, you stare at your ale for a moment, then drink the whole mug in a few quick gulps.]
 
-[[Wander The Tavern]]</tw-passagedata><tw-passagedata pid="115" name="Wander The Tavern" tags="" position="534,7789" size="100,100">You push back your chair and stand up. Stretching your legs, you begin to wander the the tavern. Paint is peeling from the walls and the humidity is relentless. A few scant torches leave the tavern relatively dim. The windows are dreary and foggy, disallowing you from looking out. The bar itself is well stocked, with several shelves of glasses and bottles lining the back wall. The barkeep is a rotund man with a filthy apron. He is cleaning a mug with an even filthier rag. Repeatedly, he holds the mug up to torchlight, assesses that it is still too dirty, and wipes it again with his rag. You flick a him a coin to pay for your ale and he gives you a nod, then goes back to his fruitless task.
+[[Wander The Tavern]]</tw-passagedata><tw-passagedata pid="115" name="Wander The Tavern" tags="" position="534,7789" size="100,100">You push back your chair and stand up. Stretching your legs, you begin to wander the the tavern. Paint is peeling from the walls and the humidity is relentless. A few scant torches leave the tavern relatively dim. The windows are dreary and foggy, disallowing you from looking out. The bar itself is well stocked, with several shelves of glasses and bottles lining the back wall. The barkeep is a rotund man with a filthy apron. He is cleaning a mug with an even filthier rag. Repeatedly, he holds the mug up to torchlight, assesses that it is still too dirty, and wipes it again with his rag. You flick him a coin to pay for your ale and he gives you a nod, then goes back to his fruitless task.
 
 The tavern itself is relatively crowded. Nearly every seat is filled, from the bar to the tables. There is quite a clamor and you find it hard to even manuvear around. You decide to make your way back to your seat, but find that it has been taken by another patron. Upon further examination, you realize that you recognize (if: $compApproval is &lt; -1)[(if: $compan is 1)[him as your previous companion Karos!
 
@@ -1878,17 +1878,17 @@ You smile and shrug, then sit down next to your old companion. &quot;You know th
 
 &quot;Oh heavens no. I just told him that there was a strict two drink limit here and that the tavern down the road has cheaper drinks.&quot;
 
-&quot;There is? What&#39;re we doing here then?&quot;, you begin to stand up out of your chair.
+&quot;Is that so? What&#39;re we doing here then?&quot;, you begin to stand up out of your chair.
 
 &quot;&#39;Course not!&quot; She sets a hand on you to stop. &quot;You still haven&#39;t learned my ways yet, &#39;Cap, have ya&#39;? Anyway, what brings you out to this neck of the woods?&quot;
 
 &quot;I just had some rare time off and thought I&#39;d try to relax a bit. I could ask you the same question, couldn&#39;t I?&quot;
 
-&quot;What else do you think I do with my days? You expect to see me in a church or a library? No, this is where I do my research. I observe the clientele, learn about rumors of what&#39;s happening in the surrounding areas, and listen to any valuable gossip that could be used to my advantage. Sometimes, I even leave with a heavier coinpurse than when I&#39;ve come in with.&quot; She winks.
+&quot;What else do you think I do with my days? You expect to see me in a church or a library? No, this is where I do my research. I observe the clientele, learn about rumors of what&#39;s happening in the surrounding areas, and listen to any valuable gossip that could be used to my advantage. Sometimes, I even leave with a heavier coinpurse than when I&#39;ve come in.&quot; She winks.
 
 You both laugh heartily.
 
-You and Loren exchange pleasant words for well over an hour as well as a few cups of ale. By the end of the exchange you propse that she join the &quot;Rags of the Lotus&quot; as a regular mercenary. She says that she&#39;d be willing to consider it, finding that her current line of work has been, as she says, &quot;inconsistent&quot;, and you leave her with your information.](else:)[Error, no companion set]](else:)[(if: $compan is 1)[him as your previous companion Karos!
+You and Loren exchange pleasant words for well over an hour as well as a few cups of ale. By the end of the exchange you propose that she join the &quot;Rags of the Lotus&quot; as a regular mercenary. She says that she&#39;d be willing to consider it, finding that her current line of work has been, as she says, &quot;inconsistent&quot;, and you leave her with your information.](else:)[Error, no companion set]](else:)[(if: $compan is 1)[him as your previous companion Karos!
 
 &quot;Hello there, Karos. How are you doing?&quot;
 
@@ -1928,7 +1928,7 @@ You make your way to the exit of the tavern.
 
 [[Prepare To Leave]]</tw-passagedata><tw-passagedata pid="116" name="Prepare To Leave" tags="" position="534,7937" size="100,100">You open the heavy front door to the bar and reveal the exterior. The night is relatively brisk. Quite a few people are hanging around the outside of the tavern, lit up by a couple torches. Some are leaning against the stone building and others are sat cross-legged upon the ground, unable to maintain their balance any longer. A few are retching out what they just paid to enjoy.
 
-You are preparing to make your way to the stables, find your steed and head home. As you look around, you notice none other than the Bishop Rafferty outside! Though clergy are typically not allowed to drink, he seems already drunk and is in common clothes. He is talking to a woman dressed in very little clothing who seems to be getting progressively angry with him.
+You are preparing to make your way to the stables, find your steed, and head home. As you look around, you notice none other than the Bishop Rafferty outside! Though clergy are typically not allowed to drink, he seems already drunk and is in common clothes. He is talking to a woman dressed in very little clothing who seems to be getting progressively angry with him.
 
 (if: $bishopApproval is &lt; -2)[&quot;Bishop! It&#39;s me!&quot; You attempt to wave him down. When the woman he is speaking with hears you, she slaps him across the face.
 
