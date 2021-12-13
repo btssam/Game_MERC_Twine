@@ -294,8 +294,7 @@ Karos&#39;s set of bolas
 Karos&#39;s heavy armor](else-if: $compan is 2)[
 Loren&#39;s long knife
 Loren&#39;s bow
-Loren&#39;s lockpick](if: $noSilver is 0)[
-15 silver pieces](if: $hasMush is 1)[
+Loren&#39;s lockpick](if: $hasMush is 1)[
 mysterious mushroom](if: $hasAsh is 1)[
 a sack of ashes with a red symbol on it]
 
@@ -1419,7 +1418,7 @@ You glance upon your headquarters as you enter. Above the entrance is a wooden s
 
 &quot;Greetings Captain! We’ve finally got another mission. Are you ready for your briefing?&quot;
 
-[[Ready]]</tw-passagedata><tw-passagedata pid="93" name="Arrive At Coreston" tags="" position="557,6351" size="100,100">(if: $displayCorestonText is 0)[Looking at the gates of Coreston, you can clearly observe this is a city of grandeur, or at least was at one point. The two carven doors at its entrance are both ornate and massive. They are surrounded by an arch of white stone. However, the gateway itself is showing signs of wear. The stone is starting to lose some of its color and the wooden doors are starting to fade, its engravings smoothing out in many parts. A high wall, wtih some stones missing, surrounds these doors far to its sides.
+[[Ready]]</tw-passagedata><tw-passagedata pid="93" name="Arrive At Coreston" tags="" position="545.3333333333334,6351" size="100,100">(if: $displayCorestonText is 0)[Looking at the gates of Coreston, you can clearly observe this is a city of grandeur, or at least was at one point. The two carven doors at its entrance are both ornate and massive. They are surrounded by an arch of white stone. However, the gateway itself is showing signs of wear. The stone is starting to lose some of its color and the wooden doors are starting to fade, its engravings smoothing out in many parts. A high wall, wtih some stones missing, surrounds these doors far to its sides.
 
 The entrance area itself is somewhat crowded. There are several people sitting at the side of the path, sleeping or begging for coins. The entranceway itself is filled with a throng of people, seemingly trying to get into the city. Three men stand in front of the doors with tall shields, thick blades, and baleful visages.
 
@@ -1437,11 +1436,10 @@ One of them spits off to his side. &quot;You an&#39; everybody else. Best pay up
 
 &quot;You daft? We&#39;re Kingsguard. Five silver pieces, it is, to get in the city. Them&#39;s the rules. Otherwise, best just turn around.&quot; He clangs his sword against his shield. The guard suspiciously eyes the bishop. He elbows one of his fellow guards and points. &quot;A clergy member, eh? You expect us to let him in too, huh?&quot;
 
-You hear the crowd murmuring at the sight of the bishop. He cowers behind your companion. Another guard cuts in. &quot;It ain&#39;t easy to bring one of his kind into these walls safely. That&#39;ll have to be fifteen silvers then. Pay up or get out.&quot;](else-if: $displayCorestonText is 1)[&quot;That&#39;ll have to be fifteen silvers then. Pay up or get out.&quot;]
+You hear the crowd murmuring at the sight of the bishop. He cowers behind your companion. The guards talk among themselves angrily. One of them shouts out. &quot;He&#39;s not coming in. That&#39;s final!&quot; They all clang their swords against their shields in unison and stand firm. &quot;Best find somewhere else to be off to, and fast.&quot;](else-if: $displayCorestonText is 1)[&quot;He&#39;s not coming in. That&#39;s final!&quot; They all clang their swords against their shields in unison and stand firm. &quot;Best find somewhere else to be off to, and fast.&quot;]
 
 (link: &quot;Ask Party For Advice&quot;) [(set: $previousPassage to &quot;Arrive At Coreston&quot;)(goto:&quot;Ask Party For Advice&quot;)]
 [[Ask About The City]]
-[[Pay Up]]
 [[Intimidate The Guards]]
 [[Persuade The Guards]]
 (link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Arrive At Coreston&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="94" name="Ignore The Noise And Continue On The Path" tags="" position="531,5740" size="100,100">After hearing these odd, alien sounds, you determine you best leave it be. 
@@ -1550,11 +1548,7 @@ After one more uneasy, restless night and a day long trek, your party finally ar
 
 &quot;Ask your bishop friend there,&quot; he spits off to the right. When Rafferty responds only with an angry glance, the guard continues. &quot;His kind has left us all penniless. Encouraged the king to help spread their word off in other lands, leaving us behind. We were better off before you damn prattlers started poppin&#39; up out of nowhere.&quot;
 
-[[Back|Arrive At Coreston]]</tw-passagedata><tw-passagedata pid="101" name="Pay Up" tags="" position="398,6525" size="100,100">(set: $noSilver to 1) You reluctantly pay the guards the fifteen silver.
-
-The guards grin devilishly. Then, they move to the sides and bow slightly, gesturing with their hand to let your party through.
-
-[[Enter The City]]</tw-passagedata><tw-passagedata pid="102" name="Intimidate The Guards" tags="" position="547,6526" size="100,100">(if: $compan is 1)[You and Karos approach the guards. They hold up their shields and pull back their blades.
+[[Back|Arrive At Coreston]]</tw-passagedata><tw-passagedata pid="101" name="Intimidate The Guards" tags="" position="447,6529.333333333333" size="100,100">(if: $compan is 1)[You and Karos approach the guards. They hold up their shields and pull back their blades.
 
 &quot;Not . . not a step closer.&quot; They command, voices slightly faltering.
 
@@ -1580,7 +1574,7 @@ They acqueisce almost instantly, dropping their swords and shields. &quot;Thank 
 
 Rafferty gathers his robe and quickly steps along behind you, happy to get out of this scene. He&#39;s looking down, but a slight smile is forming as he steps across. Some other folk follow your party before the guards are able to finally regain their bearings and stop the flow of people.
 
-[[Enter The City]]</tw-passagedata><tw-passagedata pid="103" name="Persuade The Guards" tags="" position="687,6525" size="100,100">(if: $compan is 1)[You and Karos approach the guards. They hold up their shields and pull back their blades.
+[[Enter The City]]</tw-passagedata><tw-passagedata pid="102" name="Persuade The Guards" tags="" position="627,6525" size="100,100">(if: $compan is 1)[You and Karos approach the guards. They hold up their shields and pull back their blades.
 
 &quot;Let&#39;s not jump to violence.&quot; You calmly ask of them. &quot;I think we can arrange something here.&quot; The guards respond by tightening their grip.
 
@@ -1612,7 +1606,7 @@ Loren says, &quot;Just let us through then and I promise not to tell the true au
 
 Rafferty gathers his robe and quickly steps along behind you, happy to get out of this scene. He&#39;s looking down, but a slight smile is forming as he steps across. Many other folk follow your party before the guards are able to finally regain their bearings.](else:)[Error, no companion set]
 
-[[Enter The City]]</tw-passagedata><tw-passagedata pid="104" name="Enter The City" tags="Ch6" position="543,6683" size="100,100">By the time the party enters the city gates, evening has begun. There is scant lighting provided by diffuse torches. You see a rundown stone courtyard, with a fountain in its center. There are buildings surrounding you, though many are rundown, missing some walls or even a roof. The fountain itself is cracking and filled with brown water and refuse. The stonework in the floor of the courtyard is broken and dirt is spread throughout. Several caravans are downturned and looted. Barrels lay on their sides and are broken into, one being filled with skittering rats.
+[[Enter The City]]</tw-passagedata><tw-passagedata pid="103" name="Enter The City" tags="Ch6" position="543,6683" size="100,100">By the time the party enters the city gates, evening has begun. There is scant lighting provided by diffuse torches. You see a rundown stone courtyard, with a fountain in its center. There are buildings surrounding you, though many are rundown, missing some walls or even a roof. The fountain itself is cracking and filled with brown water and refuse. The stonework in the floor of the courtyard is broken and dirt is spread throughout. Several caravans are downturned and looted. Barrels lay on their sides and are broken into, one being filled with skittering rats.
 
 You are immediately greeted by the slippery fingers of a surreptitious thief attempting to pickpocket you. (if: $compan is 1)[One firm look by Karos is enough to terrify the scrawny thief into submission. He takes off. &quot;Stand close,&quot; Karos says.](else-if: $compan is 2)[Loren notices the thief long before you do. She quickly gets in his way and send the scrawny thief away. &quot;Don&#39;t go dozing off on me now, &#39;Cap,&quot; she says.](else:)[Error, no companion set]
 
@@ -1629,7 +1623,7 @@ You exchange a quick look of concern with (if: $compan is 1)[Karos](else-if: $co
 (link: &quot;Ask Party For Advice&quot;) [(set: $previousPassage to &quot;Enter The City&quot;)(goto:&quot;Ask Party For Advice&quot;)]
 [[Let Rafferty Lead]]
 [[Choose To Lead Yourself]]
-(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Enter The City&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="105" name="Let Rafferty Lead" tags="" position="468,6830" size="100,100">&quot;Okay, Rafferty, you can lead. Let&#39;s just get through here quickly and get you back to the monastery.&quot;
+(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Enter The City&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="104" name="Let Rafferty Lead" tags="" position="468,6830" size="100,100">&quot;Okay, Rafferty, you can lead. Let&#39;s just get through here quickly and get you back to the monastery.&quot;
 
 (set: $bishopApproval to $bishopApproval +1)&lt;i&gt;(Bishop Rafferty approves)&lt;/i&gt;
 
@@ -1650,7 +1644,7 @@ You must get through this crowd.
 (link: &quot;Ask Party For Advice&quot;) [(set: $previousPassage to &quot;Let Rafferty Lead&quot;)(goto:&quot;Ask Party For Advice&quot;)]
 [[Defend The Bishop And Passively Move Through]]
 (if: $compan is 1)[(link: &quot;Tell Karos To Fight Them Off&quot;) [(goto:&quot;Tell Karos To Fight Them Off&quot;)]](else-if: $compan is 2)[(link: &quot;Tell Loren To Persuade Them&quot;) [(goto:&quot;Tell Loren To Persuade Them&quot;)]](else:)[Error, no companion set]
-(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Let Rafferty Lead&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="106" name="Choose To Lead Yourself" tags="" position="618,6833" size="100,100">&quot;I don&#39;t believe it is safe for you to lead. Please, just instruct me where to go and I will take point.&quot;
+(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Let Rafferty Lead&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="105" name="Choose To Lead Yourself" tags="" position="618,6833" size="100,100">&quot;I don&#39;t believe it is safe for you to lead. Please, just instruct me where to go and I will take point.&quot;
 
 (set: $bishopApproval to $bishopApproval -1)&lt;i&gt;(Bishop Rafferty disapproves)&lt;/i&gt;
 
@@ -1671,7 +1665,7 @@ You must get through this crowd.
 (link: &quot;Ask Party For Advice&quot;) [(set: $previousPassage to &quot;Choose To Lead Yourself&quot;)(goto:&quot;Ask Party For Advice&quot;)]
 [[Defend The Bishop And Passively Move Through]]
 (if: $compan is 1)[(link: &quot;Tell Karos To Fight Them Off&quot;) [(goto:&quot;Tell Karos To Fight Them Off&quot;)]](else-if: $compan is 2)[(link: &quot;Tell Loren To Persuade Them&quot;) [(goto:&quot;Tell Loren To Persuade Them&quot;)]](else:)[Error, no companion set]
-(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Choose To Lead Yourself&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="107" name="Tell Karos To Fight Them Off" tags="" position="419,6984" size="100,100">&quot;Karos, these people should be no match for you. Carve a path for us. I&#39;m counting on you.&quot;
+(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Choose To Lead Yourself&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="106" name="Tell Karos To Fight Them Off" tags="" position="419,6984" size="100,100">&quot;Karos, these people should be no match for you. Carve a path for us. I&#39;m counting on you.&quot;
 
 Karos looks down and contemplates for a few moments. He finally shakes his head, then looks up to you. &quot;I do not see this as a wise course, Captain,&quot; he says. &quot;There are so many of them. You put much stock into my strength.&quot; He unsheathes his spear and steps forward. He looks over his shoulder and says, &quot;I will try not to disappoint.&quot;
 
@@ -1689,7 +1683,7 @@ The crowd begins to cower at the sight of him. As Karos strides forward, their f
 
 You start approaching the other end of the bazaar, where the road narrows again. Rafferty says, &quot;The religious distrcit is just a little futher this way, let&#39;s keep going.&quot;
 
-[[Continue On|Religious District]]</tw-passagedata><tw-passagedata pid="108" name="Tell Loren To Persuade Them" tags="" position="671,6976" size="100,100">&quot;Loren, use that silver tongue and try to convince them to let us through. I&#39;m counting on you.&quot;
+[[Continue On|Religious District]]</tw-passagedata><tw-passagedata pid="107" name="Tell Loren To Persuade Them" tags="" position="671,6976" size="100,100">&quot;Loren, use that silver tongue and try to convince them to let us through. I&#39;m counting on you.&quot;
 
 Loren looks exasperated. &quot;This . . . doesn&#39;t seem feasible. Not something I&#39;m used to, to be honest. I mean, this is drastically different than trying to convice a group of drunkards to move from one pub to the next.&quot; She sighs. &quot;But if you think, it&#39;s best, I&#39;m willing to give it a shot.&quot;
 
@@ -1711,7 +1705,7 @@ The crowd murmurs angrily but, after much consideration, finally let you all thr
 
 You start approaching the other end of the bazaar, where the road narrows again. Rafferty says, &quot;The religious distrcit is just a little futher this way, let&#39;s keep going.&quot;
 
-[[Continue On|Religious District]]</tw-passagedata><tw-passagedata pid="109" name="Defend The Bishop And Passively Move Through" tags="" position="548,6985" size="100,100">&quot;Let&#39;s not hurt anyone if we don&#39;t need to. There&#39;s many villains here and we&#39;ll be risking more than we can handle.&quot;
+[[Continue On|Religious District]]</tw-passagedata><tw-passagedata pid="108" name="Defend The Bishop And Passively Move Through" tags="" position="548,6985" size="100,100">&quot;Let&#39;s not hurt anyone if we don&#39;t need to. There&#39;s many villains here and we&#39;ll be risking more than we can handle.&quot;
 
 (set: $bishopApproval to $bishopApproval -1)&lt;i&gt;(Bishop Rafferty disapproves)&lt;/i&gt;
 
@@ -1727,7 +1721,7 @@ Their attempts to reach Rafferty unsuccesful, they go back to looting the stalls
 
 &quot;The religious distrcit is just a little futher this way, let&#39;s keep going.&quot;
 
-[[Continue On|Religious District]]</tw-passagedata><tw-passagedata pid="110" name="Religious District" tags="" position="541,7194" size="100,100">You continue down more winding corridiors. The road finally starts to open up some. As you enter the Religious District, you see in the dim light, ornate articheture and stained glass throughout. This district is a stark contrast to what you&#39;ve been used to within Coreston.
+[[Continue On|Religious District]]</tw-passagedata><tw-passagedata pid="109" name="Religious District" tags="" position="541,7194" size="100,100">You continue down more winding corridiors. The road finally starts to open up some. As you enter the Religious District, you see in the dim light, ornate articheture and stained glass throughout. This district is a stark contrast to what you&#39;ve been used to within Coreston.
 
 &quot;I would not be seen with you in this district,&quot; says Rafferty abruptly. &quot;The monastery is but a few paces away. I&#39;ll be able to get there fine.&quot;
 
@@ -1736,7 +1730,7 @@ You ponder his desire.
 (link: &quot;Ask Party For Advice&quot;) [(set: $previousPassage to &quot;Religious District&quot;)(goto:&quot;Ask Party For Advice&quot;)]
 [[Escort The Bishop]]
 [[Leave The Bishop]]
-(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Religious District&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="111" name="Escort The Bishop" tags="" position="469,7346" size="100,100">&quot;Please, I must insist. After all we&#39;ve been through I wouldn&#39;t have you killed right at the end&quot;, you command.
+(link: &quot;Check Status&quot;) [(set: $previousPassage to &quot;Religious District&quot;)(goto:&quot;Check Status&quot;)]</tw-passagedata><tw-passagedata pid="110" name="Escort The Bishop" tags="" position="469,7346" size="100,100">&quot;Please, I must insist. After all we&#39;ve been through I wouldn&#39;t have you killed right at the end&quot;, you command.
 
 &quot;You&#39;ve got to be . . .&quot;, Rafferty sighs loudly.
 
@@ -1756,7 +1750,7 @@ At this, it seems you&#39;ve completed your task. You look to (if: $compan is 1)
 
 (if: $compan is 1)[Karos flashes a light smile. &quot;A worthy task, that was. I am thankful I don&#39;t have to listen to that man&#39;s whimpering anymore. We best get back to collect our reward and get some rest.&quot; You sense his posture relaxes a bit and his eyes lose their sense of perpetual vigilence.](else-if: $compan is 2)[She returns by giving you a large smile and says, &quot;You mean we&#39;ve finally done it? We don&#39;t have to serve that pompous fool anymore?&quot; She leaps into the air and does a quick little jig. &quot;Ahaha! Let&#39;s go collect our reward, then, shall we?](else:)[error, No companion set]
 
-[[Journey Back To Collect Your Reward]]</tw-passagedata><tw-passagedata pid="112" name="Leave The Bishop" tags="" position="619,7346" size="100,100">&quot;Okay, Rafferty. We will leave you be. I hope you stay safe on the last leg of your journey.&quot;
+[[Journey Back To Collect Your Reward]]</tw-passagedata><tw-passagedata pid="111" name="Leave The Bishop" tags="" position="619,7346" size="100,100">&quot;Okay, Rafferty. We will leave you be. I hope you stay safe on the last leg of your journey.&quot;
 
 (set: $bishopApproval to $bishopApproval +1)&lt;i&gt;(Bishop Rafferty approves)&lt;/i&gt;
 
@@ -1768,15 +1762,15 @@ At this, it seems you&#39;ve completed your task. You look to (if: $compan is 1)
 
 (if: $compan is 1)[Karos flashes a light smile. &quot;A worthy task, that was. I am thankful I don&#39;t have to listen to that man&#39;s whimpering anymore. We best get back to collect our reward and get some rest.&quot; You sense his posture relaxes a bit and his eyes lose their sense of perpetual vigilence.](else-if: $compan is 2)[She returns by giving you a large smile and says, &quot;You mean we&#39;ve finally done it? We don&#39;t have to serve that pompous fool anymore?&quot; She leaps into the air and does a quick little jig. &quot;Ahaha! Let&#39;s go collect our reward, then, shall we?](else:)[error, No companion set]
 
-[[Journey Back To Collect Your Reward]]</tw-passagedata><tw-passagedata pid="113" name="Journey Back To Collect Your Reward" tags="" position="534,7489" size="100,100">After a several day journey back, you and your companion arrive at your headquarters. Upon a desk in the center of the room are two sacks of coins. You both grab one of the sacks and exchange a few words before heading your own ways.
+[[Journey Back To Collect Your Reward]]</tw-passagedata><tw-passagedata pid="112" name="Journey Back To Collect Your Reward" tags="" position="534,7489" size="100,100">After a several day journey back, you and your companion arrive at your headquarters. Upon a desk in the center of the room are two sacks of coins. You both grab one of the sacks and exchange a few words before heading your own ways.
 
 Congratulations on a successful mission.
 
-[[Epilogue]]</tw-passagedata><tw-passagedata pid="114" name="Epilogue" tags="" position="535,7639" size="100,100">Weeks have passed since your previous mission in the Ashenbark Woods. You had some time between tasks and find yourself at a tavern. This tavern is called &quot;The Leaky Barrel&quot; and is located in a town just by Coreston.
+[[Epilogue]]</tw-passagedata><tw-passagedata pid="113" name="Epilogue" tags="" position="535,7639" size="100,100">Weeks have passed since your previous mission in the Ashenbark Woods. You had some time between tasks and find yourself at a tavern. This tavern is called &quot;The Leaky Barrel&quot; and is located in a town just by Coreston.
 
 You are sipping on a tall ale. You begin pondering your last mission and your line of work in general. (if: $karma is &lt; -1)[Such a pittance given for such a perilous journey; easily tenfold was deserved. And you never seem to get enough coin to relax for any real stretch of time. Retirement is out of the picture. Will you always be stuck beneath this endless spiked wheel? You begin to feel resentment and rage build up inside. You look around at the others in the bar and think only of your pain and resent the looks of joy and laughter upon their faces. You think about all the people you hurt along the way to achieve success on your recent mission. Your guilt is nonexistent, and you actually feel some of your anger subside as your reminense about the pain you&#39;ve dealt to others. You push away your ale, now discontent with even this simple pleasure.](else-if: $kamra is &gt; 1)[Several lives were needlessly lost and just for a simple escort. There is a hope, though, that this was all worth it. You did manage to help a few people along the way. Though the bishop himself was perhaps not the most moral, his teachings certainly are. Maybe the clergy and commonfolk of Coreston will one day find some common ground. They are both striving to better themselves, are they not? At least you are able to help out in some sense, one client at a time, and make rigtheous choices along the way. Plus, the pay isn&#39;t so bad either. You enjoy a long sip of ale and end it with a smile.](else:)[An odd business this is. You have no control of who comes through the door and what task they present you with. And the infrequency of such means you often have to take them regardless of how you feel about it just to make ends meet. Your choices along the way are all in an attempt to please the client. It oftentimes feels like you have no control along the way; like a raft going through a downward stream, there is only so much influence you can have. Glassy-eyed, you stare at your ale for a moment, then drink the whole mug in a few quick gulps.]
 
-[[Wander The Tavern]]</tw-passagedata><tw-passagedata pid="115" name="Wander The Tavern" tags="" position="534,7789" size="100,100">You push back your chair and stand up. Stretching your legs, you begin to wander the the tavern. Paint is peeling from the walls and the humidity is relentless. A few scant torches leave the tavern relatively dim. The windows are dreary and foggy, disallowing you from looking out. The bar itself is well stocked, with several shelves of glasses and bottles lining the back wall. The barkeep is a rotund man with a filthy apron. He is cleaning a mug with an even filthier rag. Repeatedly, he holds the mug up to torchlight, assesses that it is still too dirty, and wipes it again with his rag. You flick him a coin to pay for your ale and he gives you a nod, then goes back to his fruitless task.
+[[Wander The Tavern]]</tw-passagedata><tw-passagedata pid="114" name="Wander The Tavern" tags="" position="534,7789" size="100,100">You push back your chair and stand up. Stretching your legs, you begin to wander the the tavern. Paint is peeling from the walls and the humidity is relentless. A few scant torches leave the tavern relatively dim. The windows are dreary and foggy, disallowing you from looking out. The bar itself is well stocked, with several shelves of glasses and bottles lining the back wall. The barkeep is a rotund man with a filthy apron. He is cleaning a mug with an even filthier rag. Repeatedly, he holds the mug up to torchlight, assesses that it is still too dirty, and wipes it again with his rag. You flick him a coin to pay for your ale and he gives you a nod, then goes back to his fruitless task.
 
 The tavern itself is relatively crowded. Nearly every seat is filled, from the bar to the tables. There is quite a clamor and you find it hard to even manuvear around. You decide to make your way back to your seat, but find that it has been taken by another patron. Upon further examination, you realize that you recognize (if: $compApproval is &lt; -1)[(if: $compan is 1)[him as your previous companion Karos!
 
@@ -1880,7 +1874,7 @@ You exchange some pleasanties over the next couple of minutes. It&#39;s nice to 
 
 You make your way to the exit of the tavern.
 
-[[Prepare To Leave]]</tw-passagedata><tw-passagedata pid="116" name="Prepare To Leave" tags="" position="534,7937" size="100,100">You open the heavy front door to the bar and reveal the exterior. The night is relatively brisk. Quite a few people are hanging around the outside of the tavern, lit up by a couple torches. Some are leaning against the stone building and others are sat cross-legged upon the ground, unable to maintain their balance any longer. A few are retching out what they just paid to enjoy.
+[[Prepare To Leave]]</tw-passagedata><tw-passagedata pid="115" name="Prepare To Leave" tags="" position="534,7937" size="100,100">You open the heavy front door to the bar and reveal the exterior. The night is relatively brisk. Quite a few people are hanging around the outside of the tavern, lit up by a couple torches. Some are leaning against the stone building and others are sat cross-legged upon the ground, unable to maintain their balance any longer. A few are retching out what they just paid to enjoy.
 
 You are preparing to make your way to the stables, find your steed, and head home. As you look around, you notice none other than the Bishop Rafferty outside! Though clergy are typically not allowed to drink, he seems already drunk and is in common clothes. He is talking to a woman dressed in very little clothing who seems to be getting progressively angry with him.
 
@@ -1918,9 +1912,9 @@ You look around, feeling isolated and a tad confused. You suppose this is what y
 
 You find the stables and your steed. You provide him a carrot and pet his large mane. He neighs loudly. Your bring his face up to yours and rest your forehead on his for a moment. Then, you mount the steed and make your way off into the deep, cold night.
 
-[[The End]]</tw-passagedata><tw-passagedata pid="117" name="The End" tags="" position="534,8089" size="100,100">Congratulations!
+[[The End]]</tw-passagedata><tw-passagedata pid="116" name="The End" tags="" position="534,8089" size="100,100">Congratulations!
 
-(link: &quot;Play Again?&quot;)[(goto: &quot;Intro&quot;)]</tw-passagedata><tw-passagedata pid="118" name="Attempt to Collect Some" tags="" position="0,2596" size="100,100">You and (if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[Error, no companion set] attempt to garner a chunk of ore from this large, shining rock. Without any proper pickaxe to use, you first start by digging the point of your shield into the rock.This effort leaves naught but a scratch upon the runite deposit.
+(link: &quot;Play Again?&quot;)[(goto: &quot;Intro&quot;)]</tw-passagedata><tw-passagedata pid="117" name="Attempt to Collect Some" tags="" position="0,2596" size="100,100">You and (if: $compan is 1)[Karos](else-if: $compan is 2)[Loren](else:)[Error, no companion set] attempt to garner a chunk of ore from this large, shining rock. Without any proper pickaxe to use, you first start by digging the point of your shield into the rock.This effort leaves naught but a scratch upon the runite deposit.
 
 (if: $compan is 1)[Karos steps forward, unsheathes his axes, and swings heavily at the stone. He really seems to be putting all his might into it, yet to no avail. After a few moments, it becomes clear to both of you that there is no way for you to retrieve any runite without the proper tools.](else-if: $compan is 2)[Loren steps forward and says, &quot;I suppose I ought to give it a try myself.&quot; She unsheathes her long dagger and scraps it alongs its edge, futilely. After a few moments, she stops and stands up, saying, &quot;Well, that may have sharpened my blade a bit, but that&#39;s about all we&#39;ll get out of this.&quot;](else:)[Error, no companion set]
 
