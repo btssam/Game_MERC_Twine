@@ -1,0 +1,15 @@
+# OS / Editor temporary files
+.DS_Store
+Thumbs.db
+*.tmp
+~$*.odt
+~$*.docx
+
+# Notes
+Merc Notes/
+*.odt
+*.pdf
+Merc Notes/
+*.odt
+*.docx
+*.pdf
