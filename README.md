@@ -2,7 +2,7 @@
 
 A 29,800+ word interactive branching narrative game built with **Twine 2** using the **Harlowe 3.2.2** story format. 
 
-*Merc* puts players in command of a mercenary company where decisions impact persistent companion approval ratings, branching morality paths, and narrative state machines across 117 interconnected passages.
+*Merc* puts players in command of a mercenary company.
 
 **Play in Browser:** [Merc on itch.io](https://btssam.itch.io/merc)
 
