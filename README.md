@@ -42,5 +42,5 @@ You can run the game locally without any software:
 
 ## License
 
-- **Code & Logic:** Licensed under the [MIT License](LICENSE).
-- **Narrative, Characters, & Writing:** Licensed under [Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0)](LICENSE).
+- **Code & Logic:** Licensed under the [MIT License](LICENSE.md).
+- **Narrative, Characters, & Writing:** Licensed under [Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0)](LICENSE.md).
